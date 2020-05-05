@@ -1,0 +1,184 @@
+body {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  font-family: "MontserratSemiBold";
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 24px 60px;
+  box-sizing: border-box;
+  position: fixed;
+  background: white;
+  top: 0px;
+  z-index: 999;
+}
+
+.header__logo {
+  height: 51px;
+}
+
+.header__logoImage {
+  width: 166px;
+}
+
+.nav-header__list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.nav-header__item {
+  padding-right: 30px;
+  font-size: 15px;
+}
+
+.nav-header__item.current {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.nav-header__item.current:after {
+  content: '';
+  background-color: #E51937;
+  position: absolute;
+  width: 64%;
+  top: 100%;
+  margin-top: 6px;
+  height: 2px;
+  left: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.current__modelS {
+  color: #E51937;
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__menu-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0px;
+}
+
+.header__menu-item {
+  padding-right: 30px;
+}
+
+.header__burger {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 24px;
+  height: 15px;
+}
+
+.burger-icon {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  right: 0;
+  top: 50%;
+  margin-top: -1px;
+  background-color: #E51937;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.header__burger:before,
+.header__burger:after {
+  content: '';
+  background-color: #E51937;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.header__burger:before {
+  top: 0;
+}
+
+.header__burger:after{
+  bottom: 0;
+}
+
+.characteristic {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 133px;
+  position: relative;
+}
+
+.characteristic__title {
+  font-family: "MontserratSemiBold";
+  margin: 0px;
+  font-size: 90px;
+}
+
+.characteristic__text {
+  margin: 0px;
+  font-family: "MontserratMedium";
+  font-size: 15px;
+  margin-top: -10px;
+}
+
+.characteristic__logoImage {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.characteristic__carImage {
+  max-width: 968px;
+}
+
+.characteristic__description {
+  padding-top: 26px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.speedo__title {
+  display: flex;
+  flex-direction: row;
+  font-family: "MontserratSemiBold";
+  align-items: center;
+}
+
+.speedo__title-numb {
+  font-size: 35px;
+  margin: 0px;
+}
+
+.speedo__title-text {
+  font-size: 20px;
+  margin: 0px;
+}
+
+.speedo__desc {
+  font-family: "MontserratRegular";
+  margin: 0px;
+  font-size: 12px;
+}
