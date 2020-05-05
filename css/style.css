@@ -179,26 +179,25 @@ a {
   height: 20.94;
 }
 
-.speedo__icon-ellipse {
+.speedo__image-arrow {
   position: absolute;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: black;
-  left: 21px;
+  left: 20px;
   top: 15px;
+  animation-duration: 3s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: 17% 35%;
 }
 
-.speedo__icon-ellipse::after {
-  position: absolute;
-  content: '';
-  width: 0;
-	height: 0;
-	border-left: 2px solid transparent;
-	border-right: 2px solid transparent;
-  border-bottom: 18px solid red;
-  top: -15px;
-  left: .7px;
+@keyframes move {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-230deg);
+  }
 }
 
 .speedo__title {
