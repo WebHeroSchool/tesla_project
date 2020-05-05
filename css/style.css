@@ -160,11 +160,53 @@ a {
   flex-direction: row;
 }
 
+.speedo__image {
+  position: relative;
+  top: 18px;
+}
+
+.speedo__image-speedometr {
+  position: absolute;
+  width: 46px;
+  height: 34.13px;
+}
+
+.speedo__image-ellipse {
+  position: absolute;
+  left: 12px;
+  top: 7px;
+  width: 21.05;
+  height: 20.94;
+}
+
+.speedo__icon-ellipse {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: black;
+  left: 21px;
+  top: 15px;
+}
+
+.speedo__icon-ellipse::after {
+  position: absolute;
+  content: '';
+  width: 0;
+	height: 0;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+  border-bottom: 18px solid red;
+  top: -15px;
+  left: .7px;
+}
+
 .speedo__title {
   display: flex;
   flex-direction: row;
   font-family: "MontserratSemiBold";
   align-items: center;
+  padding-left: 60px;
 }
 
 .speedo__title-numb {
@@ -181,4 +223,6 @@ a {
   font-family: "MontserratRegular";
   margin: 0px;
   font-size: 12px;
+  padding-left: 60px;
+  margin-top: -3px;
 }
