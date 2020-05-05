@@ -156,8 +156,12 @@ a {
 .characteristic__description {
   padding-top: 26px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
+}
+
+.description-characteristic__speedo {
+  padding-right: 82px;
 }
 
 .speedo__image {
@@ -214,8 +218,11 @@ a {
 }
 
 .speedo__title-text {
+  align-self: flex-end;
+  padding-bottom: 3px;
   font-size: 20px;
   margin: 0px;
+  padding-left: 6px;
 }
 
 .speedo__desc {
@@ -223,5 +230,96 @@ a {
   margin: 0px;
   font-size: 12px;
   padding-left: 60px;
+  margin-top: -3px;
+}
+
+.description-characteristic__road {
+  padding-right: 105px;
+}
+
+.road__image {
+  position: relative;
+}
+
+.road__image-stroke {
+  width: 29px;
+  height: 44.97px;
+  position: absolute;
+  left: 0px;
+  top: 6px;
+  z-index: 4;
+}
+
+.road__image-strokeDotted {
+  width: 26.4px;
+  height: 42.37px;
+  position: absolute;
+  left: .7px;
+  top: 7px;
+  z-index: 5;
+}
+
+.road__image-ellipseRightTop {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  z-index: 6;
+  left: 22px;
+  top: 5px;
+}
+
+.road__image-ellipseRightTopIn {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  left: 24px;
+  top: 7px;
+  z-index: 7;
+}
+
+.road__image-ellipseLeftBottom {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  left: 7px;
+  top: 46px;
+  z-index: 8;
+}
+
+.road__image-ellipsrLeftBottomIn {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  z-index: 9;
+  left: 9px;
+  top: 48px;
+}
+
+.road__title {
+  display: flex;
+  flex-direction: row;
+  font-family: "MontserratSemiBold";
+  align-items: center;
+  padding-left: 40px;
+}
+
+.road__title-numb {
+  font-size: 35px;
+  margin: 0px;
+}
+
+.road__title-text {
+  align-self: flex-end;
+  padding-bottom: 3px;
+  font-size: 20px;
+  margin: 0px;
+  padding-left: 6.5px;
+}
+
+.road__desc {
+  font-family: "MontserratRegular";
+  margin: 0px;
+  font-size: 12px;
+  padding-left: 40px;
   margin-top: -3px;
 }
