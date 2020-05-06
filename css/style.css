@@ -195,7 +195,7 @@ li > a:hover {
   position: absolute;
   left: 20px;
   top: 15px;
-  animation-duration: 3s;
+  animation-duration: 2.7s;
   animation-name: move;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -412,7 +412,6 @@ li > a:hover {
   padding-top: 37px;
   position: relative;
   padding-left: 70px;
-  cursor: pointer;
   animation: arrow 1s linear infinite;
 }
 
@@ -440,8 +439,132 @@ li > a:hover {
   -o-transform: rotate(-135deg);
   transform: rotate(-45deg);
   top: 5px;
+  cursor: pointer;
 }
 
 .inside {
   padding-top: 37px;
+}
+
+@media screen and (max-width: 376px) {
+
+  .header {
+    max-width: 376px;
+    padding: 5px 21px 30px 0px;
+    position: static;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__menu-list {
+    display: none;
+  }
+
+  .characteristic {
+    max-width: 376px;
+    padding: 0px;
+  }
+
+  .characteristic__title {
+    font-size: 50px;
+  }
+
+  .characteristic__text {
+    font-size: 10px;
+  }
+
+  .characteristic__logoImage {
+    padding-top: 70px;
+    width: 100%;
+  }
+
+  .characteristic__carImage {
+    max-width: 100%;
+    padding-top: 40px;
+  }
+
+  .characteristic__description {
+    max-width: 100%;
+    padding: 18px 40px 43px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .description-characteristic__speedo {
+    padding-right: 41px;
+  }
+
+  .speedo__image {
+    width: 38.14px;
+    height: 27.98px;
+  }
+
+  .speedo__title {
+    margin-top: -15px;
+  }
+
+  .speedo__title-numb {
+    font-size: 27px;
+  }
+
+  .speedo__title-text {
+    font-size: 15px;
+  }
+
+  .speedo__desc {
+    font-size: 10px;
+  }
+
+  .description-characteristic__road {
+    padding-right: 0px;
+  }
+
+  .road__image-stroke {
+    width: 24.04px;
+    height: 36.88px;
+    padding-top: 10px;
+  }
+
+  .road__image-strokeDotted {
+    width: 21.89px;
+    height: 34.74px;
+    top: 18px;
+  }
+
+  .road__image-ellipseRightTop {
+    width: 5.8px;
+    height: 5.74px;
+    top: 16px;
+  }
+
+  .road__image-ellipseRightTopIn {
+    display: none;
+  }
+
+  .road__image-ellipseLeftBottom {
+    top: 49px;
+  }
+
+  .road__title-numb {
+    font-size: 27px;
+    padding-top: 13px;
+  }
+
+  .road__title-text {
+    font-size: 15px;
+  }
+
+  .road__desc {
+    font-size: 10px;
+  }
+
+  .description-characteristic__testDrive {
+    display: none;
+  }
+
+  .description-characteristic__button {
+    display: none;
+  }
 }
