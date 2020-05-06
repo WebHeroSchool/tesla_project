@@ -1,0 +1,907 @@
+body {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  font-family: "MontserratSemiBold";
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 24px 60px;
+  box-sizing: border-box;
+  position: fixed;
+  background: white;
+  top: 0px;
+  z-index: 999;
+}
+
+.header__logo {
+  height: 51px;
+}
+
+.header__logoImage {
+  width: 166px;
+}
+
+.nav-header__list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+li > a:hover {
+  color: #E51937;
+}
+
+.nav-header__item {
+  padding-right: 30px;
+  font-size: 15px;
+}
+
+.nav-header__item.current {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.nav-header__item.current:after {
+  content: '';
+  background-color: #E51937;
+  position: absolute;
+  width: 64%;
+  top: 100%;
+  margin-top: 6px;
+  height: 2px;
+  left: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.current__modelS {
+  color: #E51937;
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__menu-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0px;
+}
+
+.header__menu-item {
+  padding-right: 30px;
+  font-size: 15px;
+}
+
+.header__burger {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 24px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.burger-icon {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  right: 0;
+  top: 50%;
+  margin-top: -1px;
+  background-color: #E51937;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.header__burger:before,
+.header__burger:after {
+  content: '';
+  background-color: #E51937;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  cursor: pointer;
+}
+
+.header__burger:before {
+  top: 0;
+}
+
+.header__burger:after{
+  bottom: 0;
+}
+
+.characteristic {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 133px;
+  position: relative;
+}
+
+.characteristic__title {
+  font-family: "MontserratSemiBold";
+  margin: 0px;
+  font-size: 90px;
+}
+
+.characteristic__text {
+  margin: 0px;
+  font-family: "MontserratMedium";
+  font-size: 15px;
+  margin-top: -10px;
+}
+
+.characteristic__logoImage {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.characteristic__carImage {
+  max-width: 968px;
+}
+
+.characteristic__description {
+  padding-top: 26px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-left: 90px;
+}
+
+.description-characteristic__speedo {
+  padding-right: 82px;
+}
+
+.speedo__image {
+  position: relative;
+  top: 18px;
+}
+
+.speedo__image-speedometr {
+  position: absolute;
+  width: 46px;
+  height: 34.13px;
+}
+
+.speedo__image-ellipse {
+  position: absolute;
+  left: 12px;
+  top: 7px;
+  width: 21.05;
+  height: 20.94;
+}
+
+.speedo__image-arrow {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  animation-duration: 2.7s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: 17% 35%;
+}
+
+@keyframes move {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-230deg);
+  }
+}
+
+.speedo__title {
+  display: flex;
+  flex-direction: row;
+  font-family: "MontserratSemiBold";
+  align-items: center;
+  padding-left: 60px;
+}
+
+.speedo__title-numb {
+  font-size: 35px;
+  margin: 0px;
+}
+
+.speedo__title-text {
+  align-self: flex-end;
+  padding-bottom: 3px;
+  font-size: 20px;
+  margin: 0px;
+  padding-left: 6px;
+}
+
+.speedo__desc {
+  font-family: "MontserratRegular";
+  margin: 0px;
+  font-size: 12px;
+  padding-left: 60px;
+  margin-top: -3px;
+}
+
+.description-characteristic__road {
+  padding-right: 105px;
+}
+
+.road__image {
+  position: relative;
+}
+
+.road__image-stroke {
+  width: 29px;
+  height: 44.97px;
+  position: absolute;
+  left: 0px;
+  top: 6px;
+  z-index: 4;
+}
+
+.road__image-strokeDotted {
+  width: 26.4px;
+  height: 42.37px;
+  position: absolute;
+  left: .7px;
+  top: 7px;
+  z-index: 5;
+}
+
+.road__image-ellipseRightTop {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  z-index: 6;
+  left: 22px;
+  top: 5px;
+}
+
+.road__image-ellipseRightTopIn {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  left: 24px;
+  top: 7px;
+  z-index: 7;
+}
+
+.road__image-ellipseLeftBottom {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  left: 7px;
+  top: 46px;
+  z-index: 8;
+}
+
+.road__image-ellipsrLeftBottomIn {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  z-index: 9;
+  left: 9px;
+  top: 48px;
+}
+
+.road__title {
+  display: flex;
+  flex-direction: row;
+  font-family: "MontserratSemiBold";
+  align-items: center;
+  padding-left: 40px;
+}
+
+.road__title-numb {
+  font-size: 35px;
+  margin: 0px;
+}
+
+.road__title-text {
+  align-self: flex-end;
+  padding-bottom: 3px;
+  font-size: 20px;
+  margin: 0px;
+  padding-left: 6.5px;
+}
+
+.road__desc {
+  font-family: "MontserratRegular";
+  margin: 0px;
+  font-size: 12px;
+  padding-left: 40px;
+  margin-top: -3px;
+}
+
+.description-characteristic__testDrive {
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+}
+
+.testDrive__image {
+  position: relative;
+  padding-right: 40px;
+}
+
+.testDrive__image-ellipse {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: -11px;
+  left: 10px;
+}
+
+.testDrive__image-tesla {
+  position: absolute;
+  width: 14.18px;
+  height: 8.23px;
+  left: 14px;
+  top: -1px;
+  animation-duration: 3s;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: 50% 0%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-230deg);
+  }
+}
+
+.testDrive__image-dott {
+  position: absolute;
+  width: 2.58px;
+  height: 2.58px;
+  left: 20px;
+  top: -3px;
+}
+
+.testDrive__title {
+  margin: 0px;
+  padding-left: 0px;
+  font-size: 13px;
+  font-family: "MontserratBold";
+}
+
+.description-characteristic__button {
+  margin: 0px;
+  color: #E51937;
+  display: flex;
+  align-self: center;
+  font-family: "MontserratBold";
+  font-size: 13px;
+  border: 2px solid #E51937;
+  box-shadow: none;
+  transition: box-shadow 0.6s linear;
+  padding: 10px 40px;
+}
+
+.description-characteristic__button:hover {
+  box-shadow: 0px 0px 0px 2px #E51937;
+}
+
+.description-characteristic__testDrive-phone {
+  display: none;
+}
+
+.description-characteristic__button-phone {
+  display: none;
+}
+
+.characteristic__arrowDown {
+  display: flex;
+  justify-content: center;
+  padding-top: 37px;
+  position: relative;
+  padding-left: 70px;
+  animation: arrow 1s linear infinite;
+}
+
+@keyframes arrow {
+  0% {
+      bottom:0;
+  }
+  50% {
+      bottom:10px;
+  }
+  100% {
+      bottom:0;
+  }
+}
+
+.arrowDown__icon {
+  position: relative;
+  border: 3px solid  #E51937;
+  border-width: 0 0 2px 2px;
+  width: 16px;
+  height: 16px;
+  line-height: 0;
+  font-size: 0;
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-45deg);
+  top: 5px;
+  cursor: pointer;
+}
+
+.inside {
+  padding-top: 37px;
+}
+
+@media screen and (max-width: 375px) {
+
+  .header {
+    max-width: 375px;
+    padding: 5px 21px 30px 0px;
+    position: static;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__menu-list {
+    display: none;
+  }
+
+  .characteristic {
+    max-width: 375px;
+    padding: 0px;
+  }
+
+  .characteristic__title {
+    font-size: 50px;
+  }
+
+  .characteristic__text {
+    font-size: 10px;
+  }
+
+  .characteristic__logoImage {
+    padding-top: 70px;
+    width: 105%;
+    left: -5px;
+  }
+
+  .characteristic__carImage {
+    max-width: 100%;
+    padding-top: 40px;
+  }
+
+  .characteristic__description {
+    max-width: 100%;
+    padding: 18px 40px 43px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .description-characteristic__speedo {
+    padding-right: 41px;
+  }
+
+  .speedo__image {
+    width: 38.14px;
+    height: 27.98px;
+  }
+
+  .speedo__title {
+    margin-top: -15px;
+  }
+
+  .speedo__title-numb {
+    font-size: 27px;
+  }
+
+  .speedo__title-text {
+    font-size: 15px;
+  }
+
+  .speedo__desc {
+    font-size: 10px;
+  }
+
+  .description-characteristic__road {
+    padding-right: 0px;
+  }
+
+  .road__image-stroke {
+    width: 24.04px;
+    height: 36.88px;
+    padding-top: 10px;
+  }
+
+  .road__image-strokeDotted {
+    width: 21.89px;
+    height: 34.74px;
+    top: 18px;
+  }
+
+  .road__image-ellipseRightTop {
+    width: 5.8px;
+    height: 5.74px;
+    top: 16px;
+  }
+
+  .road__image-ellipseRightTopIn {
+    display: none;
+  }
+
+  .road__image-ellipseLeftBottom {
+    top: 49px;
+  }
+
+  .road__title-numb {
+    font-size: 27px;
+    padding-top: 13px;
+  }
+
+  .road__title-text {
+    font-size: 15px;
+  }
+
+  .road__desc {
+    font-size: 10px;
+  }
+
+  .description-characteristic__testDrive {
+    display: none;
+  }
+
+  .description-characteristic__button {
+    display: none;
+  }
+
+  .description-characteristic__wrap-phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .description-characteristic__testDrive-phone {
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+  }
+  
+  .testDrive-phone__image {
+    position: relative;
+    padding-right: 40px;
+  }
+  
+  .testDrive-phone__image-ellipse {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: -11px;
+    left: 10px;
+  }
+  
+  .testDrive-phone__image-tesla {
+    position: absolute;
+    width: 14.18px;
+    height: 8.23px;
+    left: 14px;
+    top: -1px;
+    animation-duration: 3s;
+    animation-name: rotatePhone;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: 50% 0%;
+  }
+  
+  @keyframes rotatePhone {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(-230deg);
+    }
+  }
+  
+  .testDrive-phone__image-dott {
+    position: absolute;
+    width: 2.58px;
+    height: 2.58px;
+    left: 20px;
+    top: -3px;
+  }
+  
+  .testDrive__title-phone {
+    margin: 0px;
+    padding-left: 0px;
+    font-size: 13px;
+    font-family: "MontserratBold";
+    color: #E51937;
+  }
+  
+  .description-characteristic__button-phone {
+    margin: 0px;
+    color: white;
+    background-color: #E51937;
+    display: flex;
+    align-self: center;
+    font-family: "MontserratBold";
+    font-size: 13px;
+    border: 2px solid #E51937;
+    box-shadow: none;
+    transition: box-shadow 0.6s linear;
+    padding: 10px 40px;
+  }
+  
+  .description-characteristic__button-phone:hover {
+    box-shadow: 0px 0px 0px 2px #E51937;
+  }
+
+  .characteristic__arrowDown {
+    padding-left: 0px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+
+  .header {
+    min-width: 376px;
+    padding: 24px 33px 80px 15px;
+    position: static;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__menu-list {
+    display: none;
+  }
+
+  .characteristic {
+    min-width: 376px;
+    padding: 0px;
+  }
+
+  .characteristic__title {
+    font-size: 90px;
+  }
+
+  .characteristic__text {
+    font-size: 15px;
+  }
+
+  .characteristic__logoImage {
+    padding-top: 70px;
+    width: 110%;
+    padding-left: 20px;
+  }
+
+  .characteristic__carImage {
+    max-width: 90%;
+    padding-top: 40px;
+  }
+
+  .characteristic__description {
+    max-width: 100%;
+    padding: 18px 40px 43px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .description-characteristic__speedo {
+    padding-right: 67px;
+  }
+
+  .speedo__image {
+    width: 65.92px;
+    height: 48.91px;
+    margin-right: 0px;
+  }
+
+  .speedo__image-speedometr {
+    width: 65.92px;
+    height: 48.91px;
+  }
+
+  .speedo__image-ellipse {
+    width: 30.17px;
+    height: 30.01px;
+    left: 17px;
+    top: 12px;
+  }
+
+  .speedo__image-arrow {
+    width: 30px;
+    height: 16px;
+    left: 28px;
+    top: 20px;
+  }
+
+  .speedo__title {
+    margin-top: -53px;
+    padding-left: 70px;
+  }
+
+  .speedo__title-numb {
+    font-size: 50px;
+  }
+
+  .speedo__title-text {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+
+  .speedo__desc {
+    font-size: 12px;
+    padding-left: 70px;
+  }
+
+  .description-characteristic__road {
+    padding-right: 18px;
+  }
+
+  .road__image-stroke {
+    width: 41.56px;
+    height: 64.45px;
+    padding-top: 0px;
+  }
+
+  .road__image-strokeDotted {
+    width: 37.83px;
+    height: 60.72px;
+    top: 6px;
+  }
+
+  .road__image-ellipseRightTop {
+    width: 10.03px;
+    height: 10.03px;
+    top: 5px;
+    left: 35px;
+  }
+
+  .road__image-ellipseRightTopIn {
+    display: none;
+  }
+
+  .road__image-ellipseLeftBottom {
+    top: 62px;
+    width: 10.03px;
+    height: 10.03px;
+  }
+
+  .road__title-numb {
+    padding-left: 19px;
+    font-size: 50px;
+    margin-top: -3px;
+  }
+
+  .road__title-text {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+
+  .road__desc {
+    padding-left: 60px;
+    font-size: 12px;
+  }
+
+  .description-characteristic__testDrive {
+    display: none;
+  }
+
+  .description-characteristic__button {
+    display: none;
+  }
+
+  .description-characteristic__wrap-phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 57px;
+  }
+
+  .description-characteristic__testDrive-phone {
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+  }
+  
+  .testDrive-phone__image {
+    position: relative;
+    padding-right: 40px;
+  }
+  
+  .testDrive-phone__image-ellipse {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: -11px;
+    left: 10px;
+  }
+  
+  .testDrive-phone__image-tesla {
+    position: absolute;
+    width: 14.18px;
+    height: 8.23px;
+    left: 14px;
+    top: -1px;
+    animation-duration: 3s;
+    animation-name: rotatePhone;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: 50% 0%;
+  }
+  
+  @keyframes rotatePhone {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(-230deg);
+    }
+  }
+  
+  .testDrive-phone__image-dott {
+    position: absolute;
+    width: 2.58px;
+    height: 2.58px;
+    left: 20px;
+    top: -3px;
+  }
+  
+  .testDrive__title-phone {
+    margin: 0px;
+    padding-left: 0px;
+    font-size: 16px;
+    font-family: "MontserratBold";
+    color: #E51937;
+  }
+  
+  .description-characteristic__button-phone {
+    margin: 0px;
+    color: white;
+    background-color: #E51937;
+    display: flex;
+    align-self: center;
+    font-family: "MontserratBold";
+    font-size: 16px;
+    border: 2px solid #E51937;
+    box-shadow: none;
+    transition: box-shadow 0.6s linear;
+    padding: 10px 40px;
+  }
+  
+  .description-characteristic__button-phone:hover {
+    box-shadow: 0px 0px 0px 2px #E51937;
+  }
+
+  .characteristic__arrowDown {
+    padding-left: 0px;
+    padding-top: 63px;
+  }
+}
