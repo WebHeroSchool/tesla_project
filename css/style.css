@@ -38,6 +38,10 @@ a {
   margin: 0px;
 }
 
+li > a:hover {
+  color: #E51937;
+}
+
 .nav-header__item {
   padding-right: 30px;
   font-size: 15px;
@@ -80,6 +84,7 @@ a {
 
 .header__menu-item {
   padding-right: 30px;
+  font-size: 15px;
 }
 
 .header__burger {
@@ -88,6 +93,7 @@ a {
   position: relative;
   width: 24px;
   height: 15px;
+  cursor: pointer;
 }
 
 .burger-icon {
@@ -111,6 +117,7 @@ a {
   height: 2px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  cursor: pointer;
 }
 
 .header__burger:before {
@@ -156,8 +163,9 @@ a {
 .characteristic__description {
   padding-top: 26px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
+  padding-left: 90px;
 }
 
 .description-characteristic__speedo {
@@ -322,4 +330,118 @@ a {
   font-size: 12px;
   padding-left: 40px;
   margin-top: -3px;
+}
+
+.description-characteristic__testDrive {
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+}
+
+.testDrive__image {
+  position: relative;
+  padding-right: 40px;
+}
+
+.testDrive__image-ellipse {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: -11px;
+  left: 10px;
+}
+
+.testDrive__image-tesla {
+  position: absolute;
+  width: 14.18px;
+  height: 8.23px;
+  left: 14px;
+  top: -1px;
+  animation-duration: 3s;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: 50% 0%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-230deg);
+  }
+}
+
+.testDrive__image-dott {
+  position: absolute;
+  width: 2.58px;
+  height: 2.58px;
+  left: 20px;
+  top: -3px;
+}
+
+.testDrive__title {
+  margin: 0px;
+  padding-left: 0px;
+  font-size: 13px;
+  font-family: "MontserratBold";
+}
+
+.description-characteristic__button {
+  margin: 0px;
+  color: #E51937;
+  display: flex;
+  align-self: center;
+  font-family: "MontserratBold";
+  font-size: 13px;
+  border: 2px solid #E51937;
+  box-shadow: none;
+  transition: box-shadow 0.6s linear;
+  padding: 10px 40px;
+}
+
+.description-characteristic__button:hover {
+  box-shadow: 0px 0px 0px 2px #E51937;
+}
+
+.characteristic__arrowDown {
+  display: flex;
+  justify-content: center;
+  padding-top: 37px;
+  position: relative;
+  padding-left: 70px;
+  cursor: pointer;
+  animation: arrow 1s linear infinite;
+}
+
+@keyframes arrow {
+  0% {
+      bottom:0;
+  }
+  50% {
+      bottom:10px;
+  }
+  100% {
+      bottom:0;
+  }
+}
+
+.arrowDown__icon {
+  position: relative;
+  border: 3px solid  #E51937;
+  border-width: 0 0 2px 2px;
+  width: 16px;
+  height: 16px;
+  line-height: 0;
+  font-size: 0;
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-45deg);
+  top: 5px;
+}
+
+.inside {
+  padding-top: 37px;
 }
