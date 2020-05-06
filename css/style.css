@@ -643,7 +643,8 @@ li > a:hover {
   
   .description-characteristic__button-phone {
     margin: 0px;
-    color: #E51937;
+    color: white;
+    background-color: #E51937;
     display: flex;
     align-self: center;
     font-family: "MontserratBold";
@@ -663,7 +664,7 @@ li > a:hover {
   }
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 376px) and (max-width: 768px) {
 
   .header {
     min-width: 376px;
@@ -793,16 +794,19 @@ li > a:hover {
   }
 
   .road__title-numb {
-    font-size: 27px;
-    padding-top: 13px;
+    padding-left: 19px;
+    font-size: 50px;
+    margin-top: -3px;
   }
 
   .road__title-text {
-    font-size: 15px;
+    font-size: 20px;
+    padding-bottom: 15px;
   }
 
   .road__desc {
-    font-size: 10px;
+    padding-left: 60px;
+    font-size: 12px;
   }
 
   .description-characteristic__testDrive {
@@ -817,6 +821,7 @@ li > a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 57px;
   }
 
   .description-characteristic__testDrive-phone {
@@ -872,18 +877,19 @@ li > a:hover {
   .testDrive__title-phone {
     margin: 0px;
     padding-left: 0px;
-    font-size: 13px;
+    font-size: 16px;
     font-family: "MontserratBold";
     color: #E51937;
   }
   
   .description-characteristic__button-phone {
     margin: 0px;
-    color: #E51937;
+    color: white;
+    background-color: #E51937;
     display: flex;
     align-self: center;
     font-family: "MontserratBold";
-    font-size: 13px;
+    font-size: 16px;
     border: 2px solid #E51937;
     box-shadow: none;
     transition: box-shadow 0.6s linear;
@@ -896,5 +902,6 @@ li > a:hover {
 
   .characteristic__arrowDown {
     padding-left: 0px;
+    padding-top: 63px;
   }
 }
