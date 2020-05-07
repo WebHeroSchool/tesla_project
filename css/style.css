@@ -1029,9 +1029,10 @@ li > a:hover {
   }
 }
 
-@media screen and (min-width: 376px) and (max-width: 414px) {
+@media screen and (min-width: 376px) and (max-width: 425px) {
   .header {
-    max-width: 414px;
+    min-width: 376px;
+    max-width: 425px;
     padding: 5px 21px 30px 0px;
     position: static;
   }
@@ -1045,7 +1046,8 @@ li > a:hover {
   }
 
   .characteristic {
-    max-width: 414px;
+    min-width: 376px;
+    max-width: 425px;
     padding: 0px;
   }
 
@@ -1239,10 +1241,11 @@ li > a:hover {
 
 }
 
-@media screen and (min-width: 415px) and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 767px) {
 
   .header {
-    min-width: 376px;
+    min-width: 426px;
+    max-width: 767px;
     padding: 24px 33px 80px 15px;
     position: static;
   }
@@ -1256,7 +1259,8 @@ li > a:hover {
   }
 
   .characteristic {
-    min-width: 376px;
+    min-width: 426px;
+    max-width: 767px;
     padding: 0px;
   }
 
@@ -1481,10 +1485,11 @@ li > a:hover {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
 
   .header {
-    max-width: 1024px;
+    min-width: 768px;
+    max-width: 991px;
     padding: 24px 33px 80px 15px;
     position: static;
   }
@@ -1498,7 +1503,251 @@ li > a:hover {
   }
 
   .characteristic {
-    max-width: 1024px;
+    min-width: 768px;
+    max-width: 991px;
+    padding: 0px;
+  }
+
+  .characteristic__title {
+    font-size: 90px;
+  }
+
+  .characteristic__text {
+    font-size: 15px;
+  }
+
+  .characteristic__logoImage {
+    padding-top: 70px;
+    width: 110%;
+    padding-left: 20px;
+  }
+
+  .characteristic__carImage {
+    max-width: 90%;
+    padding-top: 40px;
+  }
+
+  .characteristic__description {
+    max-width: 100%;
+    padding: 18px 40px 43px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .description-characteristic__speedo {
+    padding-right: 100px;
+  }
+
+  .speedo__image {
+    width: 65.92px;
+    height: 48.91px;
+    margin-right: 0px;
+  }
+
+  .speedo__image-speedometr {
+    width: 65.92px;
+    height: 48.91px;
+  }
+
+  .speedo__image-ellipse {
+    width: 30.17px;
+    height: 30.01px;
+    left: 17px;
+    top: 12px;
+  }
+
+  .speedo__image-arrow {
+    width: 30px;
+    height: 16px;
+    left: 28px;
+    top: 20px;
+  }
+
+  .speedo__title {
+    margin-top: -53px;
+    padding-left: 70px;
+  }
+
+  .speedo__title-numb {
+    font-size: 50px;
+  }
+
+  .speedo__title-text {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+
+  .speedo__desc {
+    font-size: 12px;
+    padding-left: 70px;
+  }
+
+  .description-characteristic__road {
+    padding-right: 18px;
+  }
+
+  .road__image-stroke {
+    width: 41.56px;
+    height: 64.45px;
+    padding-top: 0px;
+  }
+
+  .road__image-strokeDotted {
+    width: 37.83px;
+    height: 60.72px;
+    top: 6px;
+  }
+
+  .road__image-ellipseRightTop {
+    width: 10.03px;
+    height: 10.03px;
+    top: 5px;
+    left: 35px;
+  }
+
+  .road__image-ellipseRightTopIn {
+    display: none;
+  }
+
+  .road__image-ellipseLeftBottom {
+    top: 62px;
+    width: 10.03px;
+    height: 10.03px;
+  }
+
+  .road__title-numb {
+    padding-left: 19px;
+    font-size: 50px;
+    margin-top: -3px;
+  }
+
+  .road__title-text {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+
+  .road__desc {
+    padding-left: 60px;
+    font-size: 12px;
+  }
+
+  .description-characteristic__testDrive {
+    display: none;
+  }
+
+  .description-characteristic__button {
+    display: none;
+  }
+
+  .description-characteristic__wrap-phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 57px;
+  }
+
+  .description-characteristic__testDrive-phone {
+    display: flex;
+    align-items: center;
+    padding-right: 80px;
+  }
+  
+  .testDrive-phone__image {
+    position: relative;
+    padding-right: 40px;
+  }
+  
+  .testDrive-phone__image-ellipse {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: -11px;
+    left: 10px;
+  }
+  
+  .testDrive-phone__image-tesla {
+    position: absolute;
+    width: 14.18px;
+    height: 8.23px;
+    left: 14px;
+    top: -1px;
+    animation-duration: 3s;
+    animation-name: rotatePhone;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: 50% 0%;
+  }
+  
+  @keyframes rotatePhone {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(-230deg);
+    }
+  }
+  
+  .testDrive-phone__image-dott {
+    position: absolute;
+    width: 2.58px;
+    height: 2.58px;
+    left: 20px;
+    top: -3px;
+  }
+  
+  .testDrive__title-phone {
+    margin: 0px;
+    padding-left: 0px;
+    font-size: 16px;
+    font-family: "MontserratBold";
+    color: #E51937;
+  }
+  
+  .description-characteristic__button-phone {
+    margin: 0px;
+    color: white;
+    background-color: #E51937;
+    display: flex;
+    align-self: center;
+    font-family: "MontserratBold";
+    font-size: 16px;
+    border: 2px solid #E51937;
+    box-shadow: none;
+    transition: box-shadow 0.6s linear;
+    padding: 10px 40px;
+  }
+  
+  .description-characteristic__button-phone:hover {
+    box-shadow: 0px 0px 0px 2px #E51937;
+  }
+
+  .characteristic__arrowDown {
+    padding-left: 0px;
+    padding-top: 63px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .header {
+    min-width: 992px;
+    max-width: 1199px;
+    padding: 24px 33px 80px 15px;
+    position: static;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__menu-list {
+    display: none;
+  }
+
+  .characteristic {
+    min-width: 992px;
+    max-width: 1199px;
     padding: 0px;
   }
 
