@@ -493,6 +493,7 @@ li > a:hover {
   font-size: 15px;
   width: 97%;
   padding-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 .description-inside__display {
@@ -569,24 +570,47 @@ li > a:hover {
   padding-bottom: 10px;
 }
 
+.description-inside__update {
+  padding-top: 35px;
+  display: flex;
+  flex-direction: row;
+}
+
 .update-inside__icon {
   display: flex;
   flex-direction: column-reverse;
+  padding-bottom: 29px;
 }
 
 .update-inside__iconFirst {
   width: 6.28px;
   height: 6.42px;
+  padding-left: 16px;
 }
 
 .update-inside__iconSecond {
   width: 18.33px;
   height: 7.7px;
+  padding-left: 10px;
+  margin-top: -1px;
+}
+
+.update-inside__iconThird {
+  width: 31.07px;
+  height: 10.4px;
+  padding-left: 4px;
+  margin-top: -4px;
+}
+
+.update-inside__iconFourth {
+  width: 44px;
+  height: 13.12px;
   animation-duration: 1s;
   animation-name: blickOne;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   transform-origin: 100% 0%;
+  margin-left: -2px;
 }
 
 @keyframes blickOne {
@@ -599,14 +623,130 @@ li > a:hover {
   }
 }
 
-.update-inside__iconThird {
-  width: 31.07px;
-  height: 10.4px;
+.update-inside__title {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
-.update-inside__iconFourth {
-  width: 44px;
-  height: 13.12px;
+.update-inside__titleText {
+  margin: 0px;
+  font-size: 20px;
+  font-family: "MontserratSemiBold";
+  padding-bottom: 5px;
+}
+
+.update-inside__Text {
+  font-size: 12px;
+  font-family: "MontserratRegular";
+  margin: 0px;
+  width: 60%;
+}
+
+.description-inside__volume {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+.volume-inside__icon {
+  display: flex;
+  flex-direction: column;
+}
+
+.volume-inside__iconSmall {
+  width: 18px;
+  height: 12px;
+  padding-left: 13px;
+}
+
+.volume-inside__iconBig {
+  width: 36px;
+  height: 44px;
+  padding-left: 4.2px;
+  margin-top: -3px;
+}
+
+.volume-inside__description {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+}
+
+.description-inside__title {
+  display: flex;
+  flex-direction: row;
+}
+
+.description-inside__titleNumb {
+  font-size: 35px;
+  font-family: "MontserratSemiBold";
+  margin: 0px;
+  margin-top: -10px;
+}
+
+.description-inside__titleText {
+  font-size: 20px;
+  font-family: "MontserratSemiBold";
+  padding-left: 10px;
+  margin: 0px;
+  align-self: flex-end;
+  padding-bottom: 4px;
+}
+
+.description-inside__text {
+  font-size: 12px;
+  font-family: "MontserratRegular";
+  margin: 0px;
+  padding-top: 11px;
+}
+
+.description-inside__information {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.information-inside__iconEllipse {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  z-index: 4;
+}
+
+.information-inside__iconI {
+  height: 16px;
+  width: 4px;
+  position: absolute;
+  z-index: 5;
+  margin-left: -13px;
+  padding-top: 2px;
+}
+
+.information-inside__title {
+  font-family: "MontserratBold";
+  padding-left: 5px;
+  font-size: 13px;
+  margin: 0px;
+  padding-bottom: 9px;
+  padding-right: 22px;
+}
+
+.description-inside__button {
+  margin: 0px;
+  color: white;
+  display: flex;
+  align-self: center;
+  font-family: "MontserratBold";
+  font-size: 13px;
+  border: 2px solid white;
+  box-shadow: none;
+  transition: box-shadow 0.6s linear;
+  padding: 10px 40px;
+}
+
+.description-inside__button:hover {
+  box-shadow: 0px 0px 0px 2px white;
 }
 
 @media screen and (max-width: 320px) {
@@ -817,12 +957,57 @@ li > a:hover {
     padding-left: 0px;
   }
 
+  .inside {
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inside__title {
+    display: none;
+  }
+
+  .inside__image {
+    height: 240px;
+    max-width: 320px;
+    position: static;
+  }
+
+  .inside__description {
+    position: static;
+    width: 320px;
+    margin-top: -4px;
+    padding: 15px 5px 25px;
+    box-sizing: border-box;
+  }
+
+  .description-inside__title {
+    width: 319px;
+  }
+
+  .description-inside__display {
+    display: none;
+  }
+
+  .description-inside__update {
+    display: none;
+  }
+
+  .description-inside__volume {
+    display: none;
+  }
+
+  .description-inside__information {
+    display: none;
+  }
+
 }
 
 @media screen and (min-width: 321px) and (max-width: 375px) {
 
   .header {
     max-width: 375px;
+    min-width: 321px;
     padding: 5px 21px 30px 0px;
     position: static;
   }
@@ -837,6 +1022,7 @@ li > a:hover {
 
   .characteristic {
     max-width: 375px;
+    min-width: 321px;
     padding: 0px;
   }
 
@@ -1026,6 +1212,51 @@ li > a:hover {
 
   .characteristic__arrowDown {
     padding-left: 0px;
+  }
+
+  .inside {
+    max-width: 375px;
+    min-width: 321px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inside__title {
+    display: none;
+  }
+
+  .inside__image {
+    height: 260px;
+    max-width: 375px;
+    min-width: 321px;
+    position: static;
+  }
+
+  .inside__description {
+    position: static;
+    width: 375px;
+    margin-top: -4px;
+    padding: 15px 20px 25px;
+    box-sizing: border-box;
+  }
+
+  .description-inside__title {
+  }
+
+  .description-inside__display {
+    display: none;
+  }
+
+  .description-inside__update {
+    display: none;
+  }
+
+  .description-inside__volume {
+    display: none;
+  }
+
+  .description-inside__information {
+    display: none;
   }
 }
 
@@ -1237,6 +1468,52 @@ li > a:hover {
 
   .characteristic__arrowDown {
     padding-left: 0px;
+  }
+
+  .inside {
+    min-width: 376px;
+    max-width: 425px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inside__title {
+    display: none;
+  }
+
+  .inside__image {
+    height: 275px;
+    min-width: 376px;
+    max-width: 425px;
+    position: static;
+  }
+
+  .inside__description {
+    position: static;
+    min-width: 376px;
+    max-width: 425px;
+    margin-top: -4px;
+    padding: 15px 10px 25px;
+    box-sizing: border-box;
+  }
+
+  .description-inside__title {
+  }
+
+  .description-inside__display {
+    display: none;
+  }
+
+  .description-inside__update {
+    display: none;
+  }
+
+  .description-inside__volume {
+    display: none;
+  }
+
+  .description-inside__information {
+    display: none;
   }
 
 }
@@ -1482,6 +1759,52 @@ li > a:hover {
   .characteristic__arrowDown {
     padding-left: 0px;
     padding-top: 63px;
+  }
+
+  .inside {
+    min-width: 426px;
+    max-width: 767px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inside__title {
+    display: none;
+  }
+
+  .inside__image {
+    height: 600px;
+    min-width: 426px;
+    max-width: 767px;
+    position: static;
+  }
+
+  .inside__description {
+    position: static;
+    min-width: 426px;
+    max-width: 767px;
+    margin-top: -4px;
+    padding: 15px 5px 25px;
+    box-sizing: border-box;
+  }
+
+  .description-inside__title {
+  }
+
+  .description-inside__display {
+    display: none;
+  }
+
+  .description-inside__update {
+    display: none;
+  }
+
+  .description-inside__volume {
+    display: none;
+  }
+
+  .description-inside__information {
+    display: none;
   }
 }
 
@@ -1971,4 +2294,3 @@ li > a:hover {
     padding-top: 63px;
   }
 }
-/* Добавил больше брейкпоинтов */
