@@ -694,17 +694,22 @@ li > a:hover {
   padding-bottom: 4px;
 }
 
-.description-inside__text {
+.description-inside__desc {
   font-size: 12px;
   font-family: "MontserratRegular";
   margin: 0px;
-  padding-top: 11px;
 }
 
 .description-inside__information {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+  padding-top: 30px;
+}
+
+.information-inside__icon {
+  padding-bottom: 3px;
+  cursor: pointer;
 }
 
 .information-inside__iconEllipse {
@@ -728,7 +733,7 @@ li > a:hover {
   padding-left: 5px;
   font-size: 13px;
   margin: 0px;
-  padding-bottom: 9px;
+  padding-bottom: 10px;
   padding-right: 22px;
 }
 
@@ -749,11 +754,266 @@ li > a:hover {
   box-shadow: 0px 0px 0px 2px white;
 }
 
+.security {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+.security__description {
+  background: #E51937;
+  color: white;
+  width: 26%;
+  padding: 51px 55px 60px 56px;
+  z-index: 1;
+}
+
+.description-security__title {
+  font-size: 30px;
+  font-family: "MontserratSemiBold";
+}
+
+.description-security__text {
+  font-size: 15px;
+  font-family: "MontserratMedium";
+}
+
+.description-security__titleList {
+  font-size: 30px;
+  font-family: "MontserratSemiBold";
+}
+
+.description-security__list {
+  font-size: 17px;
+  font-family: "MontserratBold";
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.list-security__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-security__title {
+  margin: 0px;
+  padding-top: 16px;
+}
+
+.item-security__text {
+  font-size: 10px;
+  opacity: 0.7;
+  align-self: flex-end;
+  margin: 0px;
+  margin-left: -25px;
+}
+
+.item-security__stars {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 57px;
+}
+
+.stars-security__star {
+  align-self: flex-end;
+  width: 25px;
+  height: 25px;
+  padding-top: 13px;
+  padding-left: 4px;
+}
+
+.description-security__wrap-image {
+  position: relative;
+  padding-top: 111px;
+}
+
+.description-security__icon {
+  width: 62px;
+  height: 74px;
+  position: absolute;
+  padding-left: 10px;
+}
+
+.description-security__arrow {
+  width: 26.6px;
+  height: 19.51px;
+  position: absolute;
+  bottom: -47px;
+  left: 27px;
+}
+
+.description-security__rating {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.rating-security__titleNumb {
+  font-size: 50px;
+  font-family: "MontserratSemiBold";
+  position: absolute;
+  margin: 0px;
+  right: 0px;
+}
+
+.rating-security__titleText {
+  font-size: 25px;
+  font-family: "MontserratSemiBold";
+  position: absolute;
+  margin: 0px;
+  right: 10px;
+  top: 60px;
+}
+
+.description-security__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 150px;
+  bottom: 0px;
+}
+
+.info-security__icon {
+  padding-bottom: 3px;
+  cursor: pointer;
+}
+
+.info-security__iconEllipse {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  z-index: 4;
+}
+
+.info-security__iconI {
+  height: 16px;
+  width: 4px;
+  position: absolute;
+  z-index: 5;
+  margin-left: -13px;
+  padding-top: 2px;
+}
+
+.info-security__title {
+  font-family: "MontserratBold";
+  padding-left: 5px;
+  font-size: 13px;
+  margin: 0px;
+  padding-bottom: 10px;
+  padding-right: 22px;
+}
+
+.info-security__button {
+  margin: 0px;
+  color: white;
+  display: flex;
+  align-self: center;
+  font-family: "MontserratBold";
+  font-size: 13px;
+  border: 2px solid white;
+  box-shadow: none;
+  transition: box-shadow 0.6s linear;
+  padding: 10px 40px;
+}
+
+.info-security__button:hover {
+  box-shadow: 0px 0px 0px 2px white;
+}
+
+.security__logo {
+  position: absolute;
+  right: 0px;
+  z-index: 0;
+  width: 50%;
+  height: 150px;
+  padding-top: 200px;
+}
+
+.security__image {
+  position: absolute;
+  z-index: 10;
+  right: 40px;
+  top: 280px;
+  width: 70%;
+}
+
+.security__front {
+  display: none;
+}
+
+.security__side {
+  display: none;
+}
+
+.security__rollOver {
+  display: none;
+}
+
+.icon-security__rectangleFirst {
+  position: absolute;
+  width: 4px;
+  height: 271px;
+  top: 253px;
+  z-index: 15;
+  left: 607px;
+}
+
+.icon-security__ellipseFirst {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 522px;
+  z-index: 15;
+  left: 602px;
+}
+
+.icon-security__rectangleSecond {
+  position: absolute;
+  width: 4px;
+  height: 122px;
+  top: 227px;
+  z-index: 15;
+  right: 487px;
+}
+
+.icon-security__ellipseSecond {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 348px;
+  z-index: 15;
+  right: 482px;
+}
+
+.icon-security__rectangleThird {
+  position: absolute;
+  width: 4px;
+  height: 108px;
+  transform: rotate(-180deg);
+  top: 620px;
+  right: 438px;
+  z-index: 15;
+}
+
+.icon-security__ellipseThird {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 607px;
+  z-index: 15;
+  right: 433px;
+}
+
 @media screen and (max-width: 320px) {
   .header {
     max-width: 320px;
     padding: 5px 21px 30px 0px;
     position: static;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .header__nav {
@@ -983,6 +1243,10 @@ li > a:hover {
 
   .description-inside__title {
     width: 319px;
+  }
+
+  .description-inside__text {
+    padding-bottom: 20px;
   }
 
   .description-inside__display {
@@ -1240,7 +1504,8 @@ li > a:hover {
     box-sizing: border-box;
   }
 
-  .description-inside__title {
+  .description-inside__text {
+    padding-bottom: 30px;
   }
 
   .description-inside__display {
@@ -1486,6 +1751,7 @@ li > a:hover {
     min-width: 376px;
     max-width: 425px;
     position: static;
+    width: 100%;
   }
 
   .inside__description {
@@ -1493,11 +1759,13 @@ li > a:hover {
     min-width: 376px;
     max-width: 425px;
     margin-top: -4px;
-    padding: 15px 10px 25px;
+    padding: 15px 10px 15px 25px;
+    width: 100%;
     box-sizing: border-box;
   }
 
-  .description-inside__title {
+  .description-inside__text {
+    padding-bottom: 30px;
   }
 
   .description-inside__display {
@@ -1551,12 +1819,14 @@ li > a:hover {
 
   .characteristic__logoImage {
     padding-top: 70px;
-    width: 110%;
+    width: 100%;
     padding-left: 20px;
   }
 
   .characteristic__carImage {
-    max-width: 90%;
+    max-width: 767px;
+    min-width: 426px;
+    width: 100%;
     padding-top: 40px;
   }
 
@@ -1764,6 +2034,7 @@ li > a:hover {
   .inside {
     min-width: 426px;
     max-width: 767px;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -1773,7 +2044,7 @@ li > a:hover {
   }
 
   .inside__image {
-    height: 600px;
+    width: 100%;
     min-width: 426px;
     max-width: 767px;
     position: static;
@@ -1783,12 +2054,10 @@ li > a:hover {
     position: static;
     min-width: 426px;
     max-width: 767px;
+    width: 100%;
     margin-top: -4px;
     padding: 15px 5px 25px;
     box-sizing: border-box;
-  }
-
-  .description-inside__title {
   }
 
   .description-inside__display {
@@ -2049,6 +2318,74 @@ li > a:hover {
   .characteristic__arrowDown {
     padding-left: 0px;
     padding-top: 63px;
+    animation: none;
+  }
+
+  .inside {
+    min-width: 768px;
+    max-width: 991px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inside__title {
+    position: absolute;
+    right: 0px;
+    padding-top: 5px;
+  }
+
+  .inside__image {
+    min-width: 768px;
+    max-width: 991px;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .inside__description {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -4px;
+    min-width: 768px;
+    max-width: 991px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .description-inside__text {
+    font-size: 15px;
+    width: 70%;
+  }
+
+  .wrap__ipad-description {
+    padding-right: 50px;
+  }
+
+  .description-inside__information {
+    position: absolute;
+    bottom: 20px;
+    left: 200px;
+  }
+
+  .information-inside__iconEllipse {
+    width: 31.18px;
+    height: 31.18px;
+  }
+
+  .information-inside__iconI {
+    width: 5.67px;
+    height: 22.68px;
+    margin-left: -18px;
+    padding-top: 3px;
+  }
+
+  .information-inside__title {
+    font-size: 16px;
+    padding-right: 40px;
+  }
+
+  .description-inside__button {
+    font-size: 16px;
   }
 }
 
@@ -2292,5 +2629,74 @@ li > a:hover {
   .characteristic__arrowDown {
     padding-left: 0px;
     padding-top: 63px;
+    animation: none;
+  }
+
+  .inside {
+    min-width: 768px;
+    max-width: 991px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inside__title {
+    position: absolute;
+    right: 0px;
+    padding-top: 5px;
+  }
+
+  .inside__image {
+    min-width: 768px;
+    max-width: 991px;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .inside__description {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -4px;
+    min-width: 768px;
+    max-width: 991px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .description-inside__text {
+    font-size: 15px;
+    width: 70%;
+  }
+
+  .wrap__ipad-description {
+    padding-right: 50px;
+    padding-bottom: 70px;
+  }
+
+  .description-inside__information {
+    position: absolute;
+    bottom: 20px;
+    left: 250px;
+  }
+
+  .information-inside__iconEllipse {
+    width: 31.18px;
+    height: 31.18px;
+  }
+
+  .information-inside__iconI {
+    width: 5.67px;
+    height: 22.68px;
+    margin-left: -18px;
+    padding-top: 3px;
+  }
+
+  .information-inside__title {
+    font-size: 16px;
+    padding-right: 40px;
+  }
+
+  .description-inside__button {
+    font-size: 16px;
   }
 }
