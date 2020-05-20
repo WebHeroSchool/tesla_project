@@ -20,6 +20,8 @@ a {
   background: white;
   top: 0px;
   z-index: 999;
+  min-width: 1440px;
+  max-width: 1440px;
 }
 
 .header__logo {
@@ -135,6 +137,8 @@ li > a:hover {
   flex-direction: column;
   padding-top: 133px;
   position: relative;
+  min-width: 1440px;
+  max-width: 1440px;
 }
 
 .characteristic__title {
@@ -456,6 +460,8 @@ li > a:hover {
   flex-direction: row;
   justify-content: space-between;
   position: relative;
+  min-width: 1440px;
+  max-width: 1440px;
 }
 
 .inside__title {
@@ -468,9 +474,10 @@ li > a:hover {
 
 .inside__image {
   position: absolute;
+  width: 80%;
   z-index: -1;
-  bottom: 0;
-  height: 85%;
+  bottom: 0px;
+  height: 90%;
 }
 
 .inside__description {
@@ -491,7 +498,7 @@ li > a:hover {
 .description-inside__text {
   font-family: "MontserratMedium";
   font-size: 15px;
-  width: 97%;
+  width: 96%;
   padding-bottom: 50px;
   margin-bottom: 0px;
 }
@@ -759,6 +766,8 @@ li > a:hover {
   flex-direction: row;
   justify-content: space-between;
   position: relative;
+  min-width: 1440px;
+  max-width: 1440px;
 }
 
 .security__description {
@@ -923,6 +932,11 @@ li > a:hover {
   box-shadow: 0px 0px 0px 2px white;
 }
 
+.security__wrap-mobile {
+  display: flex;
+  justify-content: center;
+}
+
 .security__logo {
   position: absolute;
   right: 0px;
@@ -956,27 +970,27 @@ li > a:hover {
   position: absolute;
   width: 4px;
   height: 271px;
-  top: 253px;
+  top: 268px;
   z-index: 15;
-  left: 607px;
+  left: 650px;
 }
 
 .icon-security__ellipseFirst {
   position: absolute;
   width: 14px;
   height: 14px;
-  top: 522px;
+  top: 535px;
   z-index: 15;
-  left: 602px;
+  left: 645px;
 }
 
 .icon-security__rectangleSecond {
   position: absolute;
   width: 4px;
   height: 122px;
-  top: 227px;
+  top: 230px;
   z-index: 15;
-  right: 487px;
+  right: 518px;
 }
 
 .icon-security__ellipseSecond {
@@ -985,7 +999,7 @@ li > a:hover {
   height: 14px;
   top: 348px;
   z-index: 15;
-  right: 482px;
+  right: 513px;
 }
 
 .icon-security__rectangleThird {
@@ -993,8 +1007,8 @@ li > a:hover {
   width: 4px;
   height: 108px;
   transform: rotate(-180deg);
-  top: 620px;
-  right: 438px;
+  top: 640px;
+  right: 465px;
   z-index: 15;
 }
 
@@ -1002,9 +1016,9 @@ li > a:hover {
   position: absolute;
   width: 14px;
   height: 14px;
-  top: 607px;
+  top: 632px;
   z-index: 15;
-  right: 433px;
+  right: 460px;
 }
 
 .icon-security__front {
@@ -1013,8 +1027,8 @@ li > a:hover {
   position: absolute;
   z-index: 20;
   color: black;
-  top: 233px;
-  left: 620px;
+  top: 250px;
+  left: 660px;
   width: 200px;
 }
 
@@ -1024,8 +1038,8 @@ li > a:hover {
   position: absolute;
   z-index: 20;
   color: black;
-  top: 205px;
-  left: 870px;
+  top: 215px;
+  left: 930px;
   width: 200px;
 }
 
@@ -1035,18 +1049,19 @@ li > a:hover {
   position: absolute;
   z-index: 20;
   color: black;
-  top: 675px;
-  right: 200px;
+  top: 690px;
+  right: 225px;
   width: 230px;
 }
 
-@media screen and (max-width: 320px) {
+@media (max-width: 320px) {
   .header {
     max-width: 320px;
-    padding: 5px 21px 30px 0px;
+    min-width: 320px;
+    padding: 5px 0px 30px 0px;
     position: static;
-    width: 100%;
     box-sizing: border-box;
+    flex-wrap: wrap;
   }
 
   .header__nav {
@@ -1059,6 +1074,7 @@ li > a:hover {
 
   .characteristic {
     max-width: 320px;
+    min-width: 320px;
     padding: 0px;
   }
 
@@ -1072,24 +1088,25 @@ li > a:hover {
 
   .characteristic__logoImage {
     padding-top: 70px;
-    width: 105%;
-    left: -5px;
+    width: 100%;
   }
 
   .characteristic__carImage {
-    max-width: 100%;
+    max-width: 90%;
     padding-top: 40px;
   }
 
   .characteristic__description {
-    max-width: 100%;
+    width: 320px;
     padding: 18px 40px 43px;
     display: flex;
+    box-sizing: border-box;
     flex-direction: row;
+
   }
 
   .description-characteristic__speedo {
-    padding-right: 41px;
+    padding-right: 20px;
   }
 
   .speedo__image {
@@ -1168,12 +1185,13 @@ li > a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    box-sizing: border-box;
   }
 
   .description-characteristic__testDrive-phone {
     display: flex;
     align-items: center;
-    padding-right: 15px;
+    padding-right: 5px;
   }
   
   .testDrive-phone__image {
@@ -1234,12 +1252,13 @@ li > a:hover {
     background-color: #E51937;
     display: flex;
     align-self: center;
+    box-sizing: border-box;
     font-family: "MontserratBold";
     font-size: 13px;
     border: 2px solid #E51937;
     box-shadow: none;
     transition: box-shadow 0.6s linear;
-    padding: 10px 40px;
+    padding: 10px 30px;
   }
   
   .description-characteristic__button-phone:hover {
@@ -1252,7 +1271,9 @@ li > a:hover {
 
   .inside {
     max-width: 320px;
+    min-width: 320px;
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
   }
 
@@ -1261,21 +1282,22 @@ li > a:hover {
   }
 
   .inside__image {
-    height: 240px;
-    max-width: 320px;
+    width: 320px;
     position: static;
+    box-sizing: border-box;
   }
 
   .inside__description {
     position: static;
-    width: 320px;
+    max-width: 320px;
+    min-width: 320px;
     margin-top: -4px;
     padding: 15px 5px 25px;
     box-sizing: border-box;
   }
 
   .description-inside__title {
-    width: 319px;
+    width: 316px;
   }
 
   .description-inside__text {
@@ -1300,10 +1322,12 @@ li > a:hover {
 
   .security {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     position: relative;
     max-width: 320px;
+    min-width: 320px;
+    box-sizing: border-box;
   }
 
   .description-security__titleList {
@@ -1318,16 +1342,97 @@ li > a:hover {
     display: none;
   }
 
-  .security__wrap-mobile {
-    display: none;
-  }
-
   .security__description {
     max-width: 320px;
-    width: 130%;
+    min-width: 320px;
+    width: 100%;
     box-sizing: border-box;
     padding: 15px 20px 25px 20px;
-    margin-top: -4px;
+  }
+
+  .security__wrap-mobile {
+    max-width: 320px;
+    min-width: 320px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .security__logo {
+    padding-top: 40px;
+    width: 100%;
+    height: 10%;
+  }
+
+  .security__image {
+    top: 10%;
+    width: 100%;
+    left: 0%;
+  }
+
+  .icon-security__rectangleFirst {
+    width: 1.38px;
+    height: 93.47px;
+    top: 62px;
+    left: 82px;
+  }
+
+  .icon-security__ellipseFirst {
+    width: 4.83px;
+    height: 4.83px;
+    top: 155px;
+    left: 80px;
+  }
+
+  .icon-security__front {
+    font-size: 7px;
+    top: 56px;
+    left: 85px;
+    width: 59.56px;
+    top: 56px;
+    left: 85px;
+  }
+
+  .icon-security__rectangleSecond {
+    width: 1.38px;
+    height: 42.08px;
+    top: 54px;
+    left: 167px;
+  }
+
+  .icon-security__ellipseSecond {
+    width: 4.83px;
+    height: 4.83px;
+    top: 96px;
+    left: 165px;
+  }
+
+  .icon-security__side {
+    font-size: 7px;
+    width: 59.67px;
+    top: 48px;
+    left: 170px;
+  }
+
+  .icon-security__rectangleThird {
+    width: 1.38px;
+    height: 37.25px;
+    top: 188px;
+    right: 135px;
+  }
+
+  .icon-security__ellipseThird {
+    width: 4.83px;
+    height: 4.83px;
+    top: 185px;
+    right: 133px;
+  }
+
+  .icon-security__rollOver {
+    font-size: 7px;
+    width: 80.37px;
+    top: 205px;
+    right: 50px;
   }
 
 }
@@ -1336,7 +1441,7 @@ li > a:hover {
 
   .header {
     max-width: 375px;
-    min-width: 321px;
+    min-width: 375px;
     padding: 5px 21px 30px 0px;
     position: static;
   }
@@ -1351,7 +1456,7 @@ li > a:hover {
 
   .characteristic {
     max-width: 375px;
-    min-width: 321px;
+    min-width: 375px;
     padding: 0px;
   }
 
@@ -1365,8 +1470,7 @@ li > a:hover {
 
   .characteristic__logoImage {
     padding-top: 70px;
-    width: 105%;
-    left: -5px;
+    width: 100%;
   }
 
   .characteristic__carImage {
@@ -1545,7 +1649,7 @@ li > a:hover {
 
   .inside {
     max-width: 375px;
-    min-width: 321px;
+    min-width: 375px;
     display: flex;
     flex-direction: column;
   }
@@ -1557,7 +1661,7 @@ li > a:hover {
   .inside__image {
     height: 260px;
     max-width: 375px;
-    min-width: 321px;
+    min-width: 375px;
     position: static;
   }
 
@@ -1591,11 +1695,12 @@ li > a:hover {
 
   .security {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     position: relative;
-    max-width: 375px;
-    min-width: 321px;
+    max-width: 320px;
+    min-width: 320px;
+    box-sizing: border-box;
   }
 
   .description-security__titleList {
@@ -1610,23 +1715,110 @@ li > a:hover {
     display: none;
   }
 
-  .security__wrap-mobile {
-    display: none;
-  }
-
   .security__description {
     max-width: 375px;
-    min-width: 321px;
-    width: 130%;
+    min-width: 375px;
+    width: 100%;
     box-sizing: border-box;
     padding: 15px 20px 25px 20px;
     margin-top: -4px;
+  }
+
+
+  .security__wrap-mobile {
+    max-width: 375px;
+    min-width: 375px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .security__logo {
+    max-width: 375px;
+    min-width: 375px;
+    padding-top: 40px;
+    width: 100%;
+    height: 10%;
+    left: 0%;
+  }
+
+  .security__image {
+    max-width: 375px;
+    min-width: 375px;
+    top: 10%;
+    width: 100%;
+    left: 0%;
+  }
+
+  .icon-security__rectangleFirst {
+    width: 1.38px;
+    height: 93.47px;
+    top: 65px;
+    left: 96px;
+  }
+
+  .icon-security__ellipseFirst {
+    width: 4.83px;
+    height: 4.83px;
+    top: 157px;
+    left: 94px;
+  }
+
+  .icon-security__front {
+    font-size: 7px;
+    top: 56px;
+    left: 85px;
+    width: 59.56px;
+    top: 58px;
+    left: 99px;
+  }
+
+  .icon-security__rectangleSecond {
+    width: 1.38px;
+    height: 42.08px;
+    top: 47px;
+    left: 196px;
+  }
+
+  .icon-security__ellipseSecond {
+    width: 4.83px;
+    height: 4.83px;
+    top: 89px;
+    left: 194px;
+  }
+
+  .icon-security__side {
+    font-size: 7px;
+    width: 59.67px;
+    top: 41px;
+    left: 200px;
+  }
+
+  .icon-security__rectangleThird {
+    width: 1.38px;
+    height: 37.25px;
+    top: 197px;
+    right: 104px;
+  }
+
+  .icon-security__ellipseThird {
+    width: 4.83px;
+    height: 4.83px;
+    top: 192px;
+    right: 102px;
+  }
+
+  .icon-security__rollOver {
+    font-size: 7px;
+    width: 80.37px;
+    top: 210px;
+    right: 20px;
   }
 }
 
 @media screen and (min-width: 376px) and (max-width: 425px) {
   .header {
-    min-width: 376px;
+    min-width: 425px;
     max-width: 425px;
     padding: 5px 21px 30px 0px;
     position: static;
@@ -1641,7 +1833,7 @@ li > a:hover {
   }
 
   .characteristic {
-    min-width: 376px;
+    min-width: 425px;
     max-width: 425px;
     padding: 0px;
   }
@@ -1656,7 +1848,7 @@ li > a:hover {
 
   .characteristic__logoImage {
     padding-top: 70px;
-    width: 105%;
+    width: 100%;
     left: -5px;
   }
 
@@ -1835,7 +2027,7 @@ li > a:hover {
   }
 
   .inside {
-    min-width: 376px;
+    min-width: 425px;
     max-width: 425px;
     display: flex;
     flex-direction: column;
@@ -1847,7 +2039,7 @@ li > a:hover {
 
   .inside__image {
     height: 275px;
-    min-width: 376px;
+    min-width: 425px;
     max-width: 425px;
     position: static;
     width: 100%;
@@ -1855,7 +2047,7 @@ li > a:hover {
 
   .inside__description {
     position: static;
-    min-width: 376px;
+    min-width: 425px;
     max-width: 425px;
     margin-top: -4px;
     padding: 15px 10px 15px 25px;
@@ -1865,6 +2057,8 @@ li > a:hover {
 
   .description-inside__text {
     padding-bottom: 30px;
+    width: 90%;
+    margin-right: 0px;
   }
 
   .description-inside__display {
@@ -1885,10 +2079,10 @@ li > a:hover {
 
   .security {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     position: relative;
-    min-width: 376px;
+    min-width: 425px;
     max-width: 425px;
   }
 
@@ -1905,11 +2099,97 @@ li > a:hover {
   }
 
   .security__wrap-mobile {
-    display: none;
+    min-width: 425px;
+    max-width: 425px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .security__logo {
+    min-width: 425px;
+    max-width: 425px;
+    padding-top: 40px;
+    width: 100%;
+    height: 10%;
+    left: 0%;
+  }
+
+  .security__image {
+    min-width: 425px;
+    max-width: 425px;
+    top: 10%;
+    width: 100%;
+    left: 0%;
+  }
+
+  .icon-security__rectangleFirst {
+    width: 1.38px;
+    height: 93.47px;
+    top: 78px;
+    left: 109px;
+  }
+
+  .icon-security__ellipseFirst {
+    width: 4.83px;
+    height: 4.83px;
+    top: 170px;
+    left: 107px;
+  }
+
+  .icon-security__front {
+    font-size: 7px;
+    top: 56px;
+    left: 85px;
+    width: 59.56px;
+    top: 69px;
+    left: 113px;
+  }
+
+  .icon-security__rectangleSecond {
+    width: 1.38px;
+    height: 42.08px;
+    top: 50px;
+    left: 222px;
+  }
+
+  .icon-security__ellipseSecond {
+    width: 4.83px;
+    height: 4.83px;
+    top: 91px;
+    left: 220px;
+  }
+
+  .icon-security__side {
+    font-size: 7px;
+    width: 59.67px;
+    top: 43px;
+    left: 225px;
+  }
+
+  .icon-security__rectangleThird {
+    width: 1.38px;
+    height: 37.25px;
+    top: 213px;
+    right: 180px;
+  }
+
+  .icon-security__ellipseThird {
+    width: 4.83px;
+    height: 4.83px;
+    top: 210px;
+    right: 178px;
+  }
+
+  .icon-security__rollOver {
+    font-size: 7px;
+    width: 80.37px;
+    top: 227px;
+    right: 97px;
   }
 
   .security__description {
-    min-width: 376px;
+    min-width: 425px;
     max-width: 425px;
     width: 100%;
     box-sizing: border-box;
@@ -1917,12 +2197,17 @@ li > a:hover {
     margin-top: -4px;
   }
 
+  .description-security__text {
+    margin-right: 0px;
+    width: 90%;
+  }
+
 }
 
 @media screen and (min-width: 426px) and (max-width: 767px) {
 
   .header {
-    min-width: 426px;
+    min-width: 767px;
     max-width: 767px;
     padding: 24px 33px 80px 15px;
     position: static;
@@ -1937,7 +2222,7 @@ li > a:hover {
   }
 
   .characteristic {
-    min-width: 426px;
+    min-width: 767px;
     max-width: 767px;
     padding: 0px;
   }
@@ -1951,14 +2236,14 @@ li > a:hover {
   }
 
   .characteristic__logoImage {
+    max-width: 767px;
     padding-top: 70px;
     width: 100%;
-    padding-left: 20px;
   }
 
   .characteristic__carImage {
+    min-width: 767px;
     max-width: 767px;
-    min-width: 426px;
     width: 100%;
     padding-top: 40px;
   }
@@ -2165,7 +2450,7 @@ li > a:hover {
   }
 
   .inside {
-    min-width: 426px;
+    min-width: 767px;
     max-width: 767px;
     width: 100%;
     display: flex;
@@ -2178,14 +2463,14 @@ li > a:hover {
 
   .inside__image {
     width: 100%;
-    min-width: 426px;
+    min-width: 767px;
     max-width: 767px;
     position: static;
   }
 
   .inside__description {
     position: static;
-    min-width: 426px;
+    min-width: 767px;
     max-width: 767px;
     width: 100%;
     margin-top: -4px;
@@ -2209,12 +2494,17 @@ li > a:hover {
     display: none;
   }
 
+  .wrap__ipad-title {
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+
   .security {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     position: relative;
-    min-width: 426px;
+    min-width: 767px;
     max-width: 767px;
   }
 
@@ -2231,11 +2521,97 @@ li > a:hover {
   }
 
   .security__wrap-mobile {
-    display: none;
+    min-width: 767px;
+    max-width: 767px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .security__logo {
+    min-width: 767px;
+    max-width: 767px;
+    padding-top: 40px;
+    width: 100%;
+    height: 15%;
+    left: 0%;
+  }
+
+  .security__image {
+    min-width: 767px;
+    max-width: 767px;
+    top: 10%;
+    width: 100%;
+    left: 0%;
+  }
+
+  .icon-security__rectangleFirst {
+    width: 1.38px;
+    height: 93.47px;
+    top: 176px;
+    left: 198px;
+  }
+
+  .icon-security__ellipseFirst {
+    width: 4.83px;
+    height: 4.83px;
+    top: 270px;
+    left: 196px;
+  }
+
+  .icon-security__front {
+    font-size: 7px;
+    top: 56px;
+    left: 85px;
+    width: 59.56px;
+    top: 170px;
+    left: 202px;
+  }
+
+  .icon-security__rectangleSecond {
+    width: 1.38px;
+    height: 42.08px;
+    top: 87px;
+    left: 401px;
+  }
+
+  .icon-security__ellipseSecond {
+    width: 4.83px;
+    height: 4.83px;
+    top: 128px;
+    left: 399px;
+  }
+
+  .icon-security__side {
+    font-size: 7px;
+    width: 59.67px;
+    top: 82px;
+    left: 403px;
+  }
+
+  .icon-security__rectangleThird {
+    width: 1.38px;
+    height: 37.25px;
+    top: 347px;
+    right: 325px;
+  }
+
+  .icon-security__ellipseThird {
+    width: 4.83px;
+    height: 4.83px;
+    top: 342px;
+    right: 322px;
+  }
+
+  .icon-security__rollOver {
+    font-size: 7px;
+    width: 80.37px;
+    top: 360px;
+    right: 240px;
   }
 
   .security__description {
-    min-width: 426px;
+    min-width: 767px;
     max-width: 767px;
     width: 100%;
     box-sizing: border-box;
@@ -2243,13 +2619,28 @@ li > a:hover {
     margin-top: -4px;
   }
 
+  .description-security__text {
+    margin-right: 0px;
+    width: 90%;
+  }
+
+  .security__description {
+    min-width: 767px;
+    max-width: 767px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 20px 25px 20px;
+    margin-top: -4px;
+    padding-left: 30px;
+  }
+
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
   .header {
-    min-width: 768px;
-    max-width: 991px;
+    min-width: 1024px;
+    max-width: 1024px;
     padding: 24px 33px 80px 15px;
     position: static;
   }
@@ -2263,8 +2654,8 @@ li > a:hover {
   }
 
   .characteristic {
-    min-width: 768px;
-    max-width: 991px;
+    min-width: 1024px;
+    max-width: 1024px;
     padding: 0px;
   }
 
@@ -2278,8 +2669,9 @@ li > a:hover {
 
   .characteristic__logoImage {
     padding-top: 70px;
-    width: 110%;
+    width: 100%;
     padding-left: 20px;
+    box-sizing: border-box;
   }
 
   .characteristic__carImage {
@@ -2296,7 +2688,7 @@ li > a:hover {
   }
 
   .description-characteristic__speedo {
-    padding-right: 100px;
+    padding-right: 150px;
   }
 
   .speedo__image {
@@ -2410,457 +2802,8 @@ li > a:hover {
   .description-characteristic__testDrive-phone {
     display: flex;
     align-items: center;
-    padding-right: 80px;
-  }
-  
-  .testDrive-phone__image {
-    position: relative;
-    padding-right: 40px;
-  }
-  
-  .testDrive-phone__image-ellipse {
-    position: absolute;
-    width: 22px;
-    height: 22px;
-    top: -11px;
-    left: 10px;
-  }
-  
-  .testDrive-phone__image-tesla {
-    position: absolute;
-    width: 14.18px;
-    height: 8.23px;
-    left: 14px;
-    top: -1px;
-    animation-duration: 3s;
-    animation-name: rotatePhone;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transform-origin: 50% 0%;
-  }
-  
-  @keyframes rotatePhone {
-    from {
-      transform: rotate(0deg);
-    }
-  
-    to {
-      transform: rotate(-230deg);
-    }
-  }
-  
-  .testDrive-phone__image-dott {
-    position: absolute;
-    width: 2.58px;
-    height: 2.58px;
-    left: 20px;
-    top: -3px;
-  }
-  
-  .testDrive__title-phone {
-    margin: 0px;
-    padding-left: 0px;
-    font-size: 16px;
-    font-family: "MontserratBold";
-    color: #E51937;
-  }
-  
-  .description-characteristic__button-phone {
-    margin: 0px;
-    color: white;
-    background-color: #E51937;
-    display: flex;
-    align-self: center;
-    font-family: "MontserratBold";
-    font-size: 16px;
-    border: 2px solid #E51937;
-    box-shadow: none;
-    transition: box-shadow 0.6s linear;
-    padding: 10px 40px;
-  }
-  
-  .description-characteristic__button-phone:hover {
-    box-shadow: 0px 0px 0px 2px #E51937;
-  }
-
-  .characteristic__arrowDown {
-    padding-left: 0px;
-    padding-top: 63px;
-    animation: none;
-  }
-
-  .inside {
-    min-width: 768px;
-    max-width: 991px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .inside__title {
-    position: absolute;
-    right: 0px;
-    padding-top: 5px;
-  }
-
-  .inside__image {
-    min-width: 768px;
-    max-width: 991px;
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-
-  .inside__description {
-    display: flex;
-    justify-content: space-between;
-    margin-top: -4px;
-    min-width: 768px;
-    max-width: 991px;
-    box-sizing: border-box;
-    width: 100%;
-  }
-
-  .description-inside__text {
-    font-size: 15px;
-    width: 70%;
-  }
-
-  .wrap__ipad-description {
-    padding-right: 50px;
-  }
-
-  .description-inside__information {
-    position: absolute;
-    bottom: 20px;
-    left: 200px;
-  }
-
-  .information-inside__iconEllipse {
-    width: 31.18px;
-    height: 31.18px;
-  }
-
-  .information-inside__iconI {
-    width: 5.67px;
-    height: 22.68px;
-    margin-left: -18px;
-    padding-top: 3px;
-  }
-
-  .information-inside__title {
-    font-size: 16px;
-    padding-right: 40px;
-  }
-
-  .description-inside__button {
-    font-size: 16px;
-  }
-
-  .security {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    position: relative;
-    min-width: 768px;
-    max-width: 991px;
-  }
-
-  .security__wrap-mobile {
-    min-width: 768px;
-    max-width: 991px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-  }
-
-  .security__logo {
-    position: relative;
-    padding-top: 10%;
-    width: 70%;
-    z-index: 3;
-    height: 50%;
-  }
-
-  .security__image {
-    position: absolute;
-    padding-top: 0%;
-    right: 10%;
-    width: 90%;
-    z-index: 5;
-    top: 70%;
-  }
-
-  .icon-security__front {
-    font-size: 15px;
-    position: absolute;
-    z-index: 20;
-    left: 24%;
-    top: 53%;
-  }
-
-  .icon-security__rectangleFirst {
-    position: absolute;
-    width: 2.86px;
-    height: 193.79px;
-    left: 23.1%;
-    z-index: 20;
-    top: 62%;
-  }
-
-  .icon-security__ellipseFirst {
-    width: 10.01px;
-    height: 10.01px;
-    position: absolute;
-    left: 22.5%;
-    top: 170%;
-    z-index: 20;
-  }
-
-  .icon-security__side {
-    font-size: 15px;
-    position: absolute;
-    left: 48%;
-    z-index: 20;
-    top: 42%;
-    width: 100px;
-  }
-
-  .icon-security__rectangleSecond {
-    position: absolute;
-    width: 2.86px;
-    height: 87.24px;
-    left: 47%;
-    z-index: 20;
-    top: 50%;
-  }
-
-  .icon-security__ellipseSecond {
-    width: 10.01px;
-    height: 10.01px;
-    position: absolute;
-    left: 46.6%;
-    z-index: 20;
-    top: 98%;
-  }
-
-  .icon-security__rollOver {
-    font-size: 15px;
-    position: absolute;
-    left: 53%;
-    z-index: 20;
-    top: 211%;
-    width: 170px;
-  }
-
-  .icon-security__rectangleThird {
-    width: 2.86px;
-    height: 77.23px;
-    position: absolute;
-    left: 51.7%;
-    z-index: 20;
-    top: 207%;
-  }
-
-  .icon-security__ellipseThird {
-    width: 10.01px;
-    height: 10.01px;
-    position: absolute;
-    left: 51.2%;
-    z-index: 20;
-    top: 205%;
-  }
-
-  .security__description {
-    position: relative;
-    min-width: 768px;
-    max-width: 991px;
-    width: 100%;
-    padding-bottom: 23%;
-    box-sizing: border-box;
-    margin-top: 40%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .description-security__wrap-mobile {
-    position: absolute;
-    left: 29%;
-    bottom: 0px;
-    top: 50%;
-    padding-bottom: 50px;
-  }
-
-  .description-security__wrap-ipad {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .header {
-    min-width: 992px;
-    max-width: 1199px;
-    padding: 24px 33px 80px 15px;
-    position: static;
-  }
-
-  .header__nav {
-    display: none;
-  }
-
-  .header__menu-list {
-    display: none;
-  }
-
-  .characteristic {
-    min-width: 992px;
-    max-width: 1199px;
-    padding: 0px;
-  }
-
-  .characteristic__title {
-    font-size: 90px;
-  }
-
-  .characteristic__text {
-    font-size: 15px;
-  }
-
-  .characteristic__logoImage {
-    padding-top: 70px;
-    width: 110%;
-    padding-left: 20px;
-  }
-
-  .characteristic__carImage {
-    max-width: 90%;
-    padding-top: 40px;
-  }
-
-  .characteristic__description {
-    max-width: 100%;
-    padding: 18px 40px 43px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .description-characteristic__speedo {
     padding-right: 100px;
   }
-
-  .speedo__image {
-    width: 65.92px;
-    height: 48.91px;
-    margin-right: 0px;
-  }
-
-  .speedo__image-speedometr {
-    width: 65.92px;
-    height: 48.91px;
-  }
-
-  .speedo__image-ellipse {
-    width: 30.17px;
-    height: 30.01px;
-    left: 17px;
-    top: 12px;
-  }
-
-  .speedo__image-arrow {
-    width: 30px;
-    height: 16px;
-    left: 28px;
-    top: 20px;
-  }
-
-  .speedo__title {
-    margin-top: -53px;
-    padding-left: 70px;
-  }
-
-  .speedo__title-numb {
-    font-size: 50px;
-  }
-
-  .speedo__title-text {
-    font-size: 20px;
-    padding-bottom: 15px;
-  }
-
-  .speedo__desc {
-    font-size: 12px;
-    padding-left: 70px;
-  }
-
-  .description-characteristic__road {
-    padding-right: 18px;
-  }
-
-  .road__image-stroke {
-    width: 41.56px;
-    height: 64.45px;
-    padding-top: 0px;
-  }
-
-  .road__image-strokeDotted {
-    width: 37.83px;
-    height: 60.72px;
-    top: 6px;
-  }
-
-  .road__image-ellipseRightTop {
-    width: 10.03px;
-    height: 10.03px;
-    top: 5px;
-    left: 35px;
-  }
-
-  .road__image-ellipseRightTopIn {
-    display: none;
-  }
-
-  .road__image-ellipseLeftBottom {
-    top: 62px;
-    width: 10.03px;
-    height: 10.03px;
-  }
-
-  .road__title-numb {
-    padding-left: 19px;
-    font-size: 50px;
-    margin-top: -3px;
-  }
-
-  .road__title-text {
-    font-size: 20px;
-    padding-bottom: 15px;
-  }
-
-  .road__desc {
-    padding-left: 60px;
-    font-size: 12px;
-  }
-
-  .description-characteristic__testDrive {
-    display: none;
-  }
-
-  .description-characteristic__button {
-    display: none;
-  }
-
-  .description-characteristic__wrap-phone {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 57px;
-  }
-
-  .description-characteristic__testDrive-phone {
-    display: flex;
-    align-items: center;
-    padding-right: 80px;
-  }
   
   .testDrive-phone__image {
     position: relative;
@@ -2939,8 +2882,8 @@ li > a:hover {
   }
 
   .inside {
-    min-width: 992px;
-    max-width: 1199px;
+    min-width: 1024px;
+    max-width: 1024px;
     display: flex;
     flex-direction: column;
   }
@@ -2952,8 +2895,8 @@ li > a:hover {
   }
 
   .inside__image {
-    min-width: 992px;
-    max-width: 1199px;
+    min-width: 1024px;
+    max-width: 1024px;
     width: 100%;
     height: auto;
     position: relative;
@@ -2961,28 +2904,33 @@ li > a:hover {
 
   .inside__description {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: -4px;
-    min-width: 992px;
-    max-width: 1199px;
+    min-width: 1024px;
+    max-width: 1024px;
     box-sizing: border-box;
     width: 100%;
+    height: 500px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .description-inside__text {
     font-size: 15px;
-    width: 70%;
+    width: 300px;
+  }
+
+  .update-inside__titleText {
+    width: 172.68px;
   }
 
   .wrap__ipad-description {
-    padding-right: 50px;
-    padding-bottom: 70px;
+    padding-top: 10px;
   }
 
   .description-inside__information {
     position: absolute;
     bottom: 20px;
-    left: 250px;
   }
 
   .information-inside__iconEllipse {
@@ -3011,13 +2959,13 @@ li > a:hover {
     flex-direction: column-reverse;
     justify-content: center;
     position: relative;
-    min-width: 992px;
-    max-width: 1199px;
+    min-width: 1024px;
+    max-width: 1024px;
   }
 
   .security__wrap-mobile {
-    min-width: 992px;
-    max-width: 1199px;
+    min-width: 1024px;
+    max-width: 1024px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -3040,12 +2988,16 @@ li > a:hover {
     top: 70%;
   }
 
+  .item-security__text {
+    margin-left: 0px;
+  }
+
   .icon-security__front {
     font-size: 15px;
     position: absolute;
     z-index: 20;
     left: 24%;
-    top: 53%;
+    top: 83%;
   }
 
   .icon-security__rectangleFirst {
@@ -3054,14 +3006,14 @@ li > a:hover {
     height: 193.79px;
     left: 23.1%;
     z-index: 20;
-    top: 62%;
+    top: 89%;
   }
 
   .icon-security__ellipseFirst {
     width: 10.01px;
     height: 10.01px;
     position: absolute;
-    left: 22.5%;
+    left: 22.8%;
     top: 170%;
     z-index: 20;
   }
@@ -3071,7 +3023,7 @@ li > a:hover {
     position: absolute;
     left: 48%;
     z-index: 20;
-    top: 42%;
+    top: 55%;
     width: 100px;
   }
 
@@ -3081,7 +3033,7 @@ li > a:hover {
     height: 87.24px;
     left: 47%;
     z-index: 20;
-    top: 50%;
+    top: 62%;
   }
 
   .icon-security__ellipseSecond {
@@ -3098,7 +3050,7 @@ li > a:hover {
     position: absolute;
     left: 53%;
     z-index: 20;
-    top: 211%;
+    top: 212%;
     width: 170px;
   }
 
@@ -3122,33 +3074,44 @@ li > a:hover {
 
   .security__description {
     position: relative;
-    min-width: 992px;
-    max-width: 1199px;
+    min-width: 1024px;
+    max-width: 1024px;
     width: 100%;
-    padding-bottom: 23%;
     box-sizing: border-box;
     margin-top: 40%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 62px 55px 180px 34px;
+  }
+
+  .info-security__icon {
+    padding-right: 5px;
+  }
+
+  .info-security__title {
+    font-size: 16px;
+  }
+
+  .info-security__title {
+    padding-right: 40px;
   }
 
   .description-security__title-wrap {
-    width: 50%;
+    width: 316px;
   }
 
-  .description-security__text {
-    width: 80%;
+  .info-security__button {
+    font-size: 16px;
   }
 
   .description-security__wrap-mobile {
     position: absolute;
-    left: 33%;
-    bottom: 0px;
     top: 50%;
-    padding-bottom: 50px;
+    align-self: flex-end;
   }
 
   .description-security__wrap-ipad {
     display: none;
   }
 }
+
