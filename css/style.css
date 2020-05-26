@@ -20,7 +20,6 @@ a {
   background: white;
   top: 0;
   z-index: 999;
-  min-width: 1440px;
   max-width: 1440px;
   overflow: hidden;
 }
@@ -37,7 +36,7 @@ a {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  padding-left: 0px;
+  padding-left: 0;
   margin: 0;
 }
 
@@ -70,7 +69,7 @@ li > a:hover {
 }
 
 .current__modelS {
-  color: #E51937;
+  color: #e51937;
 }
 
 .header__menu {
@@ -82,7 +81,7 @@ li > a:hover {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  margin: 0px;
+  margin: 0;
 }
 
 .header__menu-item {
@@ -106,7 +105,7 @@ li > a:hover {
   right: 0;
   top: 50%;
   margin-top: -1px;
-  background-color: #E51937;
+  background-color: #e51937;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
@@ -114,7 +113,7 @@ li > a:hover {
 .header__burger::before,
 .header__burger::after {
   content: '';
-  background-color: #E51937;
+  background-color: #e51937;
   position: absolute;
   width: 100%;
   height: 2px;
@@ -138,18 +137,17 @@ li > a:hover {
   flex-direction: column;
   padding-top: 133px;
   position: relative;
-  min-width: 1440px;
   max-width: 1440px;
 }
 
 .characteristic__title {
-  font-family: "MontserratSemiBold";
-  margin: 0px;
+  font-family: MontserratSemiBold;
+  margin: 0;
   font-size: 90px;
 }
 
 .characteristic__text {
-  margin: 0px;
+  margin: 0;
   font-family: MontserratMedium;
   font-size: 15px;
   margin-top: -10px;
@@ -220,27 +218,27 @@ li > a:hover {
 .speedo__title {
   display: flex;
   flex-direction: row;
-  font-family: "MontserratSemiBold";
+  font-family: MontserratSemiBold;
   align-items: center;
   padding-left: 60px;
 }
 
 .speedo__title-numb {
   font-size: 35px;
-  margin: 0px;
+  margin: 0;
 }
 
 .speedo__title-text {
   align-self: flex-end;
   padding-bottom: 3px;
   font-size: 20px;
-  margin: 0px;
+  margin: 0;
   padding-left: 6px;
 }
 
 .speedo__desc {
   font-family: MontserratRegular;
-  margin: 0px;
+  margin: 0;
   font-size: 12px;
   padding-left: 60px;
   margin-top: -3px;
@@ -311,27 +309,27 @@ li > a:hover {
 .road__title {
   display: flex;
   flex-direction: row;
-  font-family: "MontserratSemiBold";
+  font-family: MontserratSemiBold;
   align-items: center;
   padding-left: 40px;
 }
 
 .road__title-numb {
   font-size: 35px;
-  margin: 0px;
+  margin: 0;
 }
 
 .road__title-text {
   align-self: flex-end;
   padding-bottom: 3px;
   font-size: 20px;
-  margin: 0px;
+  margin: 0;
   padding-left: 6.5px;
 }
 
 .road__desc {
-  font-family: "MontserratRegular";
-  margin: 0px;
+  font-family: MontserratRegular;
+  margin: 0;
   font-size: 12px;
   padding-left: 40px;
   margin-top: -3px;
@@ -388,18 +386,18 @@ li > a:hover {
 }
 
 .testDrive__title {
-  margin: 0px;
-  padding-left: 0px;
+  margin: 0;
+  padding-left: 0;
   font-size: 13px;
   font-family: MontserratBold;
 }
 
 .description-characteristic__button {
-  margin: 0px;
-  color: #E51937;
+  margin: 0;
+  color: #e51937;
   display: flex;
   align-self: center;
-  font-family: "MontserratBold";
+  font-family: MontserratBold;
   font-size: 13px;
   border: 2px solid #e51937;
   box-shadow: none;
@@ -444,7 +442,7 @@ li > a:hover {
 
 .arrowDown__icon {
   position: relative;
-  border: 3px solid  #e51937;
+  border: 3px solid #e51937;
   border-width: 0 0 2px 2px;
   width: 16px;
   height: 16px;
@@ -463,48 +461,51 @@ li > a:hover {
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  min-width: 1440px;
   max-width: 1440px;
 }
 
 .inside__title {
   font-size: 70px;
-  font-family: "MontserratSemiBold";
+  font-family: MontserratSemiBold;
   padding: 64px 80px;
   margin: 0;
-  color: #E51937;
+  color: #e51937;
 }
 
 .inside__image {
   position: absolute;
-  width: 80%;
+  max-width: 82%;
+  min-width: 15%;
   z-index: -1;
   bottom: 0;
-  height: 90%;
+  max-height: 90%;
+  min-height: 57%;
 }
 
 .inside__description {
   background: #e51937;
   color: white;
-  width: 26%;
-  padding: 51px 44px 63px 52px;
+  max-width: 39%;
+  min-width: 23%;
+  padding: 51px 44px 63px 60px;
 }
 
 .description-inside__title {
-  font-family: "MontserratSemiBold";
+  font-family: MontserratSemiBold;
   display: flex;
   flex-direction: row;
   font-size: 30px;
-  width: 100%;
-  text-align: justify;
+  min-width: 316px;
+  height: 37px;
   margin: 0;
+  padding-right: 28px;
 }
 
 .description-inside__text {
-  font-family: "MontserratMedium";
+  font-family: MontserratMedium;
   font-size: 15px;
-  width: 96%;
-  padding-bottom: 50px;
+  width: 316px;
+  padding-bottom: 54px;
   margin-bottom: 0;
 }
 
@@ -555,19 +556,19 @@ li > a:hover {
   display: flex;
   flex-direction: row;
   padding-left: 19px;
-  font-family: "MontserratSemiBold";
+  font-family: MontserratSemiBold;
   padding-bottom: 1px;
 }
 
 .desc-inside__titleNumb {
   font-size: 35px;
-  margin: 0px;
+  margin: 0;
   margin-top: -10px;
 }
 
 .desc-inside__titleText {
   font-size: 20px;
-  margin: 0px;
+  margin: 0;
   padding-left: 10px;
   align-self: center;
   margin-top: -25px;
@@ -576,8 +577,8 @@ li > a:hover {
 .display-inside__text {
   align-self: flex-end;
   font-size: 12px;
-  font-family: "MontserratRegular";
-  margin: 0px;
+  font-family: MontserratRegular;
+  margin: 0;
   margin-left: -131px;
   padding-bottom: 10px;
 }
@@ -629,7 +630,7 @@ li > a:hover {
   0% {
     opacity: 0;
   }
-  
+
   100% {
     opacity: 1;
   }
@@ -642,16 +643,17 @@ li > a:hover {
 }
 
 .update-inside__titleText {
-  margin: 0px;
+  margin: 0;
   font-size: 20px;
-  font-family: "MontserratSemiBold";
+  width: 173px;
+  font-family: MontserratSemiBold;
   padding-bottom: 5px;
 }
 
 .update-inside__Text {
   font-size: 12px;
-  font-family: "MontserratRegular";
-  margin: 0px;
+  font-family: MontserratRegular;
+  margin: 0;
   width: 60%;
 }
 
@@ -687,31 +689,31 @@ li > a:hover {
 
 .description-inside__titleNumb {
   font-size: 35px;
-  font-family: "MontserratSemiBold";
-  margin: 0px;
+  font-family: MontserratSemiBold;
+  margin: 0;
   margin-top: -10px;
 }
 
 .description-inside__titleText {
   font-size: 20px;
-  font-family: "MontserratSemiBold";
+  font-family: MontserratSemiBold;
   padding-left: 10px;
-  margin: 0px;
+  margin: 0;
   align-self: flex-end;
   padding-bottom: 4px;
 }
 
 .description-inside__desc {
   font-size: 12px;
-  font-family: "MontserratRegular";
-  margin: 0px;
+  font-family: MontserratRegular;
+  margin: 0;
 }
 
 .description-inside__information {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  padding-top: 30px;
+  padding-top: 177px;
 }
 
 .information-inside__icon {
@@ -736,25 +738,27 @@ li > a:hover {
 }
 
 .information-inside__title {
-  font-family: "MontserratBold";
+  font-family: MontserratBold;
   padding-left: 5px;
   font-size: 13px;
-  margin: 0px;
+  margin: 0;
+  min-width: 130px;
   padding-bottom: 10px;
-  padding-right: 22px;
+  padding-right: 40px;
 }
 
 .description-inside__button {
-  margin: 0px;
+  margin: 0;
   color: white;
   display: flex;
   align-self: center;
-  font-family: "MontserratBold";
+  font-family: MontserratBold;
   font-size: 13px;
   border: 2px solid white;
   box-shadow: none;
   transition: box-shadow 0.6s linear;
   padding: 10px 40px;
+  margin-right: 44px;
 }
 
 .description-inside__button:hover {
@@ -766,38 +770,41 @@ li > a:hover {
   flex-direction: row;
   justify-content: space-between;
   position: relative;
-  min-width: 1440px;
+  align-items: center;
   max-width: 1440px;
 }
 
 .security__description {
-  background: #E51937;
+  background: #e51937;
   color: white;
-  width: 26%;
+  max-width: 26%;
   padding: 51px 55px 60px 56px;
   z-index: 1;
 }
 
 .description-security__title {
   font-size: 30px;
-  font-family: "MontserratSemiBold";
+  font-family: MontserratSemiBold;
+  min-width: 316px;
 }
 
 .description-security__text {
   font-size: 15px;
-  font-family: "MontserratMedium";
+  font-family: MontserratMedium;
+  width: 316px;
 }
 
 .description-security__titleList {
   font-size: 30px;
-  font-family: "MontserratSemiBold";
+  font-family: MontserratSemiBold;
 }
 
 .description-security__list {
   font-size: 17px;
-  font-family: "MontserratBold";
+  font-family: MontserratBold;
   list-style-type: none;
-  padding-left: 0px;
+  padding-left: 0;
+  width: 300px;
 }
 
 .list-security__item {
@@ -807,7 +814,7 @@ li > a:hover {
 }
 
 .item-security__title {
-  margin: 0px;
+  margin: 0;
   padding-top: 16px;
 }
 
@@ -815,7 +822,7 @@ li > a:hover {
   font-size: 10px;
   opacity: 0.7;
   align-self: flex-end;
-  margin: 0px;
+  margin: 0;
   margin-left: -25px;
 }
 
@@ -823,7 +830,6 @@ li > a:hover {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding-left: 57px;
 }
 
 .stars-security__star {
@@ -832,6 +838,10 @@ li > a:hover {
   height: 25px;
   padding-top: 13px;
   padding-left: 4px;
+}
+
+.description-security__wrap-ipad {
+  width: 280px;
 }
 
 .description-security__wrap-image {
@@ -862,7 +872,7 @@ li > a:hover {
 
 .rating-security__titleNumb {
   font-size: 50px;
-  font-family: "MontserratSemiBold";
+  font-family: MontserratSemiBold;
   position: absolute;
   margin: 0;
   right: 0;
@@ -870,10 +880,10 @@ li > a:hover {
 
 .rating-security__titleText {
   font-size: 25px;
-  font-family: "MontserratSemiBold";
+  font-family: MontserratSemiBold;
   position: absolute;
-  margin: 0px;
-  right: 10px;
+  margin: 0;
+  right: 0;
   top: 60px;
 }
 
@@ -882,7 +892,9 @@ li > a:hover {
   justify-content: space-between;
   align-items: flex-end;
   padding-top: 150px;
-  bottom: 0px;
+  bottom: 0;
+  min-width: 280px;
+  max-width: 347px;
 }
 
 .info-security__icon {
@@ -907,12 +919,12 @@ li > a:hover {
 }
 
 .info-security__title {
-  font-family: "MontserratBold";
+  font-family: MontserratBold;
   padding-left: 5px;
   font-size: 13px;
-  margin: 0px;
+  margin: 0;
   padding-bottom: 10px;
-  padding-right: 22px;
+  min-width: 130px;
 }
 
 .info-security__button {
@@ -920,7 +932,7 @@ li > a:hover {
   color: white;
   display: flex;
   align-self: center;
-  font-family: "MontserratBold";
+  font-family: MontserratBold;
   font-size: 13px;
   border: 2px solid white;
   box-shadow: none;
@@ -929,29 +941,31 @@ li > a:hover {
 }
 
 .info-security__button:hover {
-  box-shadow: 0px 0px 0px 2px white;
+  box-shadow: 0 0 0 2px white;
 }
 
 .security__wrap-mobile {
   display: flex;
   justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -75px;
 }
 
 .security__logo {
   position: absolute;
-  right: 0px;
+  top: -70px;
+  right: -75px;
   z-index: 0;
-  width: 50%;
+  width: 75%;
   height: 150px;
-  padding-top: 200px;
 }
 
 .security__image {
-  position: absolute;
   z-index: 10;
   right: 40px;
   top: 280px;
-  width: 70%;
+  width: 100%;
 }
 
 .security__front {
@@ -966,49 +980,64 @@ li > a:hover {
   display: none;
 }
 
+.security__icon--first {
+  position: absolute;
+  top: -2%;
+  left: 24.5%;
+  height: 53%;
+}
+
 .icon-security__rectangleFirst {
   position: absolute;
   width: 4px;
-  height: 271px;
-  top: 268px;
+  height: 100%;
   z-index: 15;
-  left: 650px;
+  left: 10px;
 }
 
 .icon-security__ellipseFirst {
   position: absolute;
   width: 14px;
   height: 14px;
-  top: 535px;
   z-index: 15;
-  left: 645px;
+  left: 5px;
+  bottom: -1%;
+}
+
+.security__icon--second {
+  position: absolute;
+  top: -9%;
+  left: 52.1%;
+  height: 23%;
 }
 
 .icon-security__rectangleSecond {
   position: absolute;
   width: 4px;
-  height: 122px;
-  top: 230px;
+  height: 100%;
   z-index: 15;
-  right: 518px;
 }
 
 .icon-security__ellipseSecond {
   position: absolute;
   width: 14px;
   height: 14px;
-  top: 348px;
   z-index: 15;
-  right: 513px;
+  left: -5px;
+  bottom: -7%;
+}
+
+.security__icon--third {
+  position: absolute;
+  top: 69%;
+  left: 57.5%;
+  height: 21%;
 }
 
 .icon-security__rectangleThird {
   position: absolute;
   width: 4px;
-  height: 108px;
-  transform: rotate(-180deg);
-  top: 640px;
-  right: 465px;
+  height: 100%;
   z-index: 15;
 }
 
@@ -1016,48 +1045,48 @@ li > a:hover {
   position: absolute;
   width: 14px;
   height: 14px;
-  top: 632px;
   z-index: 15;
-  right: 460px;
+  left: -5px;
+  top: -7%;
 }
 
 .icon-security__front {
   font-size: 17px;
-  font-family: "MontserratSemiBold";
+  font-family: MontserratSemiBold;
   position: absolute;
   z-index: 20;
   color: black;
-  top: 250px;
-  left: 660px;
+  top: -5%;
+  left: 20px;
   width: 200px;
 }
 
 .icon-security__side {
   font-size: 17px;
-  font-family: "MontserratSemiBold";
+  font-family: MontserratSemiBold;
   position: absolute;
   z-index: 20;
   color: black;
-  top: 215px;
-  left: 930px;
+  top: -9%;
+  left: 10px;
   width: 200px;
 }
 
 .icon-security__rollOver {
   font-size: 17px;
-  font-family: "MontserratSemiBold";
+  font-family: MontserratSemiBold;
   position: absolute;
   z-index: 20;
   color: black;
-  top: 690px;
-  right: 225px;
+  bottom: -9%;
+  left: 10px;
   width: 230px;
 }
 
 @media (max-width: 320px) {
   .header {
     max-width: 320px;
-    min-width: 320px;
+    min-width: auto;
     padding: 5px 0 30px 0;
     position: static;
     box-sizing: border-box;
@@ -1074,7 +1103,7 @@ li > a:hover {
 
   .characteristic {
     max-width: 320px;
-    min-width: 320px;
+    min-width: auto;
     padding: 0;
   }
 
@@ -1097,7 +1126,8 @@ li > a:hover {
   }
 
   .characteristic__description {
-    width: 320px;
+    max-width: 320px;
+    min-width: auto;
     padding: 18px 40px 43px;
     display: flex;
     box-sizing: border-box;
@@ -1192,12 +1222,12 @@ li > a:hover {
     align-items: center;
     padding-right: 5px;
   }
-  
+
   .testDrive-phone__image {
     position: relative;
     padding-right: 40px;
   }
-  
+
   .testDrive-phone__image-ellipse {
     position: absolute;
     width: 22px;
@@ -1205,7 +1235,7 @@ li > a:hover {
     top: -11px;
     left: 10px;
   }
-  
+
   .testDrive-phone__image-tesla {
     position: absolute;
     width: 14.18px;
@@ -1218,7 +1248,7 @@ li > a:hover {
     animation-direction: alternate;
     transform-origin: 50% 0%;
   }
-  
+
   @keyframes rotatePhone {
     from {
       transform: rotate(0deg);
@@ -1228,7 +1258,7 @@ li > a:hover {
       transform: rotate(-230deg);
     }
   }
-  
+
   .testDrive-phone__image-dott {
     position: absolute;
     width: 2.58px;
@@ -1236,41 +1266,41 @@ li > a:hover {
     left: 20px;
     top: -3px;
   }
-  
+
   .testDrive__title-phone {
-    margin: 0px;
-    padding-left: 0px;
+    margin: 0;
+    padding-left: 0;
     font-size: 13px;
-    font-family: "MontserratBold";
-    color: #E51937;
+    font-family: MontserratBold, sans-serif;
+    color: #e51937;
   }
-  
+
   .description-characteristic__button-phone {
-    margin: 0px;
+    margin: 0;
     color: white;
-    background-color: #E51937;
+    background-color: #e51937;
     display: flex;
     align-self: center;
     box-sizing: border-box;
-    font-family: "MontserratBold";
+    font-family: MontserratBold, sans-serif;
     font-size: 13px;
-    border: 2px solid #E51937;
+    border: 2px solid #e51937;
     box-shadow: none;
     transition: box-shadow 0.6s linear;
     padding: 10px 30px;
   }
-  
+
   .description-characteristic__button-phone:hover {
-    box-shadow: 0px 0px 0px 2px #E51937;
+    box-shadow: 0 0 0 2px #e51937;
   }
 
   .characteristic__arrowDown {
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   .inside {
     max-width: 320px;
-    min-width: 320px;
+    min-width: auto;
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
@@ -1281,7 +1311,9 @@ li > a:hover {
   }
 
   .inside__image {
-    width: 320px;
+    max-width: 320px;
+    min-width: auto;
+    width: 100%;
     position: static;
     box-sizing: border-box;
   }
@@ -1289,18 +1321,22 @@ li > a:hover {
   .inside__description {
     position: static;
     max-width: 320px;
-    min-width: 320px;
+    min-width: auto;
     margin-top: -4px;
-    padding: 15px 5px 25px;
+    padding: 15px 10px 25px;
     box-sizing: border-box;
   }
 
   .description-inside__title {
-    width: 316px;
+    width: auto;
+    padding-right: 0;
+    font-size: 27px;
+    min-width: auto;
   }
 
   .description-inside__text {
     padding-bottom: 20px;
+    width: auto;
   }
 
   .description-inside__display {
@@ -1325,7 +1361,7 @@ li > a:hover {
     justify-content: center;
     position: relative;
     max-width: 320px;
-    min-width: 320px;
+    min-width: auto;
     box-sizing: border-box;
   }
 
@@ -1343,102 +1379,134 @@ li > a:hover {
 
   .security__description {
     max-width: 320px;
-    min-width: 320px;
+    min-width: auto;
     width: 100%;
     box-sizing: border-box;
-    padding: 15px 20px 25px 20px;
+    padding: 15px 10px 25px;
   }
 
   .security__wrap-mobile {
     max-width: 320px;
-    min-width: 320px;
+    min-width: auto;
     height: 300px;
     display: flex;
     justify-content: center;
   }
 
+  .description-security__title {
+    font-size: 27px;
+    width: auto;
+    min-width: 284px;
+  }
+
+  .description-security__text {
+    width: auto;
+  }
+
   .security__logo {
     padding-top: 40px;
     width: 100%;
-    height: 10%;
+    height: 20%;
+    top: 0;
   }
 
   .security__image {
     top: 10%;
     width: 100%;
-    left: 0%;
+    left: 0;
+    padding-left: 40%;
+  }
+
+  .security__icon--first {
+    position: absolute;
+    top: 21%;
+    left: 42.5%;
+    height: 93.47px;
   }
 
   .icon-security__rectangleFirst {
+    position: absolute;
     width: 1.38px;
-    height: 93.47px;
-    top: 62px;
-    left: 82px;
+    height: 100%;
+    z-index: 15;
+    left: 10px;
   }
 
   .icon-security__ellipseFirst {
+    position: absolute;
     width: 4.83px;
     height: 4.83px;
-    top: 155px;
-    left: 80px;
+    z-index: 15;
+    left: 8px;
+    bottom: -1%;
+  }
+
+  .security__icon--second {
+    position: absolute;
+    top: 16%;
+    left: 72%;
+    height: 42.08px;
+  }
+
+  .icon-security__rectangleSecond {
+    position: absolute;
+    width: 1.38px;
+    height: 100%;
+    z-index: 15;
+  }
+
+  .icon-security__ellipseSecond {
+    position: absolute;
+    width: 4.83px;
+    height: 4.83px;
+    z-index: 15;
+    left: -1.5px;
+    bottom: -7%;
+  }
+
+  .security__icon--third {
+    position: absolute;
+    top: 61%;
+    left: 77.5%;
+    height: 37.25px;
+  }
+
+  .icon-security__rectangleThird {
+    position: absolute;
+    width: 1.38px;
+    height: 100%;
+    z-index: 15;
+  }
+
+  .icon-security__ellipseThird {
+    position: absolute;
+    width: 4.83px;
+    height: 4.83px;
+    z-index: 15;
+    left: -2px;
+    top: -7%;
   }
 
   .icon-security__front {
     font-size: 7px;
-    top: 56px;
-    left: 85px;
     width: 59.56px;
-  }
-
-  .icon-security__rectangleSecond {
-    width: 1.38px;
-    height: 42.08px;
-    top: 54px;
-    left: 167px;
-  }
-
-  .icon-security__ellipseSecond {
-    width: 4.83px;
-    height: 4.83px;
-    top: 96px;
-    left: 165px;
   }
 
   .icon-security__side {
     font-size: 7px;
     width: 59.67px;
-    top: 48px;
-    left: 170px;
-  }
-
-  .icon-security__rectangleThird {
-    width: 1.38px;
-    height: 37.25px;
-    top: 188px;
-    right: 135px;
-  }
-
-  .icon-security__ellipseThird {
-    width: 4.83px;
-    height: 4.83px;
-    top: 185px;
-    right: 133px;
   }
 
   .icon-security__rollOver {
     font-size: 7px;
     width: 80.37px;
-    top: 205px;
-    right: 50px;
   }
-
 }
 
 @media screen and (min-width: 321px) and (max-width: 375px) {
-
   .header {
     max-width: 375px;
-    min-width: 375px;
+    min-width: auto;
     padding: 5px 21px 30px 0;
     position: static;
   }
@@ -1453,8 +1521,8 @@ li > a:hover {
 
   .characteristic {
     max-width: 375px;
-    min-width: 375px;
-    padding: 0px;
+    min-width: auto;
+    padding: 0;
   }
 
   .characteristic__title {
@@ -1480,6 +1548,7 @@ li > a:hover {
     padding: 18px 40px 43px;
     display: flex;
     flex-direction: row;
+    box-sizing: border-box;
   }
 
   .description-characteristic__speedo {
@@ -1508,7 +1577,7 @@ li > a:hover {
   }
 
   .description-characteristic__road {
-    padding-right: 0px;
+    padding-right: 0;
   }
 
   .road__image-stroke {
@@ -1567,14 +1636,14 @@ li > a:hover {
   .description-characteristic__testDrive-phone {
     display: flex;
     align-items: center;
-    padding-right: 40px;
+    padding-right: 20px;
   }
-  
+
   .testDrive-phone__image {
     position: relative;
     padding-right: 40px;
   }
-  
+
   .testDrive-phone__image-ellipse {
     position: absolute;
     width: 22px;
@@ -1582,7 +1651,7 @@ li > a:hover {
     top: -11px;
     left: 10px;
   }
-  
+
   .testDrive-phone__image-tesla {
     position: absolute;
     width: 14.18px;
@@ -1595,7 +1664,7 @@ li > a:hover {
     animation-direction: alternate;
     transform-origin: 50% 0%;
   }
-  
+
   @keyframes rotatePhone {
     from {
       transform: rotate(0deg);
@@ -1605,7 +1674,7 @@ li > a:hover {
       transform: rotate(-230deg);
     }
   }
-  
+
   .testDrive-phone__image-dott {
     position: absolute;
     width: 2.58px;
@@ -1613,40 +1682,40 @@ li > a:hover {
     left: 20px;
     top: -3px;
   }
-  
+
   .testDrive__title-phone {
-    margin: 0px;
-    padding-left: 0px;
+    margin: 0;
+    padding-left: 0;
     font-size: 13px;
-    font-family: "MontserratBold";
-    color: #E51937;
+    font-family: MontserratBold, sans-serif;
+    color: #e51937;
   }
-  
+
   .description-characteristic__button-phone {
-    margin: 0px;
+    margin: 0;
     color: white;
-    background-color: #E51937;
+    background-color: #e51937;
     display: flex;
     align-self: center;
-    font-family: "MontserratBold";
+    font-family: MontserratBold, sans-serif;
     font-size: 13px;
-    border: 2px solid #E51937;
+    border: 2px solid #e51937;
     box-shadow: none;
     transition: box-shadow 0.6s linear;
     padding: 10px 40px;
   }
-  
+
   .description-characteristic__button-phone:hover {
-    box-shadow: 0px 0px 0px 2px #E51937;
+    box-shadow: 0 0 0 2px #e51937;
   }
 
   .characteristic__arrowDown {
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   .inside {
     max-width: 375px;
-    min-width: 375px;
+    min-width: auto;
     display: flex;
     flex-direction: column;
   }
@@ -1656,22 +1725,31 @@ li > a:hover {
   }
 
   .inside__image {
-    height: 260px;
     max-width: 375px;
-    min-width: 375px;
+    min-width: auto;
     position: static;
+    width: 100%;
   }
 
   .inside__description {
     position: static;
-    width: 375px;
+    max-width: 375px;
+    min-width: auto;
     margin-top: -4px;
-    padding: 15px 20px 25px;
+    padding: 15px 0 25px 20px;
     box-sizing: border-box;
+  }
+
+  .description-inside__title {
+    font-size: 27px;
+    padding-right: 0;
+    width: auto;
+    min-width: auto;
   }
 
   .description-inside__text {
     padding-bottom: 30px;
+    width: auto;
   }
 
   .description-inside__display {
@@ -1695,8 +1773,8 @@ li > a:hover {
     flex-direction: column-reverse;
     justify-content: center;
     position: relative;
-    max-width: 320px;
-    min-width: 320px;
+    max-width: 375px;
+    min-width: auto;
     box-sizing: border-box;
   }
 
@@ -1714,107 +1792,138 @@ li > a:hover {
 
   .security__description {
     max-width: 375px;
-    min-width: 375px;
+    min-width: auto;
     width: 100%;
     box-sizing: border-box;
-    padding: 15px 20px 25px 20px;
+    padding: 15px 0 25px 20px;
     margin-top: -4px;
   }
 
   .security__wrap-mobile {
     max-width: 375px;
-    min-width: 375px;
-    height: 300px;
+    min-width: auto;
     display: flex;
     justify-content: center;
+    padding: 10% 0 10% 0;
+  }
+
+  .description-security__title {
+    font-size: 27px;
+    width: auto;
+    min-width: auto;
+  }
+
+  .description-security__text {
+    width: auto;
   }
 
   .security__logo {
     max-width: 375px;
-    min-width: 375px;
-    padding-top: 40px;
+    min-width: auto;
+    padding-top: 25%;
     width: 100%;
-    height: 10%;
-    left: 0%;
+    height: 20%;
   }
 
   .security__image {
     max-width: 375px;
-    min-width: 375px;
-    top: 10%;
+    min-width: auto;
+    padding-top: 5%;
     width: 100%;
-    left: 0%;
+    padding-left: 35%;
+  }
+
+  .security__icon--first {
+    position: absolute;
+    top: 21%;
+    left: 40.5%;
+    height: 93.47px;
   }
 
   .icon-security__rectangleFirst {
+    position: absolute;
     width: 1.38px;
-    height: 93.47px;
-    top: 65px;
-    left: 96px;
+    height: 100%;
+    z-index: 15;
+    left: 10px;
   }
 
   .icon-security__ellipseFirst {
+    position: absolute;
     width: 4.83px;
     height: 4.83px;
-    top: 157px;
-    left: 94px;
+    z-index: 15;
+    left: 8px;
+    bottom: -1%;
+  }
+
+  .security__icon--second {
+    position: absolute;
+    top: 14%;
+    left: 70%;
+    height: 42.08px;
+  }
+
+  .icon-security__rectangleSecond {
+    position: absolute;
+    width: 1.38px;
+    height: 100%;
+    z-index: 15;
+  }
+
+  .icon-security__ellipseSecond {
+    position: absolute;
+    width: 4.83px;
+    height: 4.83px;
+    z-index: 15;
+    left: -1.5px;
+    bottom: -7%;
+  }
+
+  .security__icon--third {
+    position: absolute;
+    top: 65%;
+    left: 75%;
+    height: 37.25px;
+  }
+
+  .icon-security__rectangleThird {
+    position: absolute;
+    width: 1.38px;
+    height: 100%;
+    z-index: 15;
+  }
+
+  .icon-security__ellipseThird {
+    position: absolute;
+    width: 4.83px;
+    height: 4.83px;
+    z-index: 15;
+    left: -2px;
+    top: -7%;
   }
 
   .icon-security__front {
     font-size: 7px;
     width: 59.56px;
-    top: 58px;
-    left: 99px;
-  }
-
-  .icon-security__rectangleSecond {
-    width: 1.38px;
-    height: 42.08px;
-    top: 47px;
-    left: 196px;
-  }
-
-  .icon-security__ellipseSecond {
-    width: 4.83px;
-    height: 4.83px;
-    top: 89px;
-    left: 194px;
   }
 
   .icon-security__side {
     font-size: 7px;
     width: 59.67px;
-    top: 41px;
-    left: 200px;
-  }
-
-  .icon-security__rectangleThird {
-    width: 1.38px;
-    height: 37.25px;
-    top: 197px;
-    right: 104px;
-  }
-
-  .icon-security__ellipseThird {
-    width: 4.83px;
-    height: 4.83px;
-    top: 192px;
-    right: 102px;
   }
 
   .icon-security__rollOver {
     font-size: 7px;
     width: 80.37px;
-    top: 210px;
-    right: 20px;
   }
 }
 
 @media screen and (min-width: 376px) and (max-width: 425px) {
   .header {
-    min-width: 425px;
+    min-width: auto;
     max-width: 425px;
-    padding: 5px 21px 30px 0px;
+    padding: 5px 21px 30px 0;
     position: static;
   }
 
@@ -1827,9 +1936,9 @@ li > a:hover {
   }
 
   .characteristic {
-    min-width: 425px;
+    min-width: auto;
     max-width: 425px;
-    padding: 0px;
+    padding: 0;
   }
 
   .characteristic__title {
@@ -1884,7 +1993,7 @@ li > a:hover {
   }
 
   .description-characteristic__road {
-    padding-right: 0px;
+    padding-right: 0;
   }
 
   .road__image-stroke {
@@ -1945,12 +2054,12 @@ li > a:hover {
     align-items: center;
     padding-right: 40px;
   }
-  
+
   .testDrive-phone__image {
     position: relative;
     padding-right: 40px;
   }
-  
+
   .testDrive-phone__image-ellipse {
     position: absolute;
     width: 22px;
@@ -1958,7 +2067,7 @@ li > a:hover {
     top: -11px;
     left: 10px;
   }
-  
+
   .testDrive-phone__image-tesla {
     position: absolute;
     width: 14.18px;
@@ -1971,7 +2080,7 @@ li > a:hover {
     animation-direction: alternate;
     transform-origin: 50% 0%;
   }
-  
+
   @keyframes rotatePhone {
     from {
       transform: rotate(0deg);
@@ -1981,7 +2090,7 @@ li > a:hover {
       transform: rotate(-230deg);
     }
   }
-  
+
   .testDrive-phone__image-dott {
     position: absolute;
     width: 2.58px;
@@ -1989,39 +2098,39 @@ li > a:hover {
     left: 20px;
     top: -3px;
   }
-  
+
   .testDrive__title-phone {
-    margin: 0px;
-    padding-left: 0px;
+    margin: 0;
+    padding-left: 0;
     font-size: 13px;
-    font-family: "MontserratBold";
-    color: #E51937;
+    font-family: MontserratBold, sans-serif;
+    color: #e51937;
   }
-  
+
   .description-characteristic__button-phone {
-    margin: 0px;
+    margin: 0;
     color: white;
-    background-color: #E51937;
+    background-color: #e51937;
     display: flex;
     align-self: center;
-    font-family: "MontserratBold";
+    font-family: MontserratBold, sans-serif;
     font-size: 13px;
-    border: 2px solid #E51937;
+    border: 2px solid #e51937;
     box-shadow: none;
     transition: box-shadow 0.6s linear;
     padding: 10px 40px;
   }
-  
+
   .description-characteristic__button-phone:hover {
-    box-shadow: 0px 0px 0px 2px #E51937;
+    box-shadow: 0 0 0 2px #e51937;
   }
 
   .characteristic__arrowDown {
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   .inside {
-    min-width: 425px;
+    min-width: auto;
     max-width: 425px;
     display: flex;
     flex-direction: column;
@@ -2033,7 +2142,7 @@ li > a:hover {
 
   .inside__image {
     height: 275px;
-    min-width: 425px;
+    min-width: auto;
     max-width: 425px;
     position: static;
     width: 100%;
@@ -2041,7 +2150,7 @@ li > a:hover {
 
   .inside__description {
     position: static;
-    min-width: 425px;
+    min-width: auto;
     max-width: 425px;
     margin-top: -4px;
     padding: 15px 10px 15px 25px;
@@ -2076,7 +2185,7 @@ li > a:hover {
     flex-direction: column-reverse;
     justify-content: center;
     position: relative;
-    min-width: 425px;
+    min-width: auto;
     max-width: 425px;
   }
 
@@ -2093,97 +2202,117 @@ li > a:hover {
   }
 
   .security__wrap-mobile {
-    min-width: 425px;
+    min-width: auto;
     max-width: 425px;
-    height: 300px;
     display: flex;
     justify-content: center;
+    padding: 10% 0 10% 0;
   }
 
   .security__logo {
-    min-width: 425px;
+    min-width: auto;
     max-width: 425px;
-    padding-top: 40px;
+    padding-top: 25%;
     width: 100%;
-    height: 10%;
-    left: 0%;
+    height: 20%;
   }
 
   .security__image {
-    min-width: 425px;
+    min-width: auto;
     max-width: 425px;
-    top: 10%;
+    padding-top: 5%;
     width: 100%;
-    left: 0%;
+    padding-left: 30%;
+  }
+
+  .security__icon--first {
+    position: absolute;
+    top: 25%;
+    left: 38.5%;
+    height: 93.47px;
   }
 
   .icon-security__rectangleFirst {
+    position: absolute;
     width: 1.38px;
-    height: 93.47px;
-    top: 78px;
-    left: 109px;
+    height: 100%;
+    z-index: 15;
+    left: 10px;
   }
 
   .icon-security__ellipseFirst {
+    position: absolute;
     width: 4.83px;
     height: 4.83px;
-    top: 170px;
-    left: 107px;
+    z-index: 15;
+    left: 8px;
+    bottom: -1%;
+  }
+
+  .security__icon--second {
+    position: absolute;
+    top: 17%;
+    left: 67.3%;
+    height: 42.08px;
+  }
+
+  .icon-security__rectangleSecond {
+    position: absolute;
+    width: 1.38px;
+    height: 100%;
+    z-index: 15;
+  }
+
+  .icon-security__ellipseSecond {
+    position: absolute;
+    width: 4.83px;
+    height: 4.83px;
+    z-index: 15;
+    left: -1.5px;
+    bottom: -7%;
+  }
+
+  .security__icon--third {
+    position: absolute;
+    top: 66%;
+    left: 72.5%;
+    height: 37.25px;
+  }
+
+  .icon-security__rectangleThird {
+    position: absolute;
+    width: 1.38px;
+    height: 100%;
+    z-index: 15;
+  }
+
+  .icon-security__ellipseThird {
+    position: absolute;
+    width: 4.83px;
+    height: 4.83px;
+    z-index: 15;
+    left: -2px;
+    top: -7%;
   }
 
   .icon-security__front {
     font-size: 7px;
-    top: 56px;
-    left: 85px;
     width: 59.56px;
-    top: 69px;
-    left: 113px;
-  }
-
-  .icon-security__rectangleSecond {
-    width: 1.38px;
-    height: 42.08px;
-    top: 50px;
-    left: 222px;
-  }
-
-  .icon-security__ellipseSecond {
-    width: 4.83px;
-    height: 4.83px;
-    top: 91px;
-    left: 220px;
   }
 
   .icon-security__side {
     font-size: 7px;
     width: 59.67px;
-    top: 43px;
-    left: 225px;
-  }
-
-  .icon-security__rectangleThird {
-    width: 1.38px;
-    height: 37.25px;
-    top: 213px;
-    right: 180px;
-  }
-
-  .icon-security__ellipseThird {
-    width: 4.83px;
-    height: 4.83px;
-    top: 210px;
-    right: 178px;
   }
 
   .icon-security__rollOver {
     font-size: 7px;
     width: 80.37px;
-    top: 227px;
-    right: 97px;
+    top: 35%;
   }
 
   .security__description {
-    min-width: 425px;
+    min-width: auto;
     max-width: 425px;
     width: 100%;
     box-sizing: border-box;
@@ -2192,16 +2321,14 @@ li > a:hover {
   }
 
   .description-security__text {
-    margin-right: 0px;
+    margin-right: 0;
     width: 90%;
   }
-
 }
 
 @media screen and (min-width: 426px) and (max-width: 767px) {
-
   .header {
-    min-width: 767px;
+    min-width: auto;
     max-width: 767px;
     padding: 24px 33px 80px 15px;
     position: static;
@@ -2216,9 +2343,9 @@ li > a:hover {
   }
 
   .characteristic {
-    min-width: 767px;
+    min-width: auto;
     max-width: 767px;
-    padding: 0px;
+    padding: 0;
   }
 
   .characteristic__title {
@@ -2230,34 +2357,36 @@ li > a:hover {
   }
 
   .characteristic__logoImage {
+    min-width: auto;
     max-width: 767px;
     padding-top: 70px;
     width: 100%;
   }
 
   .characteristic__carImage {
-    min-width: 767px;
+    min-width: auto;
     max-width: 767px;
     width: 100%;
     padding-top: 40px;
   }
 
   .characteristic__description {
-    max-width: 100%;
+    width: 100%;
     padding: 18px 40px 43px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    box-sizing: border-box;
   }
 
   .description-characteristic__speedo {
-    padding-right: 67px;
+    padding-right: 10%;
   }
 
   .speedo__image {
     width: 65.92px;
     height: 48.91px;
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .speedo__image-speedometr {
@@ -2367,12 +2496,12 @@ li > a:hover {
     align-items: center;
     padding-right: 40px;
   }
-  
+
   .testDrive-phone__image {
     position: relative;
     padding-right: 40px;
   }
-  
+
   .testDrive-phone__image-ellipse {
     position: absolute;
     width: 22px;
@@ -2380,7 +2509,7 @@ li > a:hover {
     top: -11px;
     left: 10px;
   }
-  
+
   .testDrive-phone__image-tesla {
     position: absolute;
     width: 14.18px;
@@ -2393,7 +2522,7 @@ li > a:hover {
     animation-direction: alternate;
     transform-origin: 50% 0%;
   }
-  
+
   @keyframes rotatePhone {
     from {
       transform: rotate(0deg);
@@ -2403,7 +2532,7 @@ li > a:hover {
       transform: rotate(-230deg);
     }
   }
-  
+
   .testDrive-phone__image-dott {
     position: absolute;
     width: 2.58px;
@@ -2411,40 +2540,40 @@ li > a:hover {
     left: 20px;
     top: -3px;
   }
-  
+
   .testDrive__title-phone {
-    margin: 0px;
-    padding-left: 0px;
+    margin: 0;
+    padding-left: 0;
     font-size: 16px;
-    font-family: "MontserratBold";
-    color: #E51937;
+    font-family: MontserratBold, sans-serif;
+    color: #e51937;
   }
-  
+
   .description-characteristic__button-phone {
-    margin: 0px;
+    margin: 0;
     color: white;
-    background-color: #E51937;
+    background-color: #e51937;
     display: flex;
     align-self: center;
-    font-family: "MontserratBold";
+    font-family: MontserratBold, sans-serif;
     font-size: 16px;
-    border: 2px solid #E51937;
+    border: 2px solid #e51937;
     box-shadow: none;
     transition: box-shadow 0.6s linear;
     padding: 10px 40px;
   }
-  
+
   .description-characteristic__button-phone:hover {
-    box-shadow: 0px 0px 0px 2px #E51937;
+    box-shadow: 0 0 0 2px #e51937;
   }
 
   .characteristic__arrowDown {
-    padding-left: 0px;
+    padding-left: 0;
     padding-top: 63px;
   }
 
   .inside {
-    min-width: 767px;
+    min-width: auto;
     max-width: 767px;
     width: 100%;
     display: flex;
@@ -2457,14 +2586,14 @@ li > a:hover {
 
   .inside__image {
     width: 100%;
-    min-width: 767px;
+    min-width: auto;
     max-width: 767px;
     position: static;
   }
 
   .inside__description {
     position: static;
-    min-width: 767px;
+    min-width: auto;
     max-width: 767px;
     width: 100%;
     margin-top: -4px;
@@ -2493,12 +2622,16 @@ li > a:hover {
     padding-top: 20px;
   }
 
+  .description-inside__text {
+    width: auto;
+  }
+
   .security {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     position: relative;
-    min-width: 767px;
+    min-width: auto;
     max-width: 767px;
   }
 
@@ -2515,111 +2648,121 @@ li > a:hover {
   }
 
   .security__wrap-mobile {
-    min-width: 767px;
+    min-width: auto;
     max-width: 767px;
-    height: 500px;
     display: flex;
     justify-content: center;
+    left: 0;
+    padding: 10% 0 10% 0;
   }
 
   .security__logo {
-    min-width: 767px;
+    min-width: auto;
     max-width: 767px;
-    padding-top: 40px;
+    padding-top: 30px;
     width: 100%;
-    height: 15%;
-    left: 0%;
+    height: 20%;
+    left: 0;
+    top: 5%;
+    z-index: 0;
   }
 
   .security__image {
-    min-width: 767px;
+    min-width: auto;
     max-width: 767px;
-    top: 10%;
+    padding-top: 5%;
     width: 100%;
-    left: 0%;
+    left: 0;
+  }
+
+  .security__icon--first {
+    position: absolute;
+    top: 38%;
+    left: 24.4%;
+    height: 93.47px;
   }
 
   .icon-security__rectangleFirst {
+    position: absolute;
     width: 1.38px;
-    height: 93.47px;
-    top: 176px;
-    left: 198px;
+    height: 100%;
+    z-index: 15;
+    left: 10px;
   }
 
   .icon-security__ellipseFirst {
+    position: absolute;
     width: 4.83px;
     height: 4.83px;
-    top: 270px;
-    left: 196px;
+    z-index: 15;
+    left: 8px;
+    bottom: -1%;
+  }
+
+  .security__icon--second {
+    position: absolute;
+    top: 22.5%;
+    left: 52.3%;
+    height: 42.08px;
+  }
+
+  .icon-security__rectangleSecond {
+    position: absolute;
+    width: 1.38px;
+    height: 100%;
+    z-index: 15;
+  }
+
+  .icon-security__ellipseSecond {
+    position: absolute;
+    width: 4.83px;
+    height: 4.83px;
+    z-index: 15;
+    left: -2px;
+    bottom: -7%;
+  }
+
+  .security__icon--third {
+    position: absolute;
+    top: 66%;
+    left: 57.5%;
+    height: 37.25px;
+  }
+
+  .icon-security__rectangleThird {
+    position: absolute;
+    width: 1.38px;
+    height: 100%;
+    z-index: 15;
+  }
+
+  .icon-security__ellipseThird {
+    position: absolute;
+    width: 4.83px;
+    height: 4.83px;
+    z-index: 15;
+    left: -2px;
+    top: -7%;
   }
 
   .icon-security__front {
     font-size: 7px;
-    top: 56px;
-    left: 85px;
     width: 59.56px;
-    top: 170px;
-    left: 202px;
-  }
-
-  .icon-security__rectangleSecond {
-    width: 1.38px;
-    height: 42.08px;
-    top: 87px;
-    left: 401px;
-  }
-
-  .icon-security__ellipseSecond {
-    width: 4.83px;
-    height: 4.83px;
-    top: 128px;
-    left: 399px;
   }
 
   .icon-security__side {
     font-size: 7px;
     width: 59.67px;
-    top: 82px;
-    left: 403px;
-  }
-
-  .icon-security__rectangleThird {
-    width: 1.38px;
-    height: 37.25px;
-    top: 347px;
-    right: 325px;
-  }
-
-  .icon-security__ellipseThird {
-    width: 4.83px;
-    height: 4.83px;
-    top: 342px;
-    right: 322px;
   }
 
   .icon-security__rollOver {
     font-size: 7px;
     width: 80.37px;
-    top: 360px;
-    right: 240px;
+    bottom: -5px;
   }
 
   .security__description {
-    min-width: 767px;
-    max-width: 767px;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 15px 20px 25px 20px;
-    margin-top: -4px;
-  }
-
-  .description-security__text {
-    margin-right: 0px;
-    width: 90%;
-  }
-
-  .security__description {
-    min-width: 767px;
+    min-width: auto;
     max-width: 767px;
     width: 100%;
     box-sizing: border-box;
@@ -2628,12 +2771,15 @@ li > a:hover {
     padding-left: 30px;
   }
 
+  .description-security__text {
+    margin-right: 0;
+    width: 90%;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-
   .header {
-    min-width: 1024px;
+    min-width: auto;
     max-width: 1024px;
     padding: 24px 33px 80px 15px;
     position: static;
@@ -2648,9 +2794,9 @@ li > a:hover {
   }
 
   .characteristic {
-    min-width: 1024px;
+    min-width: auto;
     max-width: 1024px;
-    padding: 0px;
+    padding: 0;
   }
 
   .characteristic__title {
@@ -2688,7 +2834,7 @@ li > a:hover {
   .speedo__image {
     width: 65.92px;
     height: 48.91px;
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .speedo__image-speedometr {
@@ -2736,7 +2882,7 @@ li > a:hover {
   .road__image-stroke {
     width: 41.56px;
     height: 64.45px;
-    padding-top: 0px;
+    padding-top: 0;
   }
 
   .road__image-strokeDotted {
@@ -2798,12 +2944,12 @@ li > a:hover {
     align-items: center;
     padding-right: 100px;
   }
-  
+
   .testDrive-phone__image {
     position: relative;
     padding-right: 40px;
   }
-  
+
   .testDrive-phone__image-ellipse {
     position: absolute;
     width: 22px;
@@ -2811,7 +2957,7 @@ li > a:hover {
     top: -11px;
     left: 10px;
   }
-  
+
   .testDrive-phone__image-tesla {
     position: absolute;
     width: 14.18px;
@@ -2824,7 +2970,7 @@ li > a:hover {
     animation-direction: alternate;
     transform-origin: 50% 0%;
   }
-  
+
   @keyframes rotatePhone {
     from {
       transform: rotate(0deg);
@@ -2834,7 +2980,7 @@ li > a:hover {
       transform: rotate(-230deg);
     }
   }
-  
+
   .testDrive-phone__image-dott {
     position: absolute;
     width: 2.58px;
@@ -2842,41 +2988,41 @@ li > a:hover {
     left: 20px;
     top: -3px;
   }
-  
+
   .testDrive__title-phone {
-    margin: 0px;
-    padding-left: 0px;
+    margin: 0;
+    padding-left: 0;
     font-size: 16px;
-    font-family: "MontserratBold";
-    color: #E51937;
+    font-family: MontserratBold;
+    color: #e51937;
   }
-  
+
   .description-characteristic__button-phone {
-    margin: 0px;
+    margin: 0;
     color: white;
-    background-color: #E51937;
+    background-color: #e51937;
     display: flex;
     align-self: center;
-    font-family: "MontserratBold";
+    font-family: MontserratBold, sans-serif;
     font-size: 16px;
-    border: 2px solid #E51937;
+    border: 2px solid #e51937;
     box-shadow: none;
     transition: box-shadow 0.6s linear;
     padding: 10px 40px;
   }
-  
+
   .description-characteristic__button-phone:hover {
-    box-shadow: 0px 0px 0px 2px #E51937;
+    box-shadow: 0 0 0 2px #e51937;
   }
 
   .characteristic__arrowDown {
-    padding-left: 0px;
+    padding-left: 0;
     padding-top: 63px;
     animation: none;
   }
 
   .inside {
-    min-width: 1024px;
+    min-width: auto;
     max-width: 1024px;
     display: flex;
     flex-direction: column;
@@ -2884,12 +3030,12 @@ li > a:hover {
 
   .inside__title {
     position: absolute;
-    right: 0px;
+    right: 0;
     padding-top: 5px;
   }
 
   .inside__image {
-    min-width: 1024px;
+    min-width: auto;
     max-width: 1024px;
     width: 100%;
     height: auto;
@@ -2900,13 +3046,20 @@ li > a:hover {
     display: flex;
     justify-content: space-around;
     margin-top: -4px;
-    min-width: 1024px;
+    min-width: auto;
     max-width: 1024px;
     box-sizing: border-box;
     width: 100%;
     height: 500px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 50px 30px 40px 30px;
+  }
+
+  .volume-inside__description {
+    width: 200px;
+  }
+
+  .description-inside__title {
+    min-width: 170px;
   }
 
   .description-inside__text {
@@ -2920,6 +3073,8 @@ li > a:hover {
 
   .wrap__ipad-description {
     padding-top: 10px;
+    max-width: 300px;
+    box-sizing: border-box;
   }
 
   .description-inside__information {
@@ -2941,7 +3096,10 @@ li > a:hover {
 
   .information-inside__title {
     font-size: 16px;
-    padding-right: 40px;
+  }
+
+  .description-inside__desc {
+    max-width: 174px;
   }
 
   .description-inside__button {
@@ -2953,12 +3111,12 @@ li > a:hover {
     flex-direction: column-reverse;
     justify-content: center;
     position: relative;
-    min-width: 1024px;
+    min-width: auto;
     max-width: 1024px;
   }
 
   .security__wrap-mobile {
-    min-width: 1024px;
+    min-width: auto;
     max-width: 1024px;
     display: flex;
     justify-content: center;
@@ -2967,108 +3125,131 @@ li > a:hover {
 
   .security__logo {
     position: relative;
-    padding-top: 10%;
-    width: 70%;
+    padding-top: 25%;
+    width: 80%;
     z-index: 3;
     height: 50%;
   }
 
   .security__image {
     position: absolute;
-    padding-top: 0%;
-    right: 10%;
-    width: 90%;
+    padding-top: 7%;
+    right: -5%;
+    width: 100%;
     z-index: 5;
-    top: 70%;
+    top: 40%;
   }
 
   .item-security__text {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
-  .icon-security__front {
-    font-size: 15px;
+  .security__icon--first {
     position: absolute;
-    z-index: 20;
-    left: 24%;
-    top: 83%;
+    top: 63%;
+    left: 29.5%;
+    height: 193.79px;
   }
 
   .icon-security__rectangleFirst {
     position: absolute;
     width: 2.86px;
-    height: 193.79px;
-    left: 23.1%;
-    z-index: 20;
-    top: 89%;
+    height: 100%;
+    z-index: 15;
+    left: 10px;
   }
 
   .icon-security__ellipseFirst {
+    position: absolute;
     width: 10.01px;
     height: 10.01px;
-    position: absolute;
-    left: 22.8%;
-    top: 170%;
-    z-index: 20;
+    z-index: 15;
+    left: 7px;
+    bottom: -1%;
   }
 
-  .icon-security__side {
-    font-size: 15px;
+  .security__icon--second {
     position: absolute;
-    left: 48%;
-    z-index: 20;
-    top: 55%;
-    width: 100px;
+    top: 50%;
+    left: 57.2%;
+    height: 87.24px;
   }
 
   .icon-security__rectangleSecond {
     position: absolute;
     width: 2.86px;
-    height: 87.24px;
-    left: 47%;
-    z-index: 20;
-    top: 62%;
+    height: 100%;
+    z-index: 15;
   }
 
   .icon-security__ellipseSecond {
+    position: absolute;
     width: 10.01px;
     height: 10.01px;
-    position: absolute;
-    left: 46.6%;
-    z-index: 20;
-    top: 98%;
+    z-index: 15;
+    left: -3px;
+    bottom: -7%;
   }
 
-  .icon-security__rollOver {
-    font-size: 15px;
+  .security__icon--third {
     position: absolute;
-    left: 53%;
-    z-index: 20;
-    top: 212%;
-    width: 170px;
+    top: 146%;
+    left: 62.5%;
+    height: 77.23px;
   }
 
   .icon-security__rectangleThird {
-    width: 2.86px;
-    height: 77.23px;
     position: absolute;
-    left: 51.7%;
-    z-index: 20;
-    top: 207%;
+    width: 2.86px;
+    height: 100%;
+    z-index: 15;
   }
 
   .icon-security__ellipseThird {
+    position: absolute;
     width: 10.01px;
     height: 10.01px;
+    z-index: 15;
+    left: -5px;
+    top: -7%;
+  }
+
+  .icon-security__front {
+    font-size: 17px;
+    font-family: MontserratSemiBold;
     position: absolute;
-    left: 51.2%;
     z-index: 20;
-    top: 205%;
+    color: black;
+    top: -5%;
+    left: 20px;
+    width: 200px;
+  }
+
+  .icon-security__side {
+    font-size: 17px;
+    font-family: MontserratSemiBold;
+    position: absolute;
+    z-index: 20;
+    color: black;
+    top: -9%;
+    left: 10px;
+    width: 200px;
+  }
+
+  .icon-security__rollOver {
+    font-size: 17px;
+    font-family: MontserratSemiBold;
+    position: absolute;
+    z-index: 20;
+    color: black;
+    bottom: -9%;
+    left: 10px;
+    width: 230px;
   }
 
   .security__description {
     position: relative;
-    min-width: 1024px;
+    min-width: auto;
     max-width: 1024px;
     width: 100%;
     box-sizing: border-box;
@@ -3078,15 +3259,18 @@ li > a:hover {
     padding: 62px 55px 180px 34px;
   }
 
+  .description-security__info {
+    min-width: 400px;
+    max-width: 500px;
+  }
+
   .info-security__icon {
     padding-right: 5px;
+    padding-bottom: 5px;
   }
 
   .info-security__title {
     font-size: 16px;
-  }
-
-  .info-security__title {
     padding-right: 40px;
   }
 
@@ -3108,4 +3292,3 @@ li > a:hover {
     display: none;
   }
 }
-
