@@ -10,7 +10,7 @@ a {
 .header {
   display: flex;
   flex-direction: row;
-  font-family: MontserratSemiBold;
+  font-family: MontserratSemiBold, sans-serif;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -141,14 +141,14 @@ li > a:hover {
 }
 
 .characteristic__title {
-  font-family: MontserratSemiBold;
+  font-family: MontserratSemiBold, sans-serif;
   margin: 0;
   font-size: 90px;
 }
 
 .characteristic__text {
   margin: 0;
-  font-family: MontserratMedium;
+  font-family: MontserratMedium, sans-serif;
   font-size: 15px;
   margin-top: -10px;
 }
@@ -218,7 +218,7 @@ li > a:hover {
 .speedo__title {
   display: flex;
   flex-direction: row;
-  font-family: MontserratSemiBold;
+  font-family: MontserratSemiBold, sans-serif;
   align-items: center;
   padding-left: 60px;
 }
@@ -237,7 +237,7 @@ li > a:hover {
 }
 
 .speedo__desc {
-  font-family: MontserratRegular;
+  font-family: MontserratRegular, sans-serif;
   margin: 0;
   font-size: 12px;
   padding-left: 60px;
@@ -309,7 +309,7 @@ li > a:hover {
 .road__title {
   display: flex;
   flex-direction: row;
-  font-family: MontserratSemiBold;
+  font-family: MontserratSemiBold, sans-serif;
   align-items: center;
   padding-left: 40px;
 }
@@ -328,7 +328,7 @@ li > a:hover {
 }
 
 .road__desc {
-  font-family: MontserratRegular;
+  font-family: MontserratRegular, sans-serif;
   margin: 0;
   font-size: 12px;
   padding-left: 40px;
@@ -389,7 +389,7 @@ li > a:hover {
   margin: 0;
   padding-left: 0;
   font-size: 13px;
-  font-family: MontserratBold;
+  font-family: MontserratBold, sans-serif;
 }
 
 .description-characteristic__button {
@@ -397,7 +397,7 @@ li > a:hover {
   color: #e51937;
   display: flex;
   align-self: center;
-  font-family: MontserratBold;
+  font-family: MontserratBold, sans-serif;
   font-size: 13px;
   border: 2px solid #e51937;
   box-shadow: none;
@@ -428,15 +428,15 @@ li > a:hover {
 
 @keyframes arrow {
   0% {
-      bottom: 0;
+    bottom: 0;
   }
 
   50% {
-      bottom: 10px;
+    bottom: 10px;
   }
 
   100% {
-      bottom: 0;
+    bottom: 0;
   }
 }
 
@@ -466,7 +466,7 @@ li > a:hover {
 
 .inside__title {
   font-size: 70px;
-  font-family: MontserratSemiBold;
+  font-family: MontserratSemiBold, sans-serif;
   padding: 64px 80px;
   margin: 0;
   color: #e51937;
@@ -491,7 +491,7 @@ li > a:hover {
 }
 
 .description-inside__title {
-  font-family: MontserratSemiBold;
+  font-family: MontserratSemiBold, sans-serif;
   display: flex;
   flex-direction: row;
   font-size: 30px;
@@ -502,7 +502,7 @@ li > a:hover {
 }
 
 .description-inside__text {
-  font-family: MontserratMedium;
+  font-family: MontserratMedium, sans-serif;
   font-size: 15px;
   width: 316px;
   padding-bottom: 54px;
@@ -556,7 +556,7 @@ li > a:hover {
   display: flex;
   flex-direction: row;
   padding-left: 19px;
-  font-family: MontserratSemiBold;
+  font-family: MontserratSemiBold, sans-serif;
   padding-bottom: 1px;
 }
 
@@ -577,7 +577,7 @@ li > a:hover {
 .display-inside__text {
   align-self: flex-end;
   font-size: 12px;
-  font-family: MontserratRegular;
+  font-family: MontserratRegular, sans-serif;
   margin: 0;
   margin-left: -131px;
   padding-bottom: 10px;
@@ -646,13 +646,13 @@ li > a:hover {
   margin: 0;
   font-size: 20px;
   width: 173px;
-  font-family: MontserratSemiBold;
+  font-family: MontserratSemiBold, sans-serif;
   padding-bottom: 5px;
 }
 
 .update-inside__Text {
   font-size: 12px;
-  font-family: MontserratRegular;
+  font-family: MontserratRegular, sans-serif;
   margin: 0;
   width: 60%;
 }
@@ -689,14 +689,14 @@ li > a:hover {
 
 .description-inside__titleNumb {
   font-size: 35px;
-  font-family: MontserratSemiBold;
+  font-family: MontserratSemiBold, sans-serif;
   margin: 0;
   margin-top: -10px;
 }
 
 .description-inside__titleText {
   font-size: 20px;
-  font-family: MontserratSemiBold;
+  font-family: MontserratSemiBold, sans-serif;
   padding-left: 10px;
   margin: 0;
   align-self: flex-end;
@@ -705,7 +705,7 @@ li > a:hover {
 
 .description-inside__desc {
   font-size: 12px;
-  font-family: MontserratRegular;
+  font-family: MontserratRegular, sans-serif;
   margin: 0;
 }
 
@@ -738,7 +738,7 @@ li > a:hover {
 }
 
 .information-inside__title {
-  font-family: MontserratBold;
+  font-family: MontserratBold, sans-serif;
   padding-left: 5px;
   font-size: 13px;
   margin: 0;
@@ -752,7 +752,7 @@ li > a:hover {
   color: white;
   display: flex;
   align-self: center;
-  font-family: MontserratBold;
+  font-family: MontserratBold, sans-serif;
   font-size: 13px;
   border: 2px solid white;
   box-shadow: none;
@@ -784,24 +784,24 @@ li > a:hover {
 
 .description-security__title {
   font-size: 30px;
-  font-family: MontserratSemiBold;
+  font-family: MontserratSemiBold, sans-serif;
   min-width: 316px;
 }
 
 .description-security__text {
   font-size: 15px;
-  font-family: MontserratMedium;
+  font-family: MontserratMedium, sans-serif;
   width: 316px;
 }
 
 .description-security__titleList {
   font-size: 30px;
-  font-family: MontserratSemiBold;
+  font-family: MontserratSemiBold, sans-serif;
 }
 
 .description-security__list {
   font-size: 17px;
-  font-family: MontserratBold;
+  font-family: MontserratBold, sans-serif;
   list-style-type: none;
   padding-left: 0;
   width: 300px;
@@ -872,7 +872,7 @@ li > a:hover {
 
 .rating-security__titleNumb {
   font-size: 50px;
-  font-family: MontserratSemiBold;
+  font-family: MontserratSemiBold, sans-serif;
   position: absolute;
   margin: 0;
   right: 0;
@@ -880,7 +880,7 @@ li > a:hover {
 
 .rating-security__titleText {
   font-size: 25px;
-  font-family: MontserratSemiBold;
+  font-family: MontserratSemiBold, sans-serif;
   position: absolute;
   margin: 0;
   right: 0;
@@ -919,7 +919,7 @@ li > a:hover {
 }
 
 .info-security__title {
-  font-family: MontserratBold;
+  font-family: MontserratBold, sans-serif;
   padding-left: 5px;
   font-size: 13px;
   margin: 0;
@@ -928,11 +928,11 @@ li > a:hover {
 }
 
 .info-security__button {
-  margin: 0px;
+  margin: 0;
   color: white;
   display: flex;
   align-self: center;
-  font-family: MontserratBold;
+  font-family: MontserratBold, sans-serif;
   font-size: 13px;
   border: 2px solid white;
   box-shadow: none;
@@ -1052,7 +1052,7 @@ li > a:hover {
 
 .icon-security__front {
   font-size: 17px;
-  font-family: MontserratSemiBold;
+  font-family: MontserratSemiBold, sans-serif;
   position: absolute;
   z-index: 20;
   color: black;
@@ -1063,7 +1063,7 @@ li > a:hover {
 
 .icon-security__side {
   font-size: 17px;
-  font-family: MontserratSemiBold;
+  font-family: MontserratSemiBold, sans-serif;
   position: absolute;
   z-index: 20;
   color: black;
@@ -1074,7 +1074,7 @@ li > a:hover {
 
 .icon-security__rollOver {
   font-size: 17px;
-  font-family: MontserratSemiBold;
+  font-family: MontserratSemiBold, sans-serif;
   position: absolute;
   z-index: 20;
   color: black;
@@ -1253,7 +1253,7 @@ li > a:hover {
     from {
       transform: rotate(0deg);
     }
-  
+
     to {
       transform: rotate(-230deg);
     }
@@ -2993,7 +2993,7 @@ li > a:hover {
     margin: 0;
     padding-left: 0;
     font-size: 16px;
-    font-family: MontserratBold;
+    font-family: MontserratBold, sans-serif;
     color: #e51937;
   }
 
@@ -3216,7 +3216,7 @@ li > a:hover {
 
   .icon-security__front {
     font-size: 17px;
-    font-family: MontserratSemiBold;
+    font-family: MontserratSemiBold, sans-serif;
     position: absolute;
     z-index: 20;
     color: black;
@@ -3227,7 +3227,7 @@ li > a:hover {
 
   .icon-security__side {
     font-size: 17px;
-    font-family: MontserratSemiBold;
+    font-family: MontserratSemiBold, sans-serif;
     position: absolute;
     z-index: 20;
     color: black;
@@ -3238,7 +3238,7 @@ li > a:hover {
 
   .icon-security__rollOver {
     font-size: 17px;
-    font-family: MontserratSemiBold;
+    font-family: MontserratSemiBold, sans-serif;
     position: absolute;
     z-index: 20;
     color: black;
