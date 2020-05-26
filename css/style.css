@@ -1,0 +1,3294 @@
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  font-family: MontserratSemiBold;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 24px 60px;
+  box-sizing: border-box;
+  position: fixed;
+  background: white;
+  top: 0;
+  z-index: 999;
+  max-width: 1440px;
+  overflow: hidden;
+}
+
+.header__logo {
+  height: 51px;
+}
+
+.header__logoImage {
+  width: 166px;
+}
+
+.nav-header__list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+li > a:hover {
+  color: #e51937;
+}
+
+.nav-header__item {
+  padding-right: 30px;
+  font-size: 15px;
+}
+
+.nav-header__item.current {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.nav-header__item.current::after {
+  content: '';
+  background-color: #e51937;
+  position: absolute;
+  width: 64%;
+  top: 100%;
+  margin-top: 6px;
+  height: 2px;
+  left: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.current__modelS {
+  color: #e51937;
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__menu-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+}
+
+.header__menu-item {
+  padding-right: 30px;
+  font-size: 15px;
+}
+
+.header__burger {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 24px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.burger-icon {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  right: 0;
+  top: 50%;
+  margin-top: -1px;
+  background-color: #e51937;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.header__burger::before,
+.header__burger::after {
+  content: '';
+  background-color: #e51937;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  cursor: pointer;
+}
+
+.header__burger::before {
+  top: 0;
+}
+
+.header__burger::after {
+  bottom: 0;
+}
+
+.characteristic {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 133px;
+  position: relative;
+  max-width: 1440px;
+}
+
+.characteristic__title {
+  font-family: MontserratSemiBold;
+  margin: 0;
+  font-size: 90px;
+}
+
+.characteristic__text {
+  margin: 0;
+  font-family: MontserratMedium;
+  font-size: 15px;
+  margin-top: -10px;
+}
+
+.characteristic__logoImage {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.characteristic__carImage {
+  max-width: 968px;
+}
+
+.characteristic__description {
+  padding-top: 26px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-left: 90px;
+}
+
+.description-characteristic__speedo {
+  padding-right: 82px;
+}
+
+.speedo__image {
+  position: relative;
+  top: 18px;
+}
+
+.speedo__image-speedometr {
+  position: absolute;
+  width: 46px;
+  height: 34.13px;
+}
+
+.speedo__image-ellipse {
+  position: absolute;
+  left: 12px;
+  top: 7px;
+  width: 21.05;
+  height: 20.94;
+}
+
+.speedo__image-arrow {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  animation-duration: 2.7s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: 17% 35%;
+}
+
+@keyframes move {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-230deg);
+  }
+}
+
+.speedo__title {
+  display: flex;
+  flex-direction: row;
+  font-family: MontserratSemiBold;
+  align-items: center;
+  padding-left: 60px;
+}
+
+.speedo__title-numb {
+  font-size: 35px;
+  margin: 0;
+}
+
+.speedo__title-text {
+  align-self: flex-end;
+  padding-bottom: 3px;
+  font-size: 20px;
+  margin: 0;
+  padding-left: 6px;
+}
+
+.speedo__desc {
+  font-family: MontserratRegular;
+  margin: 0;
+  font-size: 12px;
+  padding-left: 60px;
+  margin-top: -3px;
+}
+
+.description-characteristic__road {
+  padding-right: 105px;
+}
+
+.road__image {
+  position: relative;
+}
+
+.road__image-stroke {
+  width: 29px;
+  height: 44.97px;
+  position: absolute;
+  left: 0;
+  top: 6px;
+  z-index: 4;
+}
+
+.road__image-strokeDotted {
+  width: 26.4px;
+  height: 42.37px;
+  position: absolute;
+  left: 0.7px;
+  top: 7px;
+  z-index: 5;
+}
+
+.road__image-ellipseRightTop {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  z-index: 6;
+  left: 22px;
+  top: 5px;
+}
+
+.road__image-ellipseRightTopIn {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  left: 24px;
+  top: 7px;
+  z-index: 7;
+}
+
+.road__image-ellipseLeftBottom {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  left: 7px;
+  top: 46px;
+  z-index: 8;
+}
+
+.road__image-ellipsrLeftBottomIn {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  z-index: 9;
+  left: 9px;
+  top: 48px;
+}
+
+.road__title {
+  display: flex;
+  flex-direction: row;
+  font-family: MontserratSemiBold;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.road__title-numb {
+  font-size: 35px;
+  margin: 0;
+}
+
+.road__title-text {
+  align-self: flex-end;
+  padding-bottom: 3px;
+  font-size: 20px;
+  margin: 0;
+  padding-left: 6.5px;
+}
+
+.road__desc {
+  font-family: MontserratRegular;
+  margin: 0;
+  font-size: 12px;
+  padding-left: 40px;
+  margin-top: -3px;
+}
+
+.description-characteristic__testDrive {
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+}
+
+.testDrive__image {
+  position: relative;
+  padding-right: 40px;
+}
+
+.testDrive__image-ellipse {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: -11px;
+  left: 10px;
+}
+
+.testDrive__image-tesla {
+  position: absolute;
+  width: 14.18px;
+  height: 8.23px;
+  left: 14px;
+  top: -1px;
+  animation-duration: 3s;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: 50% 0%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-230deg);
+  }
+}
+
+.testDrive__image-dott {
+  position: absolute;
+  width: 2.58px;
+  height: 2.58px;
+  left: 20px;
+  top: -3px;
+}
+
+.testDrive__title {
+  margin: 0;
+  padding-left: 0;
+  font-size: 13px;
+  font-family: MontserratBold;
+}
+
+.description-characteristic__button {
+  margin: 0;
+  color: #e51937;
+  display: flex;
+  align-self: center;
+  font-family: MontserratBold;
+  font-size: 13px;
+  border: 2px solid #e51937;
+  box-shadow: none;
+  transition: box-shadow 0.6s linear;
+  padding: 10px 40px;
+}
+
+.description-characteristic__button:hover {
+  box-shadow: 0 0 0 2px #e51937;
+}
+
+.description-characteristic__testDrive-phone {
+  display: none;
+}
+
+.description-characteristic__button-phone {
+  display: none;
+}
+
+.characteristic__arrowDown {
+  display: flex;
+  justify-content: center;
+  padding-top: 37px;
+  position: relative;
+  padding-left: 70px;
+  animation: arrow 1s linear infinite;
+}
+
+@keyframes arrow {
+  0% {
+      bottom: 0;
+  }
+
+  50% {
+      bottom: 10px;
+  }
+
+  100% {
+      bottom: 0;
+  }
+}
+
+.arrowDown__icon {
+  position: relative;
+  border: 3px solid #e51937;
+  border-width: 0 0 2px 2px;
+  width: 16px;
+  height: 16px;
+  line-height: 0;
+  font-size: 0;
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-45deg);
+  top: 5px;
+  cursor: pointer;
+}
+
+.inside {
+  padding-top: 37px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  max-width: 1440px;
+}
+
+.inside__title {
+  font-size: 70px;
+  font-family: MontserratSemiBold;
+  padding: 64px 80px;
+  margin: 0;
+  color: #e51937;
+}
+
+.inside__image {
+  position: absolute;
+  max-width: 82%;
+  min-width: 15%;
+  z-index: -1;
+  bottom: 0;
+  max-height: 90%;
+  min-height: 57%;
+}
+
+.inside__description {
+  background: #e51937;
+  color: white;
+  max-width: 39%;
+  min-width: 23%;
+  padding: 51px 44px 63px 60px;
+}
+
+.description-inside__title {
+  font-family: MontserratSemiBold;
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  min-width: 316px;
+  height: 37px;
+  margin: 0;
+  padding-right: 28px;
+}
+
+.description-inside__text {
+  font-family: MontserratMedium;
+  font-size: 15px;
+  width: 316px;
+  padding-bottom: 54px;
+  margin-bottom: 0;
+}
+
+.description-inside__display {
+  display: flex;
+  flex-direction: row;
+}
+
+.display-inside__icon {
+  position: relative;
+}
+
+.display-inside__image {
+  position: relative;
+  z-index: 0;
+}
+
+.display-inside__icon-wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 33px;
+  left: 13px;
+}
+
+.icon-wrapper__pulse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9px;
+  height: 9px;
+  color: gray;
+  background: white;
+  border-radius: 50%;
+  animation: radial-pulse 1s infinite;
+}
+
+@keyframes radial-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+  }
+
+  100% {
+    box-shadow: 0 0 0 12px rgba(0, 0, 0, 0);
+  }
+}
+
+.display-inside__desc {
+  display: flex;
+  flex-direction: row;
+  padding-left: 19px;
+  font-family: MontserratSemiBold;
+  padding-bottom: 1px;
+}
+
+.desc-inside__titleNumb {
+  font-size: 35px;
+  margin: 0;
+  margin-top: -10px;
+}
+
+.desc-inside__titleText {
+  font-size: 20px;
+  margin: 0;
+  padding-left: 10px;
+  align-self: center;
+  margin-top: -25px;
+}
+
+.display-inside__text {
+  align-self: flex-end;
+  font-size: 12px;
+  font-family: MontserratRegular;
+  margin: 0;
+  margin-left: -131px;
+  padding-bottom: 10px;
+}
+
+.description-inside__update {
+  padding-top: 35px;
+  display: flex;
+  flex-direction: row;
+}
+
+.update-inside__icon {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 29px;
+}
+
+.update-inside__iconFirst {
+  width: 6.28px;
+  height: 6.42px;
+  padding-left: 16px;
+}
+
+.update-inside__iconSecond {
+  width: 18.33px;
+  height: 7.7px;
+  padding-left: 10px;
+  margin-top: -1px;
+}
+
+.update-inside__iconThird {
+  width: 31.07px;
+  height: 10.4px;
+  padding-left: 4px;
+  margin-top: -4px;
+}
+
+.update-inside__iconFourth {
+  width: 44px;
+  height: 13.12px;
+  animation-duration: 1s;
+  animation-name: blickOne;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: 100% 0%;
+  margin-left: -2px;
+}
+
+@keyframes blickOne {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.update-inside__title {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.update-inside__titleText {
+  margin: 0;
+  font-size: 20px;
+  width: 173px;
+  font-family: MontserratSemiBold;
+  padding-bottom: 5px;
+}
+
+.update-inside__Text {
+  font-size: 12px;
+  font-family: MontserratRegular;
+  margin: 0;
+  width: 60%;
+}
+
+.description-inside__volume {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+.volume-inside__icon {
+  display: flex;
+  flex-direction: column;
+}
+
+.volume-inside__iconSmall {
+  width: 18px;
+  height: 12px;
+  padding-left: 13px;
+}
+
+.volume-inside__iconBig {
+  width: 36px;
+  height: 44px;
+  padding-left: 4.2px;
+  margin-top: -3px;
+}
+
+.volume-inside__description {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+}
+
+.description-inside__titleNumb {
+  font-size: 35px;
+  font-family: MontserratSemiBold;
+  margin: 0;
+  margin-top: -10px;
+}
+
+.description-inside__titleText {
+  font-size: 20px;
+  font-family: MontserratSemiBold;
+  padding-left: 10px;
+  margin: 0;
+  align-self: flex-end;
+  padding-bottom: 4px;
+}
+
+.description-inside__desc {
+  font-size: 12px;
+  font-family: MontserratRegular;
+  margin: 0;
+}
+
+.description-inside__information {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding-top: 177px;
+}
+
+.information-inside__icon {
+  padding-bottom: 3px;
+  cursor: pointer;
+}
+
+.information-inside__iconEllipse {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  z-index: 4;
+}
+
+.information-inside__iconI {
+  height: 16px;
+  width: 4px;
+  position: absolute;
+  z-index: 5;
+  margin-left: -13px;
+  padding-top: 2px;
+}
+
+.information-inside__title {
+  font-family: MontserratBold;
+  padding-left: 5px;
+  font-size: 13px;
+  margin: 0;
+  min-width: 130px;
+  padding-bottom: 10px;
+  padding-right: 40px;
+}
+
+.description-inside__button {
+  margin: 0;
+  color: white;
+  display: flex;
+  align-self: center;
+  font-family: MontserratBold;
+  font-size: 13px;
+  border: 2px solid white;
+  box-shadow: none;
+  transition: box-shadow 0.6s linear;
+  padding: 10px 40px;
+  margin-right: 44px;
+}
+
+.description-inside__button:hover {
+  box-shadow: 0 0 0 2px white;
+}
+
+.security {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  max-width: 1440px;
+}
+
+.security__description {
+  background: #e51937;
+  color: white;
+  max-width: 26%;
+  padding: 51px 55px 60px 56px;
+  z-index: 1;
+}
+
+.description-security__title {
+  font-size: 30px;
+  font-family: MontserratSemiBold;
+  min-width: 316px;
+}
+
+.description-security__text {
+  font-size: 15px;
+  font-family: MontserratMedium;
+  width: 316px;
+}
+
+.description-security__titleList {
+  font-size: 30px;
+  font-family: MontserratSemiBold;
+}
+
+.description-security__list {
+  font-size: 17px;
+  font-family: MontserratBold;
+  list-style-type: none;
+  padding-left: 0;
+  width: 300px;
+}
+
+.list-security__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-security__title {
+  margin: 0;
+  padding-top: 16px;
+}
+
+.item-security__text {
+  font-size: 10px;
+  opacity: 0.7;
+  align-self: flex-end;
+  margin: 0;
+  margin-left: -25px;
+}
+
+.item-security__stars {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.stars-security__star {
+  align-self: flex-end;
+  width: 25px;
+  height: 25px;
+  padding-top: 13px;
+  padding-left: 4px;
+}
+
+.description-security__wrap-ipad {
+  width: 280px;
+}
+
+.description-security__wrap-image {
+  position: relative;
+  padding-top: 111px;
+}
+
+.description-security__icon {
+  width: 62px;
+  height: 74px;
+  position: absolute;
+  padding-left: 10px;
+}
+
+.description-security__arrow {
+  width: 26.6px;
+  height: 19.51px;
+  position: absolute;
+  bottom: -47px;
+  left: 27px;
+}
+
+.description-security__rating {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.rating-security__titleNumb {
+  font-size: 50px;
+  font-family: MontserratSemiBold;
+  position: absolute;
+  margin: 0;
+  right: 0;
+}
+
+.rating-security__titleText {
+  font-size: 25px;
+  font-family: MontserratSemiBold;
+  position: absolute;
+  margin: 0;
+  right: 0;
+  top: 60px;
+}
+
+.description-security__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 150px;
+  bottom: 0;
+  min-width: 280px;
+  max-width: 347px;
+}
+
+.info-security__icon {
+  padding-bottom: 3px;
+  cursor: pointer;
+}
+
+.info-security__iconEllipse {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  z-index: 4;
+}
+
+.info-security__iconI {
+  height: 16px;
+  width: 4px;
+  position: absolute;
+  z-index: 5;
+  margin-left: -13px;
+  padding-top: 2px;
+}
+
+.info-security__title {
+  font-family: MontserratBold;
+  padding-left: 5px;
+  font-size: 13px;
+  margin: 0;
+  padding-bottom: 10px;
+  min-width: 130px;
+}
+
+.info-security__button {
+  margin: 0px;
+  color: white;
+  display: flex;
+  align-self: center;
+  font-family: MontserratBold;
+  font-size: 13px;
+  border: 2px solid white;
+  box-shadow: none;
+  transition: box-shadow 0.6s linear;
+  padding: 10px 40px;
+}
+
+.info-security__button:hover {
+  box-shadow: 0 0 0 2px white;
+}
+
+.security__wrap-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -75px;
+}
+
+.security__logo {
+  position: absolute;
+  top: -70px;
+  right: -75px;
+  z-index: 0;
+  width: 75%;
+  height: 150px;
+}
+
+.security__image {
+  z-index: 10;
+  right: 40px;
+  top: 280px;
+  width: 100%;
+}
+
+.security__front {
+  display: none;
+}
+
+.security__side {
+  display: none;
+}
+
+.security__rollOver {
+  display: none;
+}
+
+.security__icon--first {
+  position: absolute;
+  top: -2%;
+  left: 24.5%;
+  height: 53%;
+}
+
+.icon-security__rectangleFirst {
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  z-index: 15;
+  left: 10px;
+}
+
+.icon-security__ellipseFirst {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  z-index: 15;
+  left: 5px;
+  bottom: -1%;
+}
+
+.security__icon--second {
+  position: absolute;
+  top: -9%;
+  left: 52.1%;
+  height: 23%;
+}
+
+.icon-security__rectangleSecond {
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  z-index: 15;
+}
+
+.icon-security__ellipseSecond {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  z-index: 15;
+  left: -5px;
+  bottom: -7%;
+}
+
+.security__icon--third {
+  position: absolute;
+  top: 69%;
+  left: 57.5%;
+  height: 21%;
+}
+
+.icon-security__rectangleThird {
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  z-index: 15;
+}
+
+.icon-security__ellipseThird {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  z-index: 15;
+  left: -5px;
+  top: -7%;
+}
+
+.icon-security__front {
+  font-size: 17px;
+  font-family: MontserratSemiBold;
+  position: absolute;
+  z-index: 20;
+  color: black;
+  top: -5%;
+  left: 20px;
+  width: 200px;
+}
+
+.icon-security__side {
+  font-size: 17px;
+  font-family: MontserratSemiBold;
+  position: absolute;
+  z-index: 20;
+  color: black;
+  top: -9%;
+  left: 10px;
+  width: 200px;
+}
+
+.icon-security__rollOver {
+  font-size: 17px;
+  font-family: MontserratSemiBold;
+  position: absolute;
+  z-index: 20;
+  color: black;
+  bottom: -9%;
+  left: 10px;
+  width: 230px;
+}
+
+@media (max-width: 320px) {
+  .header {
+    max-width: 320px;
+    min-width: auto;
+    padding: 5px 0 30px 0;
+    position: static;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__menu-list {
+    display: none;
+  }
+
+  .characteristic {
+    max-width: 320px;
+    min-width: auto;
+    padding: 0;
+  }
+
+  .characteristic__title {
+    font-size: 50px;
+  }
+
+  .characteristic__text {
+    font-size: 10px;
+  }
+
+  .characteristic__logoImage {
+    padding-top: 70px;
+    width: 100%;
+  }
+
+  .characteristic__carImage {
+    max-width: 90%;
+    padding-top: 40px;
+  }
+
+  .characteristic__description {
+    max-width: 320px;
+    min-width: auto;
+    padding: 18px 40px 43px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+  }
+
+  .description-characteristic__speedo {
+    padding-right: 20px;
+  }
+
+  .speedo__image {
+    width: 38.14px;
+    height: 27.98px;
+  }
+
+  .speedo__title {
+    margin-top: -15px;
+  }
+
+  .speedo__title-numb {
+    font-size: 27px;
+  }
+
+  .speedo__title-text {
+    font-size: 15px;
+  }
+
+  .speedo__desc {
+    font-size: 10px;
+  }
+
+  .description-characteristic__road {
+    padding-right: 0;
+  }
+
+  .road__image-stroke {
+    width: 24.04px;
+    height: 36.88px;
+    padding-top: 10px;
+  }
+
+  .road__image-strokeDotted {
+    width: 21.89px;
+    height: 34.74px;
+    top: 18px;
+  }
+
+  .road__image-ellipseRightTop {
+    width: 5.8px;
+    height: 5.74px;
+    top: 16px;
+  }
+
+  .road__image-ellipseRightTopIn {
+    display: none;
+  }
+
+  .road__image-ellipseLeftBottom {
+    top: 49px;
+  }
+
+  .road__title-numb {
+    font-size: 27px;
+    padding-top: 13px;
+  }
+
+  .road__title-text {
+    font-size: 15px;
+  }
+
+  .road__desc {
+    font-size: 10px;
+  }
+
+  .description-characteristic__testDrive {
+    display: none;
+  }
+
+  .description-characteristic__button {
+    display: none;
+  }
+
+  .description-characteristic__wrap-phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  .description-characteristic__testDrive-phone {
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+  }
+
+  .testDrive-phone__image {
+    position: relative;
+    padding-right: 40px;
+  }
+
+  .testDrive-phone__image-ellipse {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: -11px;
+    left: 10px;
+  }
+
+  .testDrive-phone__image-tesla {
+    position: absolute;
+    width: 14.18px;
+    height: 8.23px;
+    left: 14px;
+    top: -1px;
+    animation-duration: 3s;
+    animation-name: rotatePhone;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: 50% 0%;
+  }
+
+  @keyframes rotatePhone {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(-230deg);
+    }
+  }
+
+  .testDrive-phone__image-dott {
+    position: absolute;
+    width: 2.58px;
+    height: 2.58px;
+    left: 20px;
+    top: -3px;
+  }
+
+  .testDrive__title-phone {
+    margin: 0;
+    padding-left: 0;
+    font-size: 13px;
+    font-family: MontserratBold, sans-serif;
+    color: #e51937;
+  }
+
+  .description-characteristic__button-phone {
+    margin: 0;
+    color: white;
+    background-color: #e51937;
+    display: flex;
+    align-self: center;
+    box-sizing: border-box;
+    font-family: MontserratBold, sans-serif;
+    font-size: 13px;
+    border: 2px solid #e51937;
+    box-shadow: none;
+    transition: box-shadow 0.6s linear;
+    padding: 10px 30px;
+  }
+
+  .description-characteristic__button-phone:hover {
+    box-shadow: 0 0 0 2px #e51937;
+  }
+
+  .characteristic__arrowDown {
+    padding-left: 0;
+  }
+
+  .inside {
+    max-width: 320px;
+    min-width: auto;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+
+  .inside__title {
+    display: none;
+  }
+
+  .inside__image {
+    max-width: 320px;
+    min-width: auto;
+    width: 100%;
+    position: static;
+    box-sizing: border-box;
+  }
+
+  .inside__description {
+    position: static;
+    max-width: 320px;
+    min-width: auto;
+    margin-top: -4px;
+    padding: 15px 10px 25px;
+    box-sizing: border-box;
+  }
+
+  .description-inside__title {
+    width: auto;
+    padding-right: 0;
+    font-size: 27px;
+    min-width: auto;
+  }
+
+  .description-inside__text {
+    padding-bottom: 20px;
+    width: auto;
+  }
+
+  .description-inside__display {
+    display: none;
+  }
+
+  .description-inside__update {
+    display: none;
+  }
+
+  .description-inside__volume {
+    display: none;
+  }
+
+  .description-inside__information {
+    display: none;
+  }
+
+  .security {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    position: relative;
+    max-width: 320px;
+    min-width: auto;
+    box-sizing: border-box;
+  }
+
+  .description-security__titleList {
+    display: none;
+  }
+
+  .description-security__list {
+    display: none;
+  }
+
+  .description-security__wrap-mobile {
+    display: none;
+  }
+
+  .security__description {
+    max-width: 320px;
+    min-width: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 10px 25px;
+  }
+
+  .security__wrap-mobile {
+    max-width: 320px;
+    min-width: auto;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .description-security__title {
+    font-size: 27px;
+    width: auto;
+    min-width: 284px;
+  }
+
+  .description-security__text {
+    width: auto;
+  }
+
+  .security__logo {
+    padding-top: 40px;
+    width: 100%;
+    height: 20%;
+    top: 0;
+  }
+
+  .security__image {
+    top: 10%;
+    width: 100%;
+    left: 0;
+    padding-left: 40%;
+  }
+
+  .security__icon--first {
+    position: absolute;
+    top: 21%;
+    left: 42.5%;
+    height: 93.47px;
+  }
+
+  .icon-security__rectangleFirst {
+    position: absolute;
+    width: 1.38px;
+    height: 100%;
+    z-index: 15;
+    left: 10px;
+  }
+
+  .icon-security__ellipseFirst {
+    position: absolute;
+    width: 4.83px;
+    height: 4.83px;
+    z-index: 15;
+    left: 8px;
+    bottom: -1%;
+  }
+
+  .security__icon--second {
+    position: absolute;
+    top: 16%;
+    left: 72%;
+    height: 42.08px;
+  }
+
+  .icon-security__rectangleSecond {
+    position: absolute;
+    width: 1.38px;
+    height: 100%;
+    z-index: 15;
+  }
+
+  .icon-security__ellipseSecond {
+    position: absolute;
+    width: 4.83px;
+    height: 4.83px;
+    z-index: 15;
+    left: -1.5px;
+    bottom: -7%;
+  }
+
+  .security__icon--third {
+    position: absolute;
+    top: 61%;
+    left: 77.5%;
+    height: 37.25px;
+  }
+
+  .icon-security__rectangleThird {
+    position: absolute;
+    width: 1.38px;
+    height: 100%;
+    z-index: 15;
+  }
+
+  .icon-security__ellipseThird {
+    position: absolute;
+    width: 4.83px;
+    height: 4.83px;
+    z-index: 15;
+    left: -2px;
+    top: -7%;
+  }
+
+  .icon-security__front {
+    font-size: 7px;
+    width: 59.56px;
+  }
+
+  .icon-security__side {
+    font-size: 7px;
+    width: 59.67px;
+  }
+
+  .icon-security__rollOver {
+    font-size: 7px;
+    width: 80.37px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  .header {
+    max-width: 375px;
+    min-width: auto;
+    padding: 5px 21px 30px 0;
+    position: static;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__menu-list {
+    display: none;
+  }
+
+  .characteristic {
+    max-width: 375px;
+    min-width: auto;
+    padding: 0;
+  }
+
+  .characteristic__title {
+    font-size: 50px;
+  }
+
+  .characteristic__text {
+    font-size: 10px;
+  }
+
+  .characteristic__logoImage {
+    padding-top: 70px;
+    width: 100%;
+  }
+
+  .characteristic__carImage {
+    max-width: 100%;
+    padding-top: 40px;
+  }
+
+  .characteristic__description {
+    max-width: 100%;
+    padding: 18px 40px 43px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+  }
+
+  .description-characteristic__speedo {
+    padding-right: 41px;
+  }
+
+  .speedo__image {
+    width: 38.14px;
+    height: 27.98px;
+  }
+
+  .speedo__title {
+    margin-top: -15px;
+  }
+
+  .speedo__title-numb {
+    font-size: 27px;
+  }
+
+  .speedo__title-text {
+    font-size: 15px;
+  }
+
+  .speedo__desc {
+    font-size: 10px;
+  }
+
+  .description-characteristic__road {
+    padding-right: 0;
+  }
+
+  .road__image-stroke {
+    width: 24.04px;
+    height: 36.88px;
+    padding-top: 10px;
+  }
+
+  .road__image-strokeDotted {
+    width: 21.89px;
+    height: 34.74px;
+    top: 18px;
+  }
+
+  .road__image-ellipseRightTop {
+    width: 5.8px;
+    height: 5.74px;
+    top: 16px;
+  }
+
+  .road__image-ellipseRightTopIn {
+    display: none;
+  }
+
+  .road__image-ellipseLeftBottom {
+    top: 49px;
+  }
+
+  .road__title-numb {
+    font-size: 27px;
+    padding-top: 13px;
+  }
+
+  .road__title-text {
+    font-size: 15px;
+  }
+
+  .road__desc {
+    font-size: 10px;
+  }
+
+  .description-characteristic__testDrive {
+    display: none;
+  }
+
+  .description-characteristic__button {
+    display: none;
+  }
+
+  .description-characteristic__wrap-phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .description-characteristic__testDrive-phone {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+  }
+
+  .testDrive-phone__image {
+    position: relative;
+    padding-right: 40px;
+  }
+
+  .testDrive-phone__image-ellipse {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: -11px;
+    left: 10px;
+  }
+
+  .testDrive-phone__image-tesla {
+    position: absolute;
+    width: 14.18px;
+    height: 8.23px;
+    left: 14px;
+    top: -1px;
+    animation-duration: 3s;
+    animation-name: rotatePhone;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: 50% 0%;
+  }
+
+  @keyframes rotatePhone {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(-230deg);
+    }
+  }
+
+  .testDrive-phone__image-dott {
+    position: absolute;
+    width: 2.58px;
+    height: 2.58px;
+    left: 20px;
+    top: -3px;
+  }
+
+  .testDrive__title-phone {
+    margin: 0;
+    padding-left: 0;
+    font-size: 13px;
+    font-family: MontserratBold, sans-serif;
+    color: #e51937;
+  }
+
+  .description-characteristic__button-phone {
+    margin: 0;
+    color: white;
+    background-color: #e51937;
+    display: flex;
+    align-self: center;
+    font-family: MontserratBold, sans-serif;
+    font-size: 13px;
+    border: 2px solid #e51937;
+    box-shadow: none;
+    transition: box-shadow 0.6s linear;
+    padding: 10px 40px;
+  }
+
+  .description-characteristic__button-phone:hover {
+    box-shadow: 0 0 0 2px #e51937;
+  }
+
+  .characteristic__arrowDown {
+    padding-left: 0;
+  }
+
+  .inside {
+    max-width: 375px;
+    min-width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inside__title {
+    display: none;
+  }
+
+  .inside__image {
+    max-width: 375px;
+    min-width: auto;
+    position: static;
+    width: 100%;
+  }
+
+  .inside__description {
+    position: static;
+    max-width: 375px;
+    min-width: auto;
+    margin-top: -4px;
+    padding: 15px 0 25px 20px;
+    box-sizing: border-box;
+  }
+
+  .description-inside__title {
+    font-size: 27px;
+    padding-right: 0;
+    width: auto;
+    min-width: auto;
+  }
+
+  .description-inside__text {
+    padding-bottom: 30px;
+    width: auto;
+  }
+
+  .description-inside__display {
+    display: none;
+  }
+
+  .description-inside__update {
+    display: none;
+  }
+
+  .description-inside__volume {
+    display: none;
+  }
+
+  .description-inside__information {
+    display: none;
+  }
+
+  .security {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    position: relative;
+    max-width: 375px;
+    min-width: auto;
+    box-sizing: border-box;
+  }
+
+  .description-security__titleList {
+    display: none;
+  }
+
+  .description-security__list {
+    display: none;
+  }
+
+  .description-security__wrap-mobile {
+    display: none;
+  }
+
+  .security__description {
+    max-width: 375px;
+    min-width: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 0 25px 20px;
+    margin-top: -4px;
+  }
+
+  .security__wrap-mobile {
+    max-width: 375px;
+    min-width: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10% 0 10% 0;
+  }
+
+  .description-security__title {
+    font-size: 27px;
+    width: auto;
+    min-width: auto;
+  }
+
+  .description-security__text {
+    width: auto;
+  }
+
+  .security__logo {
+    max-width: 375px;
+    min-width: auto;
+    padding-top: 25%;
+    width: 100%;
+    height: 20%;
+  }
+
+  .security__image {
+    max-width: 375px;
+    min-width: auto;
+    padding-top: 5%;
+    width: 100%;
+    padding-left: 35%;
+  }
+
+  .security__icon--first {
+    position: absolute;
+    top: 21%;
+    left: 40.5%;
+    height: 93.47px;
+  }
+
+  .icon-security__rectangleFirst {
+    position: absolute;
+    width: 1.38px;
+    height: 100%;
+    z-index: 15;
+    left: 10px;
+  }
+
+  .icon-security__ellipseFirst {
+    position: absolute;
+    width: 4.83px;
+    height: 4.83px;
+    z-index: 15;
+    left: 8px;
+    bottom: -1%;
+  }
+
+  .security__icon--second {
+    position: absolute;
+    top: 14%;
+    left: 70%;
+    height: 42.08px;
+  }
+
+  .icon-security__rectangleSecond {
+    position: absolute;
+    width: 1.38px;
+    height: 100%;
+    z-index: 15;
+  }
+
+  .icon-security__ellipseSecond {
+    position: absolute;
+    width: 4.83px;
+    height: 4.83px;
+    z-index: 15;
+    left: -1.5px;
+    bottom: -7%;
+  }
+
+  .security__icon--third {
+    position: absolute;
+    top: 65%;
+    left: 75%;
+    height: 37.25px;
+  }
+
+  .icon-security__rectangleThird {
+    position: absolute;
+    width: 1.38px;
+    height: 100%;
+    z-index: 15;
+  }
+
+  .icon-security__ellipseThird {
+    position: absolute;
+    width: 4.83px;
+    height: 4.83px;
+    z-index: 15;
+    left: -2px;
+    top: -7%;
+  }
+
+  .icon-security__front {
+    font-size: 7px;
+    width: 59.56px;
+  }
+
+  .icon-security__side {
+    font-size: 7px;
+    width: 59.67px;
+  }
+
+  .icon-security__rollOver {
+    font-size: 7px;
+    width: 80.37px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  .header {
+    min-width: auto;
+    max-width: 425px;
+    padding: 5px 21px 30px 0;
+    position: static;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__menu-list {
+    display: none;
+  }
+
+  .characteristic {
+    min-width: auto;
+    max-width: 425px;
+    padding: 0;
+  }
+
+  .characteristic__title {
+    font-size: 50px;
+  }
+
+  .characteristic__text {
+    font-size: 10px;
+  }
+
+  .characteristic__logoImage {
+    padding-top: 70px;
+    width: 100%;
+    left: -5px;
+  }
+
+  .characteristic__carImage {
+    max-width: 100%;
+    padding-top: 40px;
+  }
+
+  .characteristic__description {
+    max-width: 100%;
+    padding: 18px 40px 43px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .description-characteristic__speedo {
+    padding-right: 41px;
+  }
+
+  .speedo__image {
+    width: 38.14px;
+    height: 27.98px;
+  }
+
+  .speedo__title {
+    margin-top: -15px;
+  }
+
+  .speedo__title-numb {
+    font-size: 27px;
+  }
+
+  .speedo__title-text {
+    font-size: 15px;
+  }
+
+  .speedo__desc {
+    font-size: 10px;
+  }
+
+  .description-characteristic__road {
+    padding-right: 0;
+  }
+
+  .road__image-stroke {
+    width: 24.04px;
+    height: 36.88px;
+    padding-top: 10px;
+  }
+
+  .road__image-strokeDotted {
+    width: 21.89px;
+    height: 34.74px;
+    top: 18px;
+  }
+
+  .road__image-ellipseRightTop {
+    width: 5.8px;
+    height: 5.74px;
+    top: 16px;
+  }
+
+  .road__image-ellipseRightTopIn {
+    display: none;
+  }
+
+  .road__image-ellipseLeftBottom {
+    top: 49px;
+  }
+
+  .road__title-numb {
+    font-size: 27px;
+    padding-top: 13px;
+  }
+
+  .road__title-text {
+    font-size: 15px;
+  }
+
+  .road__desc {
+    font-size: 10px;
+  }
+
+  .description-characteristic__testDrive {
+    display: none;
+  }
+
+  .description-characteristic__button {
+    display: none;
+  }
+
+  .description-characteristic__wrap-phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .description-characteristic__testDrive-phone {
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+  }
+
+  .testDrive-phone__image {
+    position: relative;
+    padding-right: 40px;
+  }
+
+  .testDrive-phone__image-ellipse {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: -11px;
+    left: 10px;
+  }
+
+  .testDrive-phone__image-tesla {
+    position: absolute;
+    width: 14.18px;
+    height: 8.23px;
+    left: 14px;
+    top: -1px;
+    animation-duration: 3s;
+    animation-name: rotatePhone;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: 50% 0%;
+  }
+
+  @keyframes rotatePhone {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(-230deg);
+    }
+  }
+
+  .testDrive-phone__image-dott {
+    position: absolute;
+    width: 2.58px;
+    height: 2.58px;
+    left: 20px;
+    top: -3px;
+  }
+
+  .testDrive__title-phone {
+    margin: 0;
+    padding-left: 0;
+    font-size: 13px;
+    font-family: MontserratBold, sans-serif;
+    color: #e51937;
+  }
+
+  .description-characteristic__button-phone {
+    margin: 0;
+    color: white;
+    background-color: #e51937;
+    display: flex;
+    align-self: center;
+    font-family: MontserratBold, sans-serif;
+    font-size: 13px;
+    border: 2px solid #e51937;
+    box-shadow: none;
+    transition: box-shadow 0.6s linear;
+    padding: 10px 40px;
+  }
+
+  .description-characteristic__button-phone:hover {
+    box-shadow: 0 0 0 2px #e51937;
+  }
+
+  .characteristic__arrowDown {
+    padding-left: 0;
+  }
+
+  .inside {
+    min-width: auto;
+    max-width: 425px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inside__title {
+    display: none;
+  }
+
+  .inside__image {
+    height: 275px;
+    min-width: auto;
+    max-width: 425px;
+    position: static;
+    width: 100%;
+  }
+
+  .inside__description {
+    position: static;
+    min-width: auto;
+    max-width: 425px;
+    margin-top: -4px;
+    padding: 15px 10px 15px 25px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .description-inside__text {
+    padding-bottom: 30px;
+    width: 90%;
+    margin-right: 0;
+  }
+
+  .description-inside__display {
+    display: none;
+  }
+
+  .description-inside__update {
+    display: none;
+  }
+
+  .description-inside__volume {
+    display: none;
+  }
+
+  .description-inside__information {
+    display: none;
+  }
+
+  .security {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    position: relative;
+    min-width: auto;
+    max-width: 425px;
+  }
+
+  .description-security__titleList {
+    display: none;
+  }
+
+  .description-security__list {
+    display: none;
+  }
+
+  .description-security__wrap-mobile {
+    display: none;
+  }
+
+  .security__wrap-mobile {
+    min-width: auto;
+    max-width: 425px;
+    display: flex;
+    justify-content: center;
+    padding: 10% 0 10% 0;
+  }
+
+  .security__logo {
+    min-width: auto;
+    max-width: 425px;
+    padding-top: 25%;
+    width: 100%;
+    height: 20%;
+  }
+
+  .security__image {
+    min-width: auto;
+    max-width: 425px;
+    padding-top: 5%;
+    width: 100%;
+    padding-left: 30%;
+  }
+
+  .security__icon--first {
+    position: absolute;
+    top: 25%;
+    left: 38.5%;
+    height: 93.47px;
+  }
+
+  .icon-security__rectangleFirst {
+    position: absolute;
+    width: 1.38px;
+    height: 100%;
+    z-index: 15;
+    left: 10px;
+  }
+
+  .icon-security__ellipseFirst {
+    position: absolute;
+    width: 4.83px;
+    height: 4.83px;
+    z-index: 15;
+    left: 8px;
+    bottom: -1%;
+  }
+
+  .security__icon--second {
+    position: absolute;
+    top: 17%;
+    left: 67.3%;
+    height: 42.08px;
+  }
+
+  .icon-security__rectangleSecond {
+    position: absolute;
+    width: 1.38px;
+    height: 100%;
+    z-index: 15;
+  }
+
+  .icon-security__ellipseSecond {
+    position: absolute;
+    width: 4.83px;
+    height: 4.83px;
+    z-index: 15;
+    left: -1.5px;
+    bottom: -7%;
+  }
+
+  .security__icon--third {
+    position: absolute;
+    top: 66%;
+    left: 72.5%;
+    height: 37.25px;
+  }
+
+  .icon-security__rectangleThird {
+    position: absolute;
+    width: 1.38px;
+    height: 100%;
+    z-index: 15;
+  }
+
+  .icon-security__ellipseThird {
+    position: absolute;
+    width: 4.83px;
+    height: 4.83px;
+    z-index: 15;
+    left: -2px;
+    top: -7%;
+  }
+
+  .icon-security__front {
+    font-size: 7px;
+    width: 59.56px;
+  }
+
+  .icon-security__side {
+    font-size: 7px;
+    width: 59.67px;
+  }
+
+  .icon-security__rollOver {
+    font-size: 7px;
+    width: 80.37px;
+    top: 35%;
+  }
+
+  .security__description {
+    min-width: auto;
+    max-width: 425px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 20px 25px 20px;
+    margin-top: -4px;
+  }
+
+  .description-security__text {
+    margin-right: 0;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 767px) {
+  .header {
+    min-width: auto;
+    max-width: 767px;
+    padding: 24px 33px 80px 15px;
+    position: static;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__menu-list {
+    display: none;
+  }
+
+  .characteristic {
+    min-width: auto;
+    max-width: 767px;
+    padding: 0;
+  }
+
+  .characteristic__title {
+    font-size: 90px;
+  }
+
+  .characteristic__text {
+    font-size: 15px;
+  }
+
+  .characteristic__logoImage {
+    min-width: auto;
+    max-width: 767px;
+    padding-top: 70px;
+    width: 100%;
+  }
+
+  .characteristic__carImage {
+    min-width: auto;
+    max-width: 767px;
+    width: 100%;
+    padding-top: 40px;
+  }
+
+  .characteristic__description {
+    width: 100%;
+    padding: 18px 40px 43px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+  }
+
+  .description-characteristic__speedo {
+    padding-right: 10%;
+  }
+
+  .speedo__image {
+    width: 65.92px;
+    height: 48.91px;
+    margin-right: 0;
+  }
+
+  .speedo__image-speedometr {
+    width: 65.92px;
+    height: 48.91px;
+  }
+
+  .speedo__image-ellipse {
+    width: 30.17px;
+    height: 30.01px;
+    left: 17px;
+    top: 12px;
+  }
+
+  .speedo__image-arrow {
+    width: 30px;
+    height: 16px;
+    left: 28px;
+    top: 20px;
+  }
+
+  .speedo__title {
+    margin-top: -53px;
+    padding-left: 70px;
+  }
+
+  .speedo__title-numb {
+    font-size: 50px;
+  }
+
+  .speedo__title-text {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+
+  .speedo__desc {
+    font-size: 12px;
+    padding-left: 70px;
+  }
+
+  .description-characteristic__road {
+    padding-right: 18px;
+  }
+
+  .road__image-stroke {
+    width: 41.56px;
+    height: 64.45px;
+    padding-top: 0;
+  }
+
+  .road__image-strokeDotted {
+    width: 37.83px;
+    height: 60.72px;
+    top: 6px;
+  }
+
+  .road__image-ellipseRightTop {
+    width: 10.03px;
+    height: 10.03px;
+    top: 5px;
+    left: 35px;
+  }
+
+  .road__image-ellipseRightTopIn {
+    display: none;
+  }
+
+  .road__image-ellipseLeftBottom {
+    top: 62px;
+    width: 10.03px;
+    height: 10.03px;
+  }
+
+  .road__title-numb {
+    padding-left: 19px;
+    font-size: 50px;
+    margin-top: -3px;
+  }
+
+  .road__title-text {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+
+  .road__desc {
+    padding-left: 60px;
+    font-size: 12px;
+  }
+
+  .description-characteristic__testDrive {
+    display: none;
+  }
+
+  .description-characteristic__button {
+    display: none;
+  }
+
+  .description-characteristic__wrap-phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 57px;
+  }
+
+  .description-characteristic__testDrive-phone {
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+  }
+
+  .testDrive-phone__image {
+    position: relative;
+    padding-right: 40px;
+  }
+
+  .testDrive-phone__image-ellipse {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: -11px;
+    left: 10px;
+  }
+
+  .testDrive-phone__image-tesla {
+    position: absolute;
+    width: 14.18px;
+    height: 8.23px;
+    left: 14px;
+    top: -1px;
+    animation-duration: 3s;
+    animation-name: rotatePhone;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: 50% 0%;
+  }
+
+  @keyframes rotatePhone {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(-230deg);
+    }
+  }
+
+  .testDrive-phone__image-dott {
+    position: absolute;
+    width: 2.58px;
+    height: 2.58px;
+    left: 20px;
+    top: -3px;
+  }
+
+  .testDrive__title-phone {
+    margin: 0;
+    padding-left: 0;
+    font-size: 16px;
+    font-family: MontserratBold, sans-serif;
+    color: #e51937;
+  }
+
+  .description-characteristic__button-phone {
+    margin: 0;
+    color: white;
+    background-color: #e51937;
+    display: flex;
+    align-self: center;
+    font-family: MontserratBold, sans-serif;
+    font-size: 16px;
+    border: 2px solid #e51937;
+    box-shadow: none;
+    transition: box-shadow 0.6s linear;
+    padding: 10px 40px;
+  }
+
+  .description-characteristic__button-phone:hover {
+    box-shadow: 0 0 0 2px #e51937;
+  }
+
+  .characteristic__arrowDown {
+    padding-left: 0;
+    padding-top: 63px;
+  }
+
+  .inside {
+    min-width: auto;
+    max-width: 767px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inside__title {
+    display: none;
+  }
+
+  .inside__image {
+    width: 100%;
+    min-width: auto;
+    max-width: 767px;
+    position: static;
+  }
+
+  .inside__description {
+    position: static;
+    min-width: auto;
+    max-width: 767px;
+    width: 100%;
+    margin-top: -4px;
+    padding: 15px 5px 25px;
+    box-sizing: border-box;
+  }
+
+  .description-inside__display {
+    display: none;
+  }
+
+  .description-inside__update {
+    display: none;
+  }
+
+  .description-inside__volume {
+    display: none;
+  }
+
+  .description-inside__information {
+    display: none;
+  }
+
+  .wrap__ipad-title {
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+
+  .description-inside__text {
+    width: auto;
+  }
+
+  .security {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    position: relative;
+    min-width: auto;
+    max-width: 767px;
+  }
+
+  .description-security__titleList {
+    display: none;
+  }
+
+  .description-security__list {
+    display: none;
+  }
+
+  .description-security__wrap-mobile {
+    display: none;
+  }
+
+  .security__wrap-mobile {
+    min-width: auto;
+    max-width: 767px;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    padding: 10% 0 10% 0;
+  }
+
+  .security__logo {
+    min-width: auto;
+    max-width: 767px;
+    padding-top: 30px;
+    width: 100%;
+    height: 20%;
+    left: 0;
+    top: 5%;
+    z-index: 0;
+  }
+
+  .security__image {
+    min-width: auto;
+    max-width: 767px;
+    padding-top: 5%;
+    width: 100%;
+    left: 0;
+  }
+
+  .security__icon--first {
+    position: absolute;
+    top: 38%;
+    left: 24.4%;
+    height: 93.47px;
+  }
+
+  .icon-security__rectangleFirst {
+    position: absolute;
+    width: 1.38px;
+    height: 100%;
+    z-index: 15;
+    left: 10px;
+  }
+
+  .icon-security__ellipseFirst {
+    position: absolute;
+    width: 4.83px;
+    height: 4.83px;
+    z-index: 15;
+    left: 8px;
+    bottom: -1%;
+  }
+
+  .security__icon--second {
+    position: absolute;
+    top: 22.5%;
+    left: 52.3%;
+    height: 42.08px;
+  }
+
+  .icon-security__rectangleSecond {
+    position: absolute;
+    width: 1.38px;
+    height: 100%;
+    z-index: 15;
+  }
+
+  .icon-security__ellipseSecond {
+    position: absolute;
+    width: 4.83px;
+    height: 4.83px;
+    z-index: 15;
+    left: -2px;
+    bottom: -7%;
+  }
+
+  .security__icon--third {
+    position: absolute;
+    top: 66%;
+    left: 57.5%;
+    height: 37.25px;
+  }
+
+  .icon-security__rectangleThird {
+    position: absolute;
+    width: 1.38px;
+    height: 100%;
+    z-index: 15;
+  }
+
+  .icon-security__ellipseThird {
+    position: absolute;
+    width: 4.83px;
+    height: 4.83px;
+    z-index: 15;
+    left: -2px;
+    top: -7%;
+  }
+
+  .icon-security__front {
+    font-size: 7px;
+    width: 59.56px;
+  }
+
+  .icon-security__side {
+    font-size: 7px;
+    width: 59.67px;
+  }
+
+  .icon-security__rollOver {
+    font-size: 7px;
+    width: 80.37px;
+    bottom: -5px;
+  }
+
+  .security__description {
+    min-width: auto;
+    max-width: 767px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 20px 25px 20px;
+    margin-top: -4px;
+    padding-left: 30px;
+  }
+
+  .description-security__text {
+    margin-right: 0;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    min-width: auto;
+    max-width: 1024px;
+    padding: 24px 33px 80px 15px;
+    position: static;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__menu-list {
+    display: none;
+  }
+
+  .characteristic {
+    min-width: auto;
+    max-width: 1024px;
+    padding: 0;
+  }
+
+  .characteristic__title {
+    font-size: 90px;
+  }
+
+  .characteristic__text {
+    font-size: 15px;
+  }
+
+  .characteristic__logoImage {
+    padding-top: 70px;
+    width: 100%;
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+
+  .characteristic__carImage {
+    max-width: 90%;
+    padding-top: 40px;
+  }
+
+  .characteristic__description {
+    max-width: 100%;
+    padding: 18px 40px 43px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .description-characteristic__speedo {
+    padding-right: 150px;
+  }
+
+  .speedo__image {
+    width: 65.92px;
+    height: 48.91px;
+    margin-right: 0;
+  }
+
+  .speedo__image-speedometr {
+    width: 65.92px;
+    height: 48.91px;
+  }
+
+  .speedo__image-ellipse {
+    width: 30.17px;
+    height: 30.01px;
+    left: 17px;
+    top: 12px;
+  }
+
+  .speedo__image-arrow {
+    width: 30px;
+    height: 16px;
+    left: 28px;
+    top: 20px;
+  }
+
+  .speedo__title {
+    margin-top: -53px;
+    padding-left: 70px;
+  }
+
+  .speedo__title-numb {
+    font-size: 50px;
+  }
+
+  .speedo__title-text {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+
+  .speedo__desc {
+    font-size: 12px;
+    padding-left: 70px;
+  }
+
+  .description-characteristic__road {
+    padding-right: 18px;
+  }
+
+  .road__image-stroke {
+    width: 41.56px;
+    height: 64.45px;
+    padding-top: 0;
+  }
+
+  .road__image-strokeDotted {
+    width: 37.83px;
+    height: 60.72px;
+    top: 6px;
+  }
+
+  .road__image-ellipseRightTop {
+    width: 10.03px;
+    height: 10.03px;
+    top: 5px;
+    left: 35px;
+  }
+
+  .road__image-ellipseRightTopIn {
+    display: none;
+  }
+
+  .road__image-ellipseLeftBottom {
+    top: 62px;
+    width: 10.03px;
+    height: 10.03px;
+  }
+
+  .road__title-numb {
+    padding-left: 19px;
+    font-size: 50px;
+    margin-top: -3px;
+  }
+
+  .road__title-text {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+
+  .road__desc {
+    padding-left: 60px;
+    font-size: 12px;
+  }
+
+  .description-characteristic__testDrive {
+    display: none;
+  }
+
+  .description-characteristic__button {
+    display: none;
+  }
+
+  .description-characteristic__wrap-phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 57px;
+  }
+
+  .description-characteristic__testDrive-phone {
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+  }
+
+  .testDrive-phone__image {
+    position: relative;
+    padding-right: 40px;
+  }
+
+  .testDrive-phone__image-ellipse {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: -11px;
+    left: 10px;
+  }
+
+  .testDrive-phone__image-tesla {
+    position: absolute;
+    width: 14.18px;
+    height: 8.23px;
+    left: 14px;
+    top: -1px;
+    animation-duration: 3s;
+    animation-name: rotatePhone;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: 50% 0%;
+  }
+
+  @keyframes rotatePhone {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(-230deg);
+    }
+  }
+
+  .testDrive-phone__image-dott {
+    position: absolute;
+    width: 2.58px;
+    height: 2.58px;
+    left: 20px;
+    top: -3px;
+  }
+
+  .testDrive__title-phone {
+    margin: 0;
+    padding-left: 0;
+    font-size: 16px;
+    font-family: MontserratBold;
+    color: #e51937;
+  }
+
+  .description-characteristic__button-phone {
+    margin: 0;
+    color: white;
+    background-color: #e51937;
+    display: flex;
+    align-self: center;
+    font-family: MontserratBold, sans-serif;
+    font-size: 16px;
+    border: 2px solid #e51937;
+    box-shadow: none;
+    transition: box-shadow 0.6s linear;
+    padding: 10px 40px;
+  }
+
+  .description-characteristic__button-phone:hover {
+    box-shadow: 0 0 0 2px #e51937;
+  }
+
+  .characteristic__arrowDown {
+    padding-left: 0;
+    padding-top: 63px;
+    animation: none;
+  }
+
+  .inside {
+    min-width: auto;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inside__title {
+    position: absolute;
+    right: 0;
+    padding-top: 5px;
+  }
+
+  .inside__image {
+    min-width: auto;
+    max-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .inside__description {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -4px;
+    min-width: auto;
+    max-width: 1024px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 500px;
+    padding: 50px 30px 40px 30px;
+  }
+
+  .volume-inside__description {
+    width: 200px;
+  }
+
+  .description-inside__title {
+    min-width: 170px;
+  }
+
+  .description-inside__text {
+    font-size: 15px;
+    width: 300px;
+  }
+
+  .update-inside__titleText {
+    width: 172.68px;
+  }
+
+  .wrap__ipad-description {
+    padding-top: 10px;
+    max-width: 300px;
+    box-sizing: border-box;
+  }
+
+  .description-inside__information {
+    position: absolute;
+    bottom: 20px;
+  }
+
+  .information-inside__iconEllipse {
+    width: 31.18px;
+    height: 31.18px;
+  }
+
+  .information-inside__iconI {
+    width: 5.67px;
+    height: 22.68px;
+    margin-left: -18px;
+    padding-top: 3px;
+  }
+
+  .information-inside__title {
+    font-size: 16px;
+  }
+
+  .description-inside__desc {
+    max-width: 174px;
+  }
+
+  .description-inside__button {
+    font-size: 16px;
+  }
+
+  .security {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    position: relative;
+    min-width: auto;
+    max-width: 1024px;
+  }
+
+  .security__wrap-mobile {
+    min-width: auto;
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .security__logo {
+    position: relative;
+    padding-top: 25%;
+    width: 80%;
+    z-index: 3;
+    height: 50%;
+  }
+
+  .security__image {
+    position: absolute;
+    padding-top: 7%;
+    right: -5%;
+    width: 100%;
+    z-index: 5;
+    top: 40%;
+  }
+
+  .item-security__text {
+    margin-left: 0;
+  }
+
+  .security__icon--first {
+    position: absolute;
+    top: 63%;
+    left: 29.5%;
+    height: 193.79px;
+  }
+
+  .icon-security__rectangleFirst {
+    position: absolute;
+    width: 2.86px;
+    height: 100%;
+    z-index: 15;
+    left: 10px;
+  }
+
+  .icon-security__ellipseFirst {
+    position: absolute;
+    width: 10.01px;
+    height: 10.01px;
+    z-index: 15;
+    left: 7px;
+    bottom: -1%;
+  }
+
+  .security__icon--second {
+    position: absolute;
+    top: 50%;
+    left: 57.2%;
+    height: 87.24px;
+  }
+
+  .icon-security__rectangleSecond {
+    position: absolute;
+    width: 2.86px;
+    height: 100%;
+    z-index: 15;
+  }
+
+  .icon-security__ellipseSecond {
+    position: absolute;
+    width: 10.01px;
+    height: 10.01px;
+    z-index: 15;
+    left: -3px;
+    bottom: -7%;
+  }
+
+  .security__icon--third {
+    position: absolute;
+    top: 146%;
+    left: 62.5%;
+    height: 77.23px;
+  }
+
+  .icon-security__rectangleThird {
+    position: absolute;
+    width: 2.86px;
+    height: 100%;
+    z-index: 15;
+  }
+
+  .icon-security__ellipseThird {
+    position: absolute;
+    width: 10.01px;
+    height: 10.01px;
+    z-index: 15;
+    left: -5px;
+    top: -7%;
+  }
+
+  .icon-security__front {
+    font-size: 17px;
+    font-family: MontserratSemiBold;
+    position: absolute;
+    z-index: 20;
+    color: black;
+    top: -5%;
+    left: 20px;
+    width: 200px;
+  }
+
+  .icon-security__side {
+    font-size: 17px;
+    font-family: MontserratSemiBold;
+    position: absolute;
+    z-index: 20;
+    color: black;
+    top: -9%;
+    left: 10px;
+    width: 200px;
+  }
+
+  .icon-security__rollOver {
+    font-size: 17px;
+    font-family: MontserratSemiBold;
+    position: absolute;
+    z-index: 20;
+    color: black;
+    bottom: -9%;
+    left: 10px;
+    width: 230px;
+  }
+
+  .security__description {
+    position: relative;
+    min-width: auto;
+    max-width: 1024px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 40%;
+    display: flex;
+    justify-content: space-around;
+    padding: 62px 55px 180px 34px;
+  }
+
+  .description-security__info {
+    min-width: 400px;
+    max-width: 500px;
+  }
+
+  .info-security__icon {
+    padding-right: 5px;
+    padding-bottom: 5px;
+  }
+
+  .info-security__title {
+    font-size: 16px;
+    padding-right: 40px;
+  }
+
+  .description-security__title-wrap {
+    width: 316px;
+  }
+
+  .info-security__button {
+    font-size: 16px;
+  }
+
+  .description-security__wrap-mobile {
+    position: absolute;
+    top: 50%;
+    align-self: flex-end;
+  }
+
+  .description-security__wrap-ipad {
+    display: none;
+  }
+}
